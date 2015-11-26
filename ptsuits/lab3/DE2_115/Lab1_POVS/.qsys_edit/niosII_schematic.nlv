@@ -1,0 +1,47 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst niosII.ext_ram_ctl.clk -pg 1
+preplace inst niosII.ext_flash_ctl.tda -pg 1
+preplace inst niosII -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst niosII.ext_ram_ctl -pg 1 -lvl 3 -y 560
+preplace inst niosII.ext_flash_bus -pg 1 -lvl 4 -y 590
+preplace inst niosII.sys_clk_timer -pg 1 -lvl 4 -y 250
+preplace inst niosII.instruction_tcm -pg 1 -lvl 4 -y 450
+preplace inst niosII.ext_ram_ctl.tda -pg 1
+preplace inst niosII.ext_ram_ctl.slave_translator -pg 1
+preplace inst niosII.ext_flash_ctl.clk -pg 1
+preplace inst niosII.cpu.cpu -pg 1
+preplace inst niosII.ext_flash_ctl -pg 1 -lvl 3 -y 400
+preplace inst niosII.my_pwm -pg 1 -lvl 3 -y 270
+preplace inst niosII.ext_ram_bus -pg 1 -lvl 4 -y 690
+preplace inst niosII.ext_flash_ctl.slave_translator -pg 1
+preplace inst niosII.sysid -pg 1 -lvl 4 -y 890
+preplace inst niosII.performance_counter_0 -pg 1 -lvl 3 -y 710
+preplace inst niosII.ext_flash_ctl.tdt -pg 1
+preplace inst niosII.high_res_timer -pg 1 -lvl 4 -y 350
+preplace inst niosII.seven_seg -pg 1 -lvl 4 -y 970
+preplace inst niosII.jtag_uart -pg 1 -lvl 4 -y 150
+preplace inst niosII.ext_ram_ctl.tdt -pg 1
+preplace inst niosII.ext_ram_ctl.reset -pg 1
+preplace inst niosII.cpu.clock_bridge -pg 1
+preplace inst niosII.ext_flash_ctl.reset -pg 1
+preplace inst niosII.cpu.reset_bridge -pg 1
+preplace inst niosII.buttons -pg 1 -lvl 4 -y 30
+preplace inst niosII.cpu -pg 1 -lvl 2 -y 410
+preplace inst niosII.clk -pg 1 -lvl 1 -y 430
+preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)niosII.pwm,(SLAVE)my_pwm.led_driver) 1 0 3 NJ 320 NJ 320 NJ
+preplace netloc POINT_TO_POINT<net_container>niosII</net_container>(MASTER)cpu.tightly_coupled_instruction_master_0,(SLAVE)instruction_tcm.s1) 1 2 2 N 520 NJ
+preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)ext_ram_bus.out,(SLAVE)niosII.ram_bus) 1 0 4 NJ 840 NJ 840 NJ 840 NJ
+preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)clk.clk_in,(SLAVE)niosII.clk) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>niosII</net_container>(SLAVE)sys_clk_timer.clk,(SLAVE)my_pwm.clock,(SLAVE)instruction_tcm.clk2,(SLAVE)seven_seg.clk,(SLAVE)jtag_uart.clk,(SLAVE)ext_ram_ctl.clk,(SLAVE)ext_flash_bus.clk,(SLAVE)high_res_timer.clk,(SLAVE)performance_counter_0.clk,(SLAVE)instruction_tcm.clk1,(SLAVE)cpu.clk,(SLAVE)ext_ram_bus.clk,(MASTER)clk.clk,(SLAVE)ext_flash_ctl.clk,(SLAVE)sysid.clk,(SLAVE)buttons.clk) 1 1 3 300 570 750 500 1020
+preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)niosII.btn,(SLAVE)buttons.external_connection) 1 0 4 NJ 60 NJ 60 NJ 60 NJ
+preplace netloc INTERCONNECT<net_container>niosII</net_container>(SLAVE)ext_ram_ctl.reset,(SLAVE)performance_counter_0.reset,(MASTER)clk.clk_reset,(SLAVE)seven_seg.reset,(SLAVE)sysid.reset,(MASTER)cpu.debug_reset_request,(SLAVE)instruction_tcm.reset2,(SLAVE)cpu.reset,(SLAVE)sys_clk_timer.reset,(SLAVE)my_pwm.reset_sink,(SLAVE)instruction_tcm.reset1,(SLAVE)ext_ram_bus.reset,(SLAVE)buttons.reset,(SLAVE)ext_flash_bus.reset,(SLAVE)jtag_uart.reset,(SLAVE)high_res_timer.reset,(SLAVE)ext_flash_ctl.reset) 1 1 3 280 590 770 800 1080
+preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)niosII.hex,(SLAVE)seven_seg.external_connection) 1 0 4 NJ 1000 NJ 1000 NJ 1000 NJ
+preplace netloc POINT_TO_POINT<net_container>niosII</net_container>(SLAVE)ext_ram_bus.tcs,(MASTER)ext_ram_ctl.tcm) 1 3 1 980
+preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)niosII.flash_bus,(SLAVE)ext_flash_bus.out) 1 0 4 NJ 700 NJ 700 NJ 700 NJ
+preplace netloc FAN_OUT<net_container>niosII</net_container>(SLAVE)sys_clk_timer.irq,(SLAVE)jtag_uart.irq,(SLAVE)buttons.irq,(MASTER)cpu.irq) 1 2 2 710 260 980
+preplace netloc INTERCONNECT<net_container>niosII</net_container>(SLAVE)instruction_tcm.s2,(MASTER)cpu.data_master,(SLAVE)my_pwm.avalon_slave_0,(SLAVE)cpu.debug_mem_slave,(SLAVE)seven_seg.s1,(SLAVE)sysid.control_slave,(SLAVE)ext_ram_ctl.uas,(SLAVE)sys_clk_timer.s1,(SLAVE)buttons.s1,(MASTER)cpu.instruction_master,(SLAVE)ext_flash_ctl.uas,(SLAVE)jtag_uart.avalon_jtag_slave,(SLAVE)performance_counter_0.control_slave,(SLAVE)high_res_timer.s1) 1 1 3 320 610 730 820 1100
+preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)niosII.reset,(SLAVE)clk.clk_in_reset) 1 0 1 NJ
+preplace netloc POINT_TO_POINT<net_container>niosII</net_container>(MASTER)ext_flash_ctl.tcm,(SLAVE)ext_flash_bus.tcs) 1 3 1 1060
+levelinfo -pg 1 0 70 1330
+levelinfo -hier niosII 80 110 440 830 1170 1320

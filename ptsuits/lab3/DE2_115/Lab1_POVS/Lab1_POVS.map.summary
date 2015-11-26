@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Nov 11 12:52:56 2015
+Quartus II 64-Bit Version : 15.0.2 Build 153 07/15/2015 SJ Full Version
+Revision Name : Lab1_POVS
+Top-level Entity Name : Lab1_POVS
+Family : Cyclone IV E
+Total logic elements : 6,755
+    Total combinational functions : 5,542
+    Dedicated logic registers : 3,830
+Total registers : 3830
+Total pins : 168
+Total virtual pins : 0
+Total memory bits : 218,112
+Embedded Multiplier 9-bit elements : 6
+Total PLLs : 0

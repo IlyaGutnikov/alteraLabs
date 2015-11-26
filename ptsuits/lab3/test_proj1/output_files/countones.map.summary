@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Nov 18 23:04:42 2015
+Quartus II 64-Bit Version : 15.0.2 Build 153 07/15/2015 SJ Web Edition
+Revision Name : countones
+Top-level Entity Name : countones
+Family : Cyclone IV E
+Total logic elements : 303
+    Total combinational functions : 303
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 34
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 8
+Total PLLs : 0

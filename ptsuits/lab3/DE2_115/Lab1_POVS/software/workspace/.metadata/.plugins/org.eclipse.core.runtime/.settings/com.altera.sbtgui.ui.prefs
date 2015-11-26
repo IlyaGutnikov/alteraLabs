@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+newApplicationWizardPage.defaultLocation=D\:\\Altera\\IU3-17M\\Gutnikov\\ptsuits\\lab3\\DE2_115\\Lab1_POVS\\software\\ci_project
+newSoftwareExampleWizardPage.defaultLocation=D\:\\Altera\\IU3-17M\\Gutnikov\\ptsuits\\lab3\\DE2_115\\Lab1_POVS\\software\\niosII_pwm_project
+newSoftwareExampleWizardPage.sopcinfoFile=D\:\\Altera\\IU3-17M\\Gutnikov\\ptsuits\\lab3\\DE2_115\\Lab1_POVS\\niosII.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=D\:\\Altera\\IU3-17M\\Gutnikov\\ptsuits\\lab3\\DE2_115\\Lab1_POVS\\software\\niosII_pwm_project_bsp

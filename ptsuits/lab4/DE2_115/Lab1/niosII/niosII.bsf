@@ -1,0 +1,206 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 512 544)
+	(text "niosII" (rect 242 -1 262 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 528 20 540)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk_clk" (rect 0 0 27 12)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 61 46 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 192 72)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "reset_reset_n" (rect 0 0 56 12)(font "Arial" (font_size 8)))
+		(text "reset_reset_n" (rect 4 101 82 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 192 112)(line_width 1))
+	)
+	(port
+		(pt 0 432)
+		(input)
+		(text "btn_export[3..0]" (rect 0 0 62 12)(font "Arial" (font_size 8)))
+		(text "btn_export[3..0]" (rect 4 421 100 432)(font "Arial" (font_size 8)))
+		(line (pt 0 432)(pt 192 432)(line_width 3))
+	)
+	(port
+		(pt 0 152)
+		(output)
+		(text "ram_bus_tcm_address_out[20..0]" (rect 0 0 138 12)(font "Arial" (font_size 8)))
+		(text "ram_bus_tcm_address_out[20..0]" (rect 4 141 184 152)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 192 152)(line_width 3))
+	)
+	(port
+		(pt 0 168)
+		(output)
+		(text "ram_bus_tcm_outputenable_n_out" (rect 0 0 140 12)(font "Arial" (font_size 8)))
+		(text "ram_bus_tcm_outputenable_n_out" (rect 4 157 184 168)(font "Arial" (font_size 8)))
+		(line (pt 0 168)(pt 192 168)(line_width 1))
+	)
+	(port
+		(pt 0 184)
+		(output)
+		(text "ram_bus_tcm_byteenable_n_out[1..0]" (rect 0 0 153 12)(font "Arial" (font_size 8)))
+		(text "ram_bus_tcm_byteenable_n_out[1..0]" (rect 4 173 208 184)(font "Arial" (font_size 8)))
+		(line (pt 0 184)(pt 192 184)(line_width 3))
+	)
+	(port
+		(pt 0 200)
+		(output)
+		(text "ram_bus_tcm_write_n_out" (rect 0 0 109 12)(font "Arial" (font_size 8)))
+		(text "ram_bus_tcm_write_n_out" (rect 4 189 142 200)(font "Arial" (font_size 8)))
+		(line (pt 0 200)(pt 192 200)(line_width 1))
+	)
+	(port
+		(pt 0 232)
+		(output)
+		(text "ram_bus_tcm_chipselect_n_out" (rect 0 0 129 12)(font "Arial" (font_size 8)))
+		(text "ram_bus_tcm_chipselect_n_out" (rect 4 221 172 232)(font "Arial" (font_size 8)))
+		(line (pt 0 232)(pt 192 232)(line_width 1))
+	)
+	(port
+		(pt 0 272)
+		(output)
+		(text "flash_bus_tcm_address_out[22..0]" (rect 0 0 140 12)(font "Arial" (font_size 8)))
+		(text "flash_bus_tcm_address_out[22..0]" (rect 4 261 196 272)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 192 272)(line_width 3))
+	)
+	(port
+		(pt 0 288)
+		(output)
+		(text "flash_bus_tcm_outputenable_n_out" (rect 0 0 142 12)(font "Arial" (font_size 8)))
+		(text "flash_bus_tcm_outputenable_n_out" (rect 4 277 196 288)(font "Arial" (font_size 8)))
+		(line (pt 0 288)(pt 192 288)(line_width 1))
+	)
+	(port
+		(pt 0 304)
+		(output)
+		(text "flash_bus_tcm_reset_n_out" (rect 0 0 114 12)(font "Arial" (font_size 8)))
+		(text "flash_bus_tcm_reset_n_out" (rect 4 293 154 304)(font "Arial" (font_size 8)))
+		(line (pt 0 304)(pt 192 304)(line_width 1))
+	)
+	(port
+		(pt 0 320)
+		(output)
+		(text "flash_bus_tcm_write_n_out" (rect 0 0 112 12)(font "Arial" (font_size 8)))
+		(text "flash_bus_tcm_write_n_out" (rect 4 309 154 320)(font "Arial" (font_size 8)))
+		(line (pt 0 320)(pt 192 320)(line_width 1))
+	)
+	(port
+		(pt 0 352)
+		(output)
+		(text "flash_bus_tcm_chipselect_n_out" (rect 0 0 132 12)(font "Arial" (font_size 8)))
+		(text "flash_bus_tcm_chipselect_n_out" (rect 4 341 184 352)(font "Arial" (font_size 8)))
+		(line (pt 0 352)(pt 192 352)(line_width 1))
+	)
+	(port
+		(pt 0 392)
+		(output)
+		(text "hex_export[31..0]" (rect 0 0 68 12)(font "Arial" (font_size 8)))
+		(text "hex_export[31..0]" (rect 4 381 106 392)(font "Arial" (font_size 8)))
+		(line (pt 0 392)(pt 192 392)(line_width 3))
+	)
+	(port
+		(pt 0 472)
+		(output)
+		(text "pwm_export[7..0]" (rect 0 0 69 12)(font "Arial" (font_size 8)))
+		(text "pwm_export[7..0]" (rect 4 461 100 472)(font "Arial" (font_size 8)))
+		(line (pt 0 472)(pt 192 472)(line_width 3))
+	)
+	(port
+		(pt 0 512)
+		(output)
+		(text "gen_export" (rect 0 0 44 12)(font "Arial" (font_size 8)))
+		(text "gen_export" (rect 4 501 64 512)(font "Arial" (font_size 8)))
+		(line (pt 0 512)(pt 192 512)(line_width 1))
+	)
+	(port
+		(pt 0 216)
+		(bidir)
+		(text "ram_bus_tcm_data_out[15..0]" (rect 0 0 121 12)(font "Arial" (font_size 8)))
+		(text "ram_bus_tcm_data_out[15..0]" (rect 4 205 166 216)(font "Arial" (font_size 8)))
+		(line (pt 0 216)(pt 192 216)(line_width 3))
+	)
+	(port
+		(pt 0 336)
+		(bidir)
+		(text "flash_bus_tcm_data_out[7..0]" (rect 0 0 120 12)(font "Arial" (font_size 8)))
+		(text "flash_bus_tcm_data_out[7..0]" (rect 4 325 172 336)(font "Arial" (font_size 8)))
+		(line (pt 0 336)(pt 192 336)(line_width 3))
+	)
+	(drawing
+		(text "clk" (rect 177 43 372 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 197 67 412 144)(font "Arial" (color 0 0 0)))
+		(text "reset" (rect 163 83 356 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 197 107 436 224)(font "Arial" (color 0 0 0)))
+		(text "ram_bus" (rect 141 123 324 259)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "tcm_address_out" (rect 197 147 484 304)(font "Arial" (color 0 0 0)))
+		(text "tcm_outputenable_n_out" (rect 197 163 526 336)(font "Arial" (color 0 0 0)))
+		(text "tcm_byteenable_n_out" (rect 197 179 514 368)(font "Arial" (color 0 0 0)))
+		(text "tcm_write_n_out" (rect 197 195 484 400)(font "Arial" (color 0 0 0)))
+		(text "tcm_data_out" (rect 197 211 466 432)(font "Arial" (color 0 0 0)))
+		(text "tcm_chipselect_n_out" (rect 197 227 514 464)(font "Arial" (color 0 0 0)))
+		(text "flash_bus" (rect 135 243 324 499)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "tcm_address_out" (rect 197 267 484 544)(font "Arial" (color 0 0 0)))
+		(text "tcm_outputenable_n_out" (rect 197 283 526 576)(font "Arial" (color 0 0 0)))
+		(text "tcm_reset_n_out" (rect 197 299 484 608)(font "Arial" (color 0 0 0)))
+		(text "tcm_write_n_out" (rect 197 315 484 640)(font "Arial" (color 0 0 0)))
+		(text "tcm_data_out" (rect 197 331 466 672)(font "Arial" (color 0 0 0)))
+		(text "tcm_chipselect_n_out" (rect 197 347 514 704)(font "Arial" (color 0 0 0)))
+		(text "hex" (rect 173 363 364 739)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 197 387 430 784)(font "Arial" (color 0 0 0)))
+		(text "btn" (rect 175 403 368 819)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 197 427 430 864)(font "Arial" (color 0 0 0)))
+		(text "pwm" (rect 165 443 348 899)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 197 467 430 944)(font "Arial" (color 0 0 0)))
+		(text "gen" (rect 172 483 362 979)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 197 507 430 1024)(font "Arial" (color 0 0 0)))
+		(text " system " (rect 477 528 1002 1066)(font "Arial" ))
+		(line (pt 192 32)(pt 320 32)(line_width 1))
+		(line (pt 320 32)(pt 320 528)(line_width 1))
+		(line (pt 192 528)(pt 320 528)(line_width 1))
+		(line (pt 192 32)(pt 192 528)(line_width 1))
+		(line (pt 193 52)(pt 193 76)(line_width 1))
+		(line (pt 194 52)(pt 194 76)(line_width 1))
+		(line (pt 193 92)(pt 193 116)(line_width 1))
+		(line (pt 194 92)(pt 194 116)(line_width 1))
+		(line (pt 193 132)(pt 193 236)(line_width 1))
+		(line (pt 194 132)(pt 194 236)(line_width 1))
+		(line (pt 193 252)(pt 193 356)(line_width 1))
+		(line (pt 194 252)(pt 194 356)(line_width 1))
+		(line (pt 193 372)(pt 193 396)(line_width 1))
+		(line (pt 194 372)(pt 194 396)(line_width 1))
+		(line (pt 193 412)(pt 193 436)(line_width 1))
+		(line (pt 194 412)(pt 194 436)(line_width 1))
+		(line (pt 193 452)(pt 193 476)(line_width 1))
+		(line (pt 194 452)(pt 194 476)(line_width 1))
+		(line (pt 193 492)(pt 193 516)(line_width 1))
+		(line (pt 194 492)(pt 194 516)(line_width 1))
+		(line (pt 0 0)(pt 512 0)(line_width 1))
+		(line (pt 512 0)(pt 512 544)(line_width 1))
+		(line (pt 0 544)(pt 512 544)(line_width 1))
+		(line (pt 0 0)(pt 0 544)(line_width 1))
+	)
+)

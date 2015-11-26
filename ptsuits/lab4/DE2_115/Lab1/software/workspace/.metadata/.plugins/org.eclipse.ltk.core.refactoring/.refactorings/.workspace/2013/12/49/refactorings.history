@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;ucosii_tutorial/seven_seg_out.c&apos;" deleteContents="false" description="Delete resource &apos;ucosii_tutorial/seven_seg_out.c&apos;" element1="/ucosii_tutorial/seven_seg_out.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1386075360722"/>
+</session>
