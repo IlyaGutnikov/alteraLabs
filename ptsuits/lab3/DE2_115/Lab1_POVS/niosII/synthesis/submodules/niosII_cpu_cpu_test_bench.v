@@ -113,7 +113,7 @@ module niosII_cpu_cpu_test_bench (
   input   [ 25: 0] W_pcb;
   input   [ 31: 0] W_status_reg;
   input            W_valid;
-  input   [ 79: 0] W_vinst;
+  input   [ 71: 0] W_vinst;
   input            W_wr_dst_reg;
   input            clk;
   input   [ 25: 0] d_address;
@@ -307,7 +307,6 @@ module niosII_cpu_cpu_test_bench (
   wire             W_op_stwio;
   wire             W_op_sub;
   wire             W_op_sync;
-  wire             W_op_task2_ci_0;
   wire             W_op_trap;
   wire             W_op_wrctl;
   wire             W_op_wrprs;
@@ -448,7 +447,6 @@ module niosII_cpu_cpu_test_bench (
   assign W_op_intr = (W_iw_opx == 61) & W_is_opx_inst;
   assign W_op_crst = (W_iw_opx == 62) & W_is_opx_inst;
   assign W_op_opx_rsv63 = (W_iw_opx == 63) & W_is_opx_inst;
-  assign W_op_task2_ci_0 = W_op_custom & 1'b1;
   assign W_is_opx_inst = W_iw_op == 58;
   always @(posedge clk or negedge reset_n)
     begin

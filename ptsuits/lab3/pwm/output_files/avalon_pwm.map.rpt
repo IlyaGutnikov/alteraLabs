@@ -1,5 +1,5 @@
 Analysis & Synthesis report for avalon_pwm
-Mon Nov 23 00:02:43 2015
+Sun Nov 29 17:50:15 2015
 Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
 
 
@@ -14,9 +14,11 @@ Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Inverted Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -43,16 +45,16 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov 23 00:02:43 2015      ;
+; Analysis & Synthesis Status        ; Successful - Sun Nov 29 17:50:15 2015      ;
 ; Quartus II 64-Bit Version          ; 15.0.2 Build 153 07/15/2015 SJ Web Edition ;
 ; Revision Name                      ; avalon_pwm                                 ;
 ; Top-level Entity Name              ; avalon_pwm                                 ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 205                                        ;
-;     Total combinational functions  ; 141                                        ;
-;     Dedicated logic registers      ; 97                                         ;
-; Total registers                    ; 97                                         ;
-; Total pins                         ; 173                                        ;
+; Total logic elements               ; 283                                        ;
+;     Total combinational functions  ; 187                                        ;
+;     Dedicated logic registers      ; 130                                        ;
+; Total registers                    ; 130                                        ;
+; Total pins                         ; 78                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -171,30 +173,30 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 205       ;
+; Estimated Total logic elements              ; 283       ;
 ;                                             ;           ;
-; Total combinational functions               ; 141       ;
+; Total combinational functions               ; 187       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 11        ;
-;     -- 3 input functions                    ; 96        ;
-;     -- <=2 input functions                  ; 34        ;
+;     -- 4 input functions                    ; 89        ;
+;     -- 3 input functions                    ; 63        ;
+;     -- <=2 input functions                  ; 35        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 48        ;
+;     -- normal mode                          ; 94        ;
 ;     -- arithmetic mode                      ; 93        ;
 ;                                             ;           ;
-; Total registers                             ; 97        ;
-;     -- Dedicated logic registers            ; 97        ;
+; Total registers                             ; 130       ;
+;     -- Dedicated logic registers            ; 130       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 173       ;
+; I/O pins                                    ; 78        ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 97        ;
-; Total fan-out                               ; 1063      ;
-; Average fan-out                             ; 1.82      ;
+; Maximum fan-out                             ; 130       ;
+; Total fan-out                               ; 1250      ;
+; Average fan-out                             ; 2.64      ;
 +---------------------------------------------+-----------+
 
 
@@ -203,7 +205,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |avalon_pwm                ; 141 (141)         ; 97 (97)      ; 0           ; 0            ; 0       ; 0         ; 173  ; 0            ; |avalon_pwm         ; work         ;
+; |avalon_pwm                ; 187 (187)         ; 130 (130)    ; 0           ; 0            ; 0       ; 0         ; 78   ; 0            ; |avalon_pwm         ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -213,14 +215,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 97    ;
+; Total registers                              ; 130   ;
 ; Number of registers using Synchronous Clear  ; 32    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 97    ;
+; Number of registers using Asynchronous Clear ; 130   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 64    ;
+; Number of registers using Clock Enable       ; 96    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; state                                  ; 2       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |avalon_pwm|Mux30          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
 +-----------------------------------------------------+
@@ -228,23 +249,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 173                         ;
-; cycloneiii_ff         ; 97                          ;
-;     CLR               ; 1                           ;
+; boundary_port         ; 78                          ;
+; cycloneiii_ff         ; 130                         ;
+;     CLR               ; 2                           ;
 ;     CLR SCLR          ; 32                          ;
-;     ENA CLR           ; 64                          ;
-; cycloneiii_lcell_comb ; 142                         ;
+;     ENA CLR           ; 96                          ;
+; cycloneiii_lcell_comb ; 188                         ;
 ;     arith             ; 93                          ;
 ;         2 data inputs ; 31                          ;
 ;         3 data inputs ; 62                          ;
-;     normal            ; 49                          ;
+;     normal            ; 95                          ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 34                          ;
-;         4 data inputs ; 11                          ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 89                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.10                        ;
-; Average LUT depth     ; 2.90                        ;
+; Average LUT depth     ; 3.20                        ;
 +-----------------------+-----------------------------+
 
 
@@ -263,7 +284,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
-    Info: Processing started: Mon Nov 23 00:02:33 2015
+    Info: Processing started: Sun Nov 29 17:50:04 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off avalon_pwm -c avalon_pwm
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file simulation/modelsim/avalon_pwm.v
@@ -271,50 +292,22 @@ Info (12021): Found 1 design units, including 1 entities, in source file simulat
 Info (12021): Found 1 design units, including 1 entities, in source file avalon_pwm.v
     Info (12023): Found entity 1: avalon_pwm
 Info (12127): Elaborating entity "avalon_pwm" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at avalon_pwm.v(26): object "div_en" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at avalon_pwm.v(26): object "duty_en" assigned a value but never read
+Warning (10230): Verilog HDL assignment warning at avalon_pwm.v(33): truncated value with size 2 to match size of target (1)
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 32 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "dither[0]"
-    Warning (15610): No output dependent on input pin "dither[1]"
-    Warning (15610): No output dependent on input pin "dither[2]"
-    Warning (15610): No output dependent on input pin "dither[3]"
-    Warning (15610): No output dependent on input pin "dither[4]"
-    Warning (15610): No output dependent on input pin "dither[5]"
-    Warning (15610): No output dependent on input pin "dither[6]"
-    Warning (15610): No output dependent on input pin "dither[7]"
-    Warning (15610): No output dependent on input pin "dither[8]"
-    Warning (15610): No output dependent on input pin "dither[9]"
-    Warning (15610): No output dependent on input pin "dither[10]"
-    Warning (15610): No output dependent on input pin "dither[11]"
-    Warning (15610): No output dependent on input pin "dither[12]"
-    Warning (15610): No output dependent on input pin "dither[13]"
-    Warning (15610): No output dependent on input pin "dither[14]"
-    Warning (15610): No output dependent on input pin "dither[15]"
-    Warning (15610): No output dependent on input pin "dither[16]"
-    Warning (15610): No output dependent on input pin "dither[17]"
-    Warning (15610): No output dependent on input pin "dither[18]"
-    Warning (15610): No output dependent on input pin "dither[19]"
-    Warning (15610): No output dependent on input pin "dither[20]"
-    Warning (15610): No output dependent on input pin "dither[21]"
-    Warning (15610): No output dependent on input pin "dither[22]"
-    Warning (15610): No output dependent on input pin "dither[23]"
-    Warning (15610): No output dependent on input pin "dither[24]"
-    Warning (15610): No output dependent on input pin "dither[25]"
-    Warning (15610): No output dependent on input pin "dither[26]"
-    Warning (15610): No output dependent on input pin "dither[27]"
-    Warning (15610): No output dependent on input pin "dither[28]"
-    Warning (15610): No output dependent on input pin "dither[29]"
-    Warning (15610): No output dependent on input pin "dither[30]"
-    Warning (15610): No output dependent on input pin "dither[31]"
-Info (21057): Implemented 378 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 69 input pins
-    Info (21059): Implemented 104 output pins
-    Info (21061): Implemented 205 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 34 warnings
-    Info: Peak virtual memory: 648 megabytes
-    Info: Processing ended: Mon Nov 23 00:02:43 2015
-    Info: Elapsed time: 00:00:10
+Info (21057): Implemented 361 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 38 input pins
+    Info (21059): Implemented 40 output pins
+    Info (21061): Implemented 283 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 647 megabytes
+    Info: Processing ended: Sun Nov 29 17:50:15 2015
+    Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:25
 
 

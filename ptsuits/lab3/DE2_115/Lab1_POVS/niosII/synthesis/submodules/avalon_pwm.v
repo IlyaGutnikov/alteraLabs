@@ -7,7 +7,7 @@ module avalon_pwm
 	input [31:0] wr_data;
 	input cs;
 	input wr_n;
-	input addr;
+	input [1:0]addr;
 	input clr_n;
 	output [31:0] rd_data;
 	output [7:0] pwm_out;
@@ -18,8 +18,11 @@ module avalon_pwm
 	reg [31:0]	div;
 	reg [31:0]	duty;
 	reg [31:0] counter;
+	reg [31:0] counter2;
 	reg off;
+	reg state;
 	reg [31:0] rd_data;
+	reg [31:0] dither;
 	wire div_en, duty_en;
 
 	/////////////////////////////////////////////////////////////////////
@@ -36,21 +39,30 @@ module avalon_pwm
 		begin
 			div <= 0;
 			duty <= 0;
+			dither<=0;
 		end
 		else
 		begin
-			if (div_en)	div <= wr_data;
-			if (duty_en) duty <= wr_data;
+		if(cs&!wr_n)
+			begin
+			case(addr)
+			2'b00: div <= wr_data;
+			2'b01: duty <= wr_data;
+			2'b10: dither <= wr_data;
+			endcase
+			end
 		end		
 	end
 
 	//register read
 	always @(*)
 	begin
-		if (addr == 0)
-			rd_data = div;
-		else
-			rd_data = duty;
+		case(addr)
+		2'b00: rd_data = div;
+		2'b01: rd_data = duty;
+		2'b10: rd_data = dither;
+		default: rd_data = 0;
+		endcase
 	end
 	
 	/////////////////////////////////////////////////////////////////////
@@ -71,16 +83,36 @@ module avalon_pwm
 	//PWM compare
 	always @(posedge clk or negedge clr_n)
 	begin
-		if (clr_n == 0)
+		//clr
+		if (clr_n == 0) begin
 			off <= 0;
+			state <= 1;
+				end
 		else
+		//task1 work
+		if (dither == 1) begin
 			if (counter >= duty)
+					if ((clk == 1)&&(state == 1)) begin 
+						off <= 1;
+						state <= 0;	
+					end
+					else begin
+						off <= 0;
+						state <= 1;
+					end
+			else
+				off <= 1;
+		end
+		else begin
+		//normal work
+		if (counter >= duty)
 				off <= 1;
 			else
 				if (counter == 0)
 					off <= 0;
 				else
 					off <= off;
+		end
 	end
 
 	assign pwm_out = {8{!off}};

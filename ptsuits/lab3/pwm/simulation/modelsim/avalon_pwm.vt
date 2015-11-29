@@ -18,7 +18,7 @@
 // suit user's needs .Comments are provided in each section to help the user    
 // fill out necessary details.                                                  
 // *****************************************************************************
-// Generated on "11/22/2015 17:38:10"
+// Generated on "11/29/2015 17:44:24"
                                                                                 
 // Verilog Test Bench template for design : avalon_pwm
 // 
@@ -53,65 +53,23 @@ avalon_pwm i1 (
 	.wr_data(wr_data),
 	.wr_n(wr_n)
 );
-
-initial                                                
-begin 
-	clk = 0;
-	forever #10 clk = ~clk;
-end
-
 initial                                                
 begin                                                  
 // code that executes only once                        
 // insert code here --> begin                          
-	cs = 0;
-	wr_n = 0;
-	addr = 0;
-	wr_data = 0;
-	wr_data = 0;
-
-	#10 clr_n = 0;
-	#10 clr_n = 1;
-	
-	wr_data = 16;
-	addr = 0; //0 - div
-	#20 cs = 1;
-	#20 cs = 0;	
-
-	wr_data = 8;
-	addr = 1; //1 - duty
-	#20 cs = 1;
-	#20 cs = 0;
-	#20 wr_n = 1;
-	
-	//task1 work
-	#900 cs = 0;
-	wr_n = 0;
-	addr = 0;
-	wr_data = 0;
-	wr_data = 0;
-
-	#10 clr_n = 0;
-	#10 clr_n = 1;
-	
-	wr_data = 16;
-	addr = 0; //0 - div
-	#20 cs = 1;
-	#20 cs = 0;	
-
-	wr_data = 8;
-	addr = 1; //1 - duty
-	#20 cs = 1;
-	#20 cs = 0;	
-	
-	wr_data = 1;
-	addr = 2;
-	#20 cs = 1;
-	#20 cs = 0;
-	
-	#20 wr_n = 1;
-	
-	
-end                                                 
+                                                       
+// --> end                                             
+$display("Running testbench");                       
+end                                                    
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin                          
+                                                       
+@eachvec;                                              
+// --> end                                             
+end                                                    
 endmodule
 
