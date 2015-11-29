@@ -1,5 +1,5 @@
 Analysis & Synthesis report for countones
-Wed Nov 18 23:04:42 2015
+Sun Nov 29 18:51:59 2015
 Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
 
 
@@ -15,15 +15,16 @@ Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis DSP Block Usage Summary
   9. User-Specified and Inferred Latches
- 10. General Register Statistics
- 11. Parameter Settings for Inferred Entity Instance: lpm_mult:Mult0
- 12. Parameter Settings for Inferred Entity Instance: lpm_mult:Mult3
- 13. Parameter Settings for Inferred Entity Instance: lpm_mult:Mult1
- 14. Parameter Settings for Inferred Entity Instance: lpm_mult:Mult2
- 15. lpm_mult Parameter Settings by Entity Instance
- 16. Post-Synthesis Netlist Statistics for Top Partition
- 17. Elapsed Time Per Partition
- 18. Analysis & Synthesis Messages
+ 10. Logic Cells Representing Combinational Loops
+ 11. General Register Statistics
+ 12. Parameter Settings for Inferred Entity Instance: lpm_mult:Mult0
+ 13. Parameter Settings for Inferred Entity Instance: lpm_mult:Mult3
+ 14. Parameter Settings for Inferred Entity Instance: lpm_mult:Mult1
+ 15. Parameter Settings for Inferred Entity Instance: lpm_mult:Mult2
+ 16. lpm_mult Parameter Settings by Entity Instance
+ 17. Post-Synthesis Netlist Statistics for Top Partition
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
 
 
 
@@ -50,19 +51,19 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 18 23:04:42 2015      ;
+; Analysis & Synthesis Status        ; Successful - Sun Nov 29 18:51:59 2015      ;
 ; Quartus II 64-Bit Version          ; 15.0.2 Build 153 07/15/2015 SJ Web Edition ;
 ; Revision Name                      ; countones                                  ;
 ; Top-level Entity Name              ; countones                                  ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 303                                        ;
-;     Total combinational functions  ; 303                                        ;
+; Total logic elements               ; 161                                        ;
+;     Total combinational functions  ; 161                                        ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
 ; Total pins                         ; 34                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
-; Embedded Multiplier 9-bit elements ; 8                                          ;
+; Embedded Multiplier 9-bit elements ; 4                                          ;
 ; Total PLLs                         ; 0                                          ;
 +------------------------------------+--------------------------------------------+
 
@@ -176,7 +177,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; multcore.inc                     ; yes             ; Megafunction                 ; e:/altera/quartus/libraries/megafunctions/multcore.inc    ;         ;
 ; bypassff.inc                     ; yes             ; Megafunction                 ; e:/altera/quartus/libraries/megafunctions/bypassff.inc    ;         ;
 ; altshift.inc                     ; yes             ; Megafunction                 ; e:/altera/quartus/libraries/megafunctions/altshift.inc    ;         ;
-; db/mult_t5t.tdf                  ; yes             ; Auto-Generated Megafunction  ; E:/alteraLabs/ptsuits/lab3/test_proj1/db/mult_t5t.tdf     ;         ;
+; db/mult_73t.tdf                  ; yes             ; Auto-Generated Megafunction  ; E:/alteraLabs/ptsuits/lab3/test_proj1/db/mult_73t.tdf     ;         ;
 +----------------------------------+-----------------+------------------------------+-----------------------------------------------------------+---------+
 
 
@@ -185,17 +186,17 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------------------------------------------------+
 ; Resource                                    ; Usage                                           ;
 +---------------------------------------------+-------------------------------------------------+
-; Estimated Total logic elements              ; 303                                             ;
+; Estimated Total logic elements              ; 161                                             ;
 ;                                             ;                                                 ;
-; Total combinational functions               ; 303                                             ;
+; Total combinational functions               ; 161                                             ;
 ; Logic element usage by number of LUT inputs ;                                                 ;
-;     -- 4 input functions                    ; 131                                             ;
-;     -- 3 input functions                    ; 157                                             ;
-;     -- <=2 input functions                  ; 15                                              ;
+;     -- 4 input functions                    ; 90                                              ;
+;     -- 3 input functions                    ; 65                                              ;
+;     -- <=2 input functions                  ; 6                                               ;
 ;                                             ;                                                 ;
 ; Logic elements by mode                      ;                                                 ;
-;     -- normal mode                          ; 242                                             ;
-;     -- arithmetic mode                      ; 61                                              ;
+;     -- normal mode                          ; 161                                             ;
+;     -- arithmetic mode                      ; 0                                               ;
 ;                                             ;                                                 ;
 ; Total registers                             ; 0                                               ;
 ;     -- Dedicated logic registers            ; 0                                               ;
@@ -203,12 +204,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;                                             ;                                                 ;
 ; I/O pins                                    ; 34                                              ;
 ;                                             ;                                                 ;
-; Embedded Multiplier 9-bit elements          ; 8                                               ;
+; Embedded Multiplier 9-bit elements          ; 4                                               ;
 ;                                             ;                                                 ;
-; Maximum fan-out node                        ; lpm_mult:Mult3|mult_t5t:auto_generated|mac_out2 ;
-; Maximum fan-out                             ; 109                                             ;
-; Total fan-out                               ; 1056                                            ;
-; Average fan-out                             ; 2.79                                            ;
+; Maximum fan-out node                        ; lpm_mult:Mult3|mult_73t:auto_generated|mac_out2 ;
+; Maximum fan-out                             ; 71                                              ;
+; Total fan-out                               ; 608                                             ;
+; Average fan-out                             ; 2.57                                            ;
 +---------------------------------------------+-------------------------------------------------+
 
 
@@ -217,15 +218,15 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------+--------------+
 ; Compilation Hierarchy Node      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                               ; Library Name ;
 +---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------+--------------+
-; |countones                      ; 303 (303)         ; 0 (0)        ; 0           ; 8            ; 0       ; 4         ; 34   ; 0            ; |countones                                        ; work         ;
-;    |lpm_mult:Mult0|             ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |countones|lpm_mult:Mult0                         ; work         ;
-;       |mult_t5t:auto_generated| ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |countones|lpm_mult:Mult0|mult_t5t:auto_generated ; work         ;
-;    |lpm_mult:Mult1|             ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |countones|lpm_mult:Mult1                         ; work         ;
-;       |mult_t5t:auto_generated| ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |countones|lpm_mult:Mult1|mult_t5t:auto_generated ; work         ;
-;    |lpm_mult:Mult2|             ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |countones|lpm_mult:Mult2                         ; work         ;
-;       |mult_t5t:auto_generated| ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |countones|lpm_mult:Mult2|mult_t5t:auto_generated ; work         ;
-;    |lpm_mult:Mult3|             ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |countones|lpm_mult:Mult3                         ; work         ;
-;       |mult_t5t:auto_generated| ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |countones|lpm_mult:Mult3|mult_t5t:auto_generated ; work         ;
+; |countones                      ; 161 (161)         ; 0 (0)        ; 0           ; 4            ; 4       ; 0         ; 34   ; 0            ; |countones                                        ; work         ;
+;    |lpm_mult:Mult0|             ; 0 (0)             ; 0 (0)        ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |countones|lpm_mult:Mult0                         ; work         ;
+;       |mult_73t:auto_generated| ; 0 (0)             ; 0 (0)        ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |countones|lpm_mult:Mult0|mult_73t:auto_generated ; work         ;
+;    |lpm_mult:Mult1|             ; 0 (0)             ; 0 (0)        ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |countones|lpm_mult:Mult1                         ; work         ;
+;       |mult_73t:auto_generated| ; 0 (0)             ; 0 (0)        ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |countones|lpm_mult:Mult1|mult_73t:auto_generated ; work         ;
+;    |lpm_mult:Mult2|             ; 0 (0)             ; 0 (0)        ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |countones|lpm_mult:Mult2                         ; work         ;
+;       |mult_73t:auto_generated| ; 0 (0)             ; 0 (0)        ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |countones|lpm_mult:Mult2|mult_73t:auto_generated ; work         ;
+;    |lpm_mult:Mult3|             ; 0 (0)             ; 0 (0)        ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |countones|lpm_mult:Mult3                         ; work         ;
+;       |mult_73t:auto_generated| ; 0 (0)             ; 0 (0)        ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |countones|lpm_mult:Mult3|mult_73t:auto_generated ; work         ;
 +---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -235,10 +236,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------+-------------+
 ; Statistic                             ; Number Used ;
 +---------------------------------------+-------------+
-; Simple Multipliers (9-bit)            ; 0           ;
-; Simple Multipliers (18-bit)           ; 4           ;
+; Simple Multipliers (9-bit)            ; 4           ;
+; Simple Multipliers (18-bit)           ; 0           ;
 ; Embedded Multiplier Blocks            ; --          ;
-; Embedded Multiplier 9-bit elements    ; 8           ;
+; Embedded Multiplier 9-bit elements    ; 4           ;
 ; Signed Embedded Multipliers           ; 4           ;
 ; Unsigned Embedded Multipliers         ; 0           ;
 ; Mixed Sign Embedded Multipliers       ; 0           ;
@@ -258,6 +259,20 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; Number of user-specified and inferred latches = 2  ;                     ;                        ;
 +----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops               ;
++--------------------------------------------------------+---+
+; Logic Cell Name                                        ;   ;
++--------------------------------------------------------+---+
+; Add0~0                                                 ;   ;
+; Add0~1                                                 ;   ;
+; Add1~0                                                 ;   ;
+; Add2~0                                                 ;   ;
+; Number of logic cells representing combinational loops ; 4 ;
++--------------------------------------------------------+---+
+Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -284,10 +299,10 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY        ;
 ; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE        ;
 ; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE      ;
-; LPM_WIDTHA                                     ; 12           ; Untyped             ;
-; LPM_WIDTHB                                     ; 12           ; Untyped             ;
-; LPM_WIDTHP                                     ; 24           ; Untyped             ;
-; LPM_WIDTHR                                     ; 24           ; Untyped             ;
+; LPM_WIDTHA                                     ; 8            ; Untyped             ;
+; LPM_WIDTHB                                     ; 8            ; Untyped             ;
+; LPM_WIDTHP                                     ; 16           ; Untyped             ;
+; LPM_WIDTHR                                     ; 16           ; Untyped             ;
 ; LPM_WIDTHS                                     ; 1            ; Untyped             ;
 ; LPM_REPRESENTATION                             ; SIGNED       ; Untyped             ;
 ; LPM_PIPELINE                                   ; 0            ; Untyped             ;
@@ -295,14 +310,14 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped             ;
 ; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped             ;
 ; USE_EAB                                        ; OFF          ; Untyped             ;
-; MAXIMIZE_SPEED                                 ; 6            ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 5            ; Untyped             ;
 ; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped             ;
 ; CARRY_CHAIN                                    ; MANUAL       ; Untyped             ;
 ; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K ;
 ; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped             ;
 ; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped             ;
 ; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped             ;
-; CBXI_PARAMETER                                 ; mult_t5t     ; Untyped             ;
+; CBXI_PARAMETER                                 ; mult_73t     ; Untyped             ;
 ; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped             ;
 ; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped             ;
 ; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped             ;
@@ -319,10 +334,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY        ;
 ; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE        ;
 ; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE      ;
-; LPM_WIDTHA                                     ; 12           ; Untyped             ;
-; LPM_WIDTHB                                     ; 12           ; Untyped             ;
-; LPM_WIDTHP                                     ; 24           ; Untyped             ;
-; LPM_WIDTHR                                     ; 24           ; Untyped             ;
+; LPM_WIDTHA                                     ; 8            ; Untyped             ;
+; LPM_WIDTHB                                     ; 8            ; Untyped             ;
+; LPM_WIDTHP                                     ; 16           ; Untyped             ;
+; LPM_WIDTHR                                     ; 16           ; Untyped             ;
 ; LPM_WIDTHS                                     ; 1            ; Untyped             ;
 ; LPM_REPRESENTATION                             ; SIGNED       ; Untyped             ;
 ; LPM_PIPELINE                                   ; 0            ; Untyped             ;
@@ -330,14 +345,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped             ;
 ; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped             ;
 ; USE_EAB                                        ; OFF          ; Untyped             ;
-; MAXIMIZE_SPEED                                 ; 6            ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 5            ; Untyped             ;
 ; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped             ;
 ; CARRY_CHAIN                                    ; MANUAL       ; Untyped             ;
 ; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K ;
 ; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped             ;
 ; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped             ;
 ; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped             ;
-; CBXI_PARAMETER                                 ; mult_t5t     ; Untyped             ;
+; CBXI_PARAMETER                                 ; mult_73t     ; Untyped             ;
 ; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped             ;
 ; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped             ;
 ; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped             ;
@@ -354,10 +369,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY        ;
 ; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE        ;
 ; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE      ;
-; LPM_WIDTHA                                     ; 12           ; Untyped             ;
-; LPM_WIDTHB                                     ; 12           ; Untyped             ;
-; LPM_WIDTHP                                     ; 24           ; Untyped             ;
-; LPM_WIDTHR                                     ; 24           ; Untyped             ;
+; LPM_WIDTHA                                     ; 8            ; Untyped             ;
+; LPM_WIDTHB                                     ; 8            ; Untyped             ;
+; LPM_WIDTHP                                     ; 16           ; Untyped             ;
+; LPM_WIDTHR                                     ; 16           ; Untyped             ;
 ; LPM_WIDTHS                                     ; 1            ; Untyped             ;
 ; LPM_REPRESENTATION                             ; SIGNED       ; Untyped             ;
 ; LPM_PIPELINE                                   ; 0            ; Untyped             ;
@@ -365,14 +380,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped             ;
 ; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped             ;
 ; USE_EAB                                        ; OFF          ; Untyped             ;
-; MAXIMIZE_SPEED                                 ; 6            ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 5            ; Untyped             ;
 ; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped             ;
 ; CARRY_CHAIN                                    ; MANUAL       ; Untyped             ;
 ; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K ;
 ; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped             ;
 ; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped             ;
 ; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped             ;
-; CBXI_PARAMETER                                 ; mult_t5t     ; Untyped             ;
+; CBXI_PARAMETER                                 ; mult_73t     ; Untyped             ;
 ; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped             ;
 ; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped             ;
 ; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped             ;
@@ -389,10 +404,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY        ;
 ; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE        ;
 ; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE      ;
-; LPM_WIDTHA                                     ; 12           ; Untyped             ;
-; LPM_WIDTHB                                     ; 12           ; Untyped             ;
-; LPM_WIDTHP                                     ; 24           ; Untyped             ;
-; LPM_WIDTHR                                     ; 24           ; Untyped             ;
+; LPM_WIDTHA                                     ; 8            ; Untyped             ;
+; LPM_WIDTHB                                     ; 8            ; Untyped             ;
+; LPM_WIDTHP                                     ; 16           ; Untyped             ;
+; LPM_WIDTHR                                     ; 16           ; Untyped             ;
 ; LPM_WIDTHS                                     ; 1            ; Untyped             ;
 ; LPM_REPRESENTATION                             ; SIGNED       ; Untyped             ;
 ; LPM_PIPELINE                                   ; 0            ; Untyped             ;
@@ -400,14 +415,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped             ;
 ; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped             ;
 ; USE_EAB                                        ; OFF          ; Untyped             ;
-; MAXIMIZE_SPEED                                 ; 6            ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 5            ; Untyped             ;
 ; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped             ;
 ; CARRY_CHAIN                                    ; MANUAL       ; Untyped             ;
 ; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K ;
 ; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped             ;
 ; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped             ;
 ; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped             ;
-; CBXI_PARAMETER                                 ; mult_t5t     ; Untyped             ;
+; CBXI_PARAMETER                                 ; mult_73t     ; Untyped             ;
 ; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped             ;
 ; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped             ;
 ; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped             ;
@@ -422,9 +437,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------+----------------+
 ; Number of entity instances            ; 4              ;
 ; Entity Instance                       ; lpm_mult:Mult0 ;
-;     -- LPM_WIDTHA                     ; 12             ;
-;     -- LPM_WIDTHB                     ; 12             ;
-;     -- LPM_WIDTHP                     ; 24             ;
+;     -- LPM_WIDTHA                     ; 8              ;
+;     -- LPM_WIDTHB                     ; 8              ;
+;     -- LPM_WIDTHP                     ; 16             ;
 ;     -- LPM_REPRESENTATION             ; SIGNED         ;
 ;     -- INPUT_A_IS_CONSTANT            ; NO             ;
 ;     -- INPUT_B_IS_CONSTANT            ; NO             ;
@@ -433,9 +448,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- INPUT_A_FIXED_VALUE            ; Bx             ;
 ;     -- INPUT_B_FIXED_VALUE            ; Bx             ;
 ; Entity Instance                       ; lpm_mult:Mult3 ;
-;     -- LPM_WIDTHA                     ; 12             ;
-;     -- LPM_WIDTHB                     ; 12             ;
-;     -- LPM_WIDTHP                     ; 24             ;
+;     -- LPM_WIDTHA                     ; 8              ;
+;     -- LPM_WIDTHB                     ; 8              ;
+;     -- LPM_WIDTHP                     ; 16             ;
 ;     -- LPM_REPRESENTATION             ; SIGNED         ;
 ;     -- INPUT_A_IS_CONSTANT            ; NO             ;
 ;     -- INPUT_B_IS_CONSTANT            ; NO             ;
@@ -444,9 +459,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- INPUT_A_FIXED_VALUE            ; Bx             ;
 ;     -- INPUT_B_FIXED_VALUE            ; Bx             ;
 ; Entity Instance                       ; lpm_mult:Mult1 ;
-;     -- LPM_WIDTHA                     ; 12             ;
-;     -- LPM_WIDTHB                     ; 12             ;
-;     -- LPM_WIDTHP                     ; 24             ;
+;     -- LPM_WIDTHA                     ; 8              ;
+;     -- LPM_WIDTHB                     ; 8              ;
+;     -- LPM_WIDTHP                     ; 16             ;
 ;     -- LPM_REPRESENTATION             ; SIGNED         ;
 ;     -- INPUT_A_IS_CONSTANT            ; NO             ;
 ;     -- INPUT_B_IS_CONSTANT            ; NO             ;
@@ -455,9 +470,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- INPUT_A_FIXED_VALUE            ; Bx             ;
 ;     -- INPUT_B_FIXED_VALUE            ; Bx             ;
 ; Entity Instance                       ; lpm_mult:Mult2 ;
-;     -- LPM_WIDTHA                     ; 12             ;
-;     -- LPM_WIDTHB                     ; 12             ;
-;     -- LPM_WIDTHP                     ; 24             ;
+;     -- LPM_WIDTHA                     ; 8              ;
+;     -- LPM_WIDTHB                     ; 8              ;
+;     -- LPM_WIDTHP                     ; 16             ;
 ;     -- LPM_REPRESENTATION             ; SIGNED         ;
 ;     -- INPUT_A_IS_CONSTANT            ; NO             ;
 ;     -- INPUT_B_IS_CONSTANT            ; NO             ;
@@ -474,20 +489,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 34                          ;
-; cycloneiii_lcell_comb ; 303                         ;
-;     arith             ; 61                          ;
-;         1 data inputs ; 4                           ;
-;         3 data inputs ; 57                          ;
-;     normal            ; 242                         ;
-;         0 data inputs ; 7                           ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 100                         ;
-;         4 data inputs ; 131                         ;
+; cycloneiii_lcell_comb ; 161                         ;
+;     normal            ; 161                         ;
+;         2 data inputs ; 6                           ;
+;         3 data inputs ; 65                          ;
+;         4 data inputs ; 90                          ;
 ; cycloneiii_mac_mult   ; 4                           ;
 ; cycloneiii_mac_out    ; 4                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 42.00                       ;
-; Average LUT depth     ; 21.36                       ;
+; Max LUT depth         ; 32.00                       ;
+; Average LUT depth     ; 20.22                       ;
 +-----------------------+-----------------------------+
 
 
@@ -506,16 +517,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
-    Info: Processing started: Wed Nov 18 23:04:30 2015
+    Info: Processing started: Sun Nov 29 18:51:47 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off countones -c countones
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file countones.v
     Info (12023): Found entity 1: countones
 Info (12127): Elaborating entity "countones" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at countones.v(59): truncated value with size 32 to match size of target (2)
-Warning (10240): Verilog HDL Always Construct warning at countones.v(26): inferring latch(es) for variable "t", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "t[0]" at countones.v(53)
-Info (10041): Inferred latch for "t[1]" at countones.v(53)
+Warning (10230): Verilog HDL assignment warning at countones.v(27): truncated value with size 8 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at countones.v(28): truncated value with size 8 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at countones.v(29): truncated value with size 8 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at countones.v(30): truncated value with size 8 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at countones.v(57): truncated value with size 32 to match size of target (2)
+Warning (10240): Verilog HDL Always Construct warning at countones.v(27): inferring latch(es) for variable "a", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at countones.v(27): inferring latch(es) for variable "b", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at countones.v(27): inferring latch(es) for variable "c", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at countones.v(27): inferring latch(es) for variable "d", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at countones.v(27): inferring latch(es) for variable "t", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "t[0]" at countones.v(51)
+Info (10041): Inferred latch for "t[1]" at countones.v(51)
 Info (278001): Inferred 4 megafunctions from design logic
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult0"
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult3"
@@ -523,28 +542,57 @@ Info (278001): Inferred 4 megafunctions from design logic
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult2"
 Info (12130): Elaborated megafunction instantiation "lpm_mult:Mult0"
 Info (12133): Instantiated megafunction "lpm_mult:Mult0" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTHA" = "12"
-    Info (12134): Parameter "LPM_WIDTHB" = "12"
-    Info (12134): Parameter "LPM_WIDTHP" = "24"
-    Info (12134): Parameter "LPM_WIDTHR" = "24"
+    Info (12134): Parameter "LPM_WIDTHA" = "8"
+    Info (12134): Parameter "LPM_WIDTHB" = "8"
+    Info (12134): Parameter "LPM_WIDTHP" = "16"
+    Info (12134): Parameter "LPM_WIDTHR" = "16"
     Info (12134): Parameter "LPM_WIDTHS" = "1"
     Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
     Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
     Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
-    Info (12134): Parameter "MAXIMIZE_SPEED" = "6"
-Info (12021): Found 1 design units, including 1 entities, in source file db/mult_t5t.tdf
-    Info (12023): Found entity 1: mult_t5t
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_73t.tdf
+    Info (12023): Found entity 1: mult_73t
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 345 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 28 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "din[1]"
+    Warning (15610): No output dependent on input pin "din[2]"
+    Warning (15610): No output dependent on input pin "din[3]"
+    Warning (15610): No output dependent on input pin "din[4]"
+    Warning (15610): No output dependent on input pin "din[5]"
+    Warning (15610): No output dependent on input pin "din[6]"
+    Warning (15610): No output dependent on input pin "din[7]"
+    Warning (15610): No output dependent on input pin "din[9]"
+    Warning (15610): No output dependent on input pin "din[10]"
+    Warning (15610): No output dependent on input pin "din[11]"
+    Warning (15610): No output dependent on input pin "din[12]"
+    Warning (15610): No output dependent on input pin "din[13]"
+    Warning (15610): No output dependent on input pin "din[14]"
+    Warning (15610): No output dependent on input pin "din[15]"
+    Warning (15610): No output dependent on input pin "din[17]"
+    Warning (15610): No output dependent on input pin "din[18]"
+    Warning (15610): No output dependent on input pin "din[19]"
+    Warning (15610): No output dependent on input pin "din[20]"
+    Warning (15610): No output dependent on input pin "din[21]"
+    Warning (15610): No output dependent on input pin "din[22]"
+    Warning (15610): No output dependent on input pin "din[23]"
+    Warning (15610): No output dependent on input pin "din[25]"
+    Warning (15610): No output dependent on input pin "din[26]"
+    Warning (15610): No output dependent on input pin "din[27]"
+    Warning (15610): No output dependent on input pin "din[28]"
+    Warning (15610): No output dependent on input pin "din[29]"
+    Warning (15610): No output dependent on input pin "din[30]"
+    Warning (15610): No output dependent on input pin "din[31]"
+Info (21057): Implemented 199 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 32 input pins
     Info (21059): Implemented 2 output pins
-    Info (21061): Implemented 303 logic cells
-    Info (21062): Implemented 8 DSP elements
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info (21061): Implemented 161 logic cells
+    Info (21062): Implemented 4 DSP elements
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 40 warnings
     Info: Peak virtual memory: 653 megabytes
-    Info: Processing ended: Wed Nov 18 23:04:42 2015
+    Info: Processing ended: Sun Nov 29 18:51:59 2015
     Info: Elapsed time: 00:00:12
     Info: Total CPU time (on all processors): 00:00:27
 

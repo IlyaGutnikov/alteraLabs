@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dE:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim
 vcountones
-Z1 !s110 1447877289
+Z1 !s110 1448812495
 !i10b 1
-!s100 N4X;S5K4QX<e:9Qkk5MOk0
-I@f9aYKI9719eRYd@C1Cak1
+!s100 S@;fX]]De:bdZK3nj9k`U0
+Io3dUZSA0LI[0<jD7LYG7k0
 Z2 V`JN@9S9cnhjKRR_L]QIcM3
 R0
-w1447877051
+w1448812476
 8E:/alteraLabs/ptsuits/lab3/test_proj1/countones.v
 FE:/alteraLabs/ptsuits/lab3/test_proj1/countones.v
 L0 1
@@ -23,7 +23,7 @@ Z3 OV;L;10.3d;59
 r1
 !s85 0
 31
-!s108 1447877289.310000
+!s108 1448812495.720000
 !s107 E:/alteraLabs/ptsuits/lab3/test_proj1/countones.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/alteraLabs/ptsuits/lab3/test_proj1|E:/alteraLabs/ptsuits/lab3/test_proj1/countones.v|
 !i113 1
@@ -44,7 +44,7 @@ R3
 r1
 !s85 0
 31
-!s108 1447877289.384000
+!s108 1448812495.806000
 !s107 E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim/countones.vt|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim|E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim/countones.vt|
 !i113 1

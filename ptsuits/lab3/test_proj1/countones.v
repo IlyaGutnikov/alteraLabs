@@ -23,13 +23,11 @@ module countones(din,result);
  
 	always @(*) 
 	begin 
-		for (i = 0; i<8; i=i+1) 
-		begin 
-			a[i] = din[i+24];
-			b[i] = din[i+16];
-			c[i] = din[i+8];
-			d[i] = din[i];
-		end
+	
+		a = din[31:24];
+		b = din[23:16];
+		c = din[15:8];
+		d = din[7:0];
 		
 		a_int = a;
 		b_int = b;

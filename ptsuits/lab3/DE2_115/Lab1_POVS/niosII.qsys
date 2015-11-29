@@ -21,7 +21,7 @@
    {
       datum _sortIndex
       {
-         value = "11";
+         value = "13";
          type = "int";
       }
       datum sopceditor_expanded
@@ -34,7 +34,7 @@
    {
       datum baseAddress
       {
-         value = "20975680";
+         value = "20975744";
          type = "String";
       }
    }
@@ -49,6 +49,14 @@
       {
          value = "1";
          type = "boolean";
+      }
+   }
+   element countones
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
       }
    }
    element cpu
@@ -76,7 +84,7 @@
    {
       datum _sortIndex
       {
-         value = "7";
+         value = "9";
          type = "int";
       }
       datum sopceditor_expanded
@@ -89,7 +97,7 @@
    {
       datum _sortIndex
       {
-         value = "6";
+         value = "8";
          type = "int";
       }
       datum sopceditor_expanded
@@ -110,7 +118,7 @@
    {
       datum _sortIndex
       {
-         value = "5";
+         value = "7";
          type = "int";
       }
       datum sopceditor_expanded
@@ -123,7 +131,7 @@
    {
       datum _sortIndex
       {
-         value = "4";
+         value = "6";
          type = "int";
       }
       datum sopceditor_expanded
@@ -144,7 +152,7 @@
    {
       datum _sortIndex
       {
-         value = "10";
+         value = "12";
          type = "int";
       }
       datum sopceditor_expanded
@@ -157,7 +165,7 @@
    {
       datum baseAddress
       {
-         value = "20975696";
+         value = "20975760";
          type = "String";
       }
    }
@@ -165,7 +173,7 @@
    {
       datum _sortIndex
       {
-         value = "13";
+         value = "15";
          type = "int";
       }
       datum sopceditor_expanded
@@ -178,7 +186,7 @@
    {
       datum baseAddress
       {
-         value = "20975616";
+         value = "20975680";
          type = "String";
       }
    }
@@ -186,7 +194,7 @@
    {
       datum _sortIndex
       {
-         value = "3";
+         value = "5";
          type = "int";
       }
       datum sopceditor_expanded
@@ -225,7 +233,7 @@
    {
       datum _sortIndex
       {
-         value = "8";
+         value = "10";
          type = "int";
       }
       datum sopceditor_expanded
@@ -238,7 +246,7 @@
    {
       datum baseAddress
       {
-         value = "20975736";
+         value = "20975800";
          type = "String";
       }
    }
@@ -246,7 +254,7 @@
    {
       datum _sortIndex
       {
-         value = "14";
+         value = "17";
          type = "int";
       }
    }
@@ -254,7 +262,7 @@
    {
       datum baseAddress
       {
-         value = "20975712";
+         value = "20975776";
          type = "String";
       }
    }
@@ -266,11 +274,43 @@
          type = "String";
       }
    }
+   element niosII
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone IV E";
+         type = "String";
+      }
+   }
+   element niosII
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone IV E";
+         type = "String";
+      }
+   }
+   element performance_counter_0
+   {
+      datum _sortIndex
+      {
+         value = "16";
+         type = "int";
+      }
+   }
+   element performance_counter_0.control_slave
+   {
+      datum baseAddress
+      {
+         value = "20975616";
+         type = "String";
+      }
+   }
    element seven_seg
    {
       datum _sortIndex
       {
-         value = "9";
+         value = "11";
          type = "int";
       }
       datum sopceditor_expanded
@@ -283,7 +323,7 @@
    {
       datum baseAddress
       {
-         value = "20975696";
+         value = "20975760";
          type = "String";
       }
    }
@@ -291,7 +331,7 @@
    {
       datum _sortIndex
       {
-         value = "12";
+         value = "14";
          type = "int";
       }
       datum sopceditor_expanded
@@ -304,7 +344,7 @@
    {
       datum baseAddress
       {
-         value = "20975648";
+         value = "20975712";
          type = "String";
       }
    }
@@ -312,7 +352,7 @@
    {
       datum _sortIndex
       {
-         value = "2";
+         value = "4";
          type = "int";
       }
       datum sopceditor_expanded
@@ -325,8 +365,16 @@
    {
       datum baseAddress
       {
-         value = "20975728";
+         value = "20975792";
          type = "String";
+      }
+   }
+   element task2
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
       }
    }
 }
@@ -390,6 +438,7 @@
   <parameter name="inputClockFrequency" value="0" />
   <parameter name="resetSynchronousEdges" value="NONE" />
  </module>
+ <module name="countones" kind="countones_ci" version="1.0" enabled="0" />
  <module name="cpu" kind="altera_nios2_gen2" version="15.0" enabled="1">
   <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="1" />
   <parameter name="AUTO_CLK_RESET_DOMAIN" value="1" />
@@ -403,14 +452,14 @@
   <parameter name="cpuArchRev" value="1" />
   <parameter name="cpuID" value="0" />
   <parameter name="cpuReset" value="false" />
-  <parameter name="customInstSlavesSystemInfo" value="&lt;info/&gt;" />
+  <parameter name="customInstSlavesSystemInfo"><![CDATA[<info><slave name="task2_ci_0" baseAddress="1" addressSpan="1" clockCycleType="COMBINATORIAL" /></info>]]></parameter>
   <parameter name="customInstSlavesSystemInfo_nios_a" value="&lt;info/&gt;" />
   <parameter name="customInstSlavesSystemInfo_nios_b" value="&lt;info/&gt;" />
   <parameter name="customInstSlavesSystemInfo_nios_c" value="&lt;info/&gt;" />
   <parameter name="dataAddrWidth" value="26" />
   <parameter name="dataMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="dataMasterHighPerformanceMapParam" value="" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='ext_flash_ctl.uas' start='0x800000' end='0x1000000' /><slave name='ext_ram_ctl.uas' start='0x1200000' end='0x1400000' /><slave name='cpu.debug_mem_slave' start='0x1400800' end='0x1401000' /><slave name='high_res_timer.s1' start='0x1401000' end='0x1401020' /><slave name='sys_clk_timer.s1' start='0x1401020' end='0x1401040' /><slave name='buttons.s1' start='0x1401040' end='0x1401050' /><slave name='seven_seg.s1' start='0x1401050' end='0x1401060' /><slave name='my_pwm.avalon_slave_0' start='0x1401060' end='0x1401070' /><slave name='sysid.control_slave' start='0x1401070' end='0x1401078' /><slave name='jtag_uart.avalon_jtag_slave' start='0x1401078' end='0x1401080' /><slave name='instruction_tcm.s2' start='0x2000000' end='0x2004000' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='ext_flash_ctl.uas' start='0x800000' end='0x1000000' /><slave name='ext_ram_ctl.uas' start='0x1200000' end='0x1400000' /><slave name='cpu.debug_mem_slave' start='0x1400800' end='0x1401000' /><slave name='performance_counter_0.control_slave' start='0x1401000' end='0x1401040' /><slave name='high_res_timer.s1' start='0x1401040' end='0x1401060' /><slave name='sys_clk_timer.s1' start='0x1401060' end='0x1401080' /><slave name='buttons.s1' start='0x1401080' end='0x1401090' /><slave name='seven_seg.s1' start='0x1401090' end='0x14010A0' /><slave name='my_pwm.avalon_slave_0' start='0x14010A0' end='0x14010B0' /><slave name='sysid.control_slave' start='0x14010B0' end='0x14010B8' /><slave name='jtag_uart.avalon_jtag_slave' start='0x14010B8' end='0x14010C0' /><slave name='instruction_tcm.s2' start='0x2000000' end='0x2004000' /></address-map>]]></parameter>
   <parameter name="data_master_high_performance_paddr_base" value="0" />
   <parameter name="data_master_high_performance_paddr_size" value="0" />
   <parameter name="data_master_paddr_base" value="0" />
@@ -773,6 +822,13 @@
   <parameter name="writeIRQThreshold" value="8" />
  </module>
  <module name="my_pwm" kind="avalon_pwm" version="1.0" enabled="1" />
+ <module
+   name="performance_counter_0"
+   kind="altera_avalon_performance_counter"
+   version="15.0"
+   enabled="1">
+  <parameter name="numberOfSections" value="3" />
+ </module>
  <module name="seven_seg" kind="altera_avalon_pio" version="15.0" enabled="1">
   <parameter name="bitClearingEdgeCapReg" value="false" />
   <parameter name="bitModifyingOutReg" value="false" />
@@ -811,13 +867,14 @@
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
   <parameter name="id" value="0" />
  </module>
+ <module name="task2" kind="task2_ci" version="1.0" enabled="1" />
  <connection
    kind="avalon"
    version="15.0"
    start="cpu.data_master"
    end="jtag_uart.avalon_jtag_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x01401078" />
+  <parameter name="baseAddress" value="0x014010b8" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -826,7 +883,7 @@
    start="cpu.data_master"
    end="my_pwm.avalon_slave_0">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x01401060" />
+  <parameter name="baseAddress" value="0x014010a0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -835,7 +892,16 @@
    start="cpu.data_master"
    end="sysid.control_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x01401070" />
+  <parameter name="baseAddress" value="0x014010b0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="15.0"
+   start="cpu.data_master"
+   end="performance_counter_0.control_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x01401000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -853,7 +919,7 @@
    start="cpu.data_master"
    end="seven_seg.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x01401050" />
+  <parameter name="baseAddress" value="0x01401090" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -862,12 +928,12 @@
    start="cpu.data_master"
    end="green_led.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x01401050" />
+  <parameter name="baseAddress" value="0x01401090" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection kind="avalon" version="15.0" start="cpu.data_master" end="buttons.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x01401040" />
+  <parameter name="baseAddress" value="0x01401080" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -876,7 +942,7 @@
    start="cpu.data_master"
    end="sys_clk_timer.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x01401020" />
+  <parameter name="baseAddress" value="0x01401060" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -885,7 +951,7 @@
    start="cpu.data_master"
    end="high_res_timer.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x01401000" />
+  <parameter name="baseAddress" value="0x01401040" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -967,6 +1033,11 @@
    kind="clock"
    version="15.0"
    start="clk.clk"
+   end="performance_counter_0.clk" />
+ <connection
+   kind="clock"
+   version="15.0"
+   start="clk.clk"
    end="instruction_tcm.clk1" />
  <connection
    kind="clock"
@@ -986,6 +1057,24 @@
  </connection>
  <connection kind="interrupt" version="15.0" start="cpu.irq" end="jtag_uart.irq">
   <parameter name="irqNumber" value="1" />
+ </connection>
+ <connection
+   kind="nios_custom_instruction"
+   version="15.0"
+   start="cpu.custom_instruction_master"
+   end="countones.nios_custom_instruction_slave">
+  <parameter name="CIName" value="countones" />
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0" />
+ </connection>
+ <connection
+   kind="nios_custom_instruction"
+   version="15.0"
+   start="cpu.custom_instruction_master"
+   end="task2.nios_custom_instruction_slave">
+  <parameter name="CIName" value="task2_ci_0" />
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="1" />
  </connection>
  <connection kind="reset" version="15.0" start="clk.clk_reset" end="cpu.reset" />
  <connection kind="reset" version="15.0" start="clk.clk_reset" end="sysid.reset" />
@@ -1035,6 +1124,11 @@
    version="15.0"
    start="clk.clk_reset"
    end="high_res_timer.reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="clk.clk_reset"
+   end="performance_counter_0.reset" />
  <connection
    kind="reset"
    version="15.0"
@@ -1110,6 +1204,11 @@
    version="15.0"
    start="cpu.debug_reset_request"
    end="high_res_timer.reset" />
+ <connection
+   kind="reset"
+   version="15.0"
+   start="cpu.debug_reset_request"
+   end="performance_counter_0.reset" />
  <connection
    kind="reset"
    version="15.0"

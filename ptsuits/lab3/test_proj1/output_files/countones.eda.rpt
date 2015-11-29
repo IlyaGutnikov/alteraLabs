@@ -1,5 +1,5 @@
 EDA Netlist Writer report for countones
-Wed Nov 18 23:07:33 2015
+Sun Nov 29 18:52:15 2015
 Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
 
 
@@ -8,7 +8,9 @@ Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
 ---------------------
   1. Legal Notice
   2. EDA Netlist Writer Summary
-  3. EDA Netlist Writer Messages
+  3. Simulation Settings
+  4. Simulation Generated Files
+  5. EDA Netlist Writer Messages
 
 
 
@@ -35,11 +37,50 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Nov 18 23:07:33 2015 ;
+; EDA Netlist Writer Status ; Successful - Sun Nov 29 18:52:15 2015 ;
 ; Revision Name             ; countones                             ;
 ; Top-level Entity Name     ; countones                             ;
 ; Family                    ; Cyclone IV E                          ;
+; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Settings                                                                                                           ;
++---------------------------------------------------------------------------------------------------+---------------------------+
+; Option                                                                                            ; Setting                   ;
++---------------------------------------------------------------------------------------------------+---------------------------+
+; Tool Name                                                                                         ; ModelSim-Altera (Verilog) ;
+; Generate netlist for functional simulation only                                                   ; Off                       ;
+; Time scale                                                                                        ; 1 ps                      ;
+; Truncate long hierarchy paths                                                                     ; Off                       ;
+; Map illegal HDL characters                                                                        ; Off                       ;
+; Flatten buses into individual nodes                                                               ; Off                       ;
+; Maintain hierarchy                                                                                ; Off                       ;
+; Bring out device-wide set/reset signals as ports                                                  ; Off                       ;
+; Enable glitch filtering                                                                           ; Off                       ;
+; Do not write top level VHDL entity                                                                ; Off                       ;
+; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                       ;
+; Architecture name in VHDL output netlist                                                          ; structure                 ;
+; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                       ;
+; Generate third-party EDA tool command script for gate-level simulation                            ; Off                       ;
++---------------------------------------------------------------------------------------------------+---------------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                   ;
++----------------------------------------------------------------------------------------------+
+; Generated Files                                                                              ;
++----------------------------------------------------------------------------------------------+
+; E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim/countones_6_1200mv_85c_slow.vo     ;
+; E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim/countones_6_1200mv_0c_slow.vo      ;
+; E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim/countones_min_1200mv_0c_fast.vo    ;
+; E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim/countones.vo                       ;
+; E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim/countones_6_1200mv_85c_v_slow.sdo  ;
+; E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim/countones_6_1200mv_0c_v_slow.sdo   ;
+; E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim/countones_min_1200mv_0c_v_fast.sdo ;
+; E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim/countones_v.sdo                    ;
++----------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -48,13 +89,20 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
-    Info: Processing started: Wed Nov 18 23:07:32 2015
-Info: Command: quartus_eda --read_settings_files=on --write_settings_files=off countones -c countones --gen_testbench
-Info (201000): Generated Verilog Test Bench File E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim/countones.vt for simulation
+    Info: Processing started: Sun Nov 29 18:52:15 2015
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off countones -c countones
+Info (204019): Generated file countones_6_1200mv_85c_slow.vo in folder "E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file countones_6_1200mv_0c_slow.vo in folder "E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file countones_min_1200mv_0c_fast.vo in folder "E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file countones.vo in folder "E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file countones_6_1200mv_85c_v_slow.sdo in folder "E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file countones_6_1200mv_0c_v_slow.sdo in folder "E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file countones_min_1200mv_0c_v_fast.sdo in folder "E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file countones_v.sdo in folder "E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 562 megabytes
-    Info: Processing ended: Wed Nov 18 23:07:33 2015
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 573 megabytes
+    Info: Processing ended: Sun Nov 29 18:52:15 2015
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 

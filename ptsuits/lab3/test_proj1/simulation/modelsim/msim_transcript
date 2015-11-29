@@ -14,29 +14,29 @@
 # 
 # vlog -vlog01compat -work work +incdir+E:/alteraLabs/ptsuits/lab3/test_proj1 {E:/alteraLabs/ptsuits/lab3/test_proj1/countones.v}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 23:08:09 on Nov 18,2015
+# Start time: 18:54:55 on Nov 29,2015
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/alteraLabs/ptsuits/lab3/test_proj1" E:/alteraLabs/ptsuits/lab3/test_proj1/countones.v 
 # -- Compiling module countones
 # 
 # Top level modules:
 # 	countones
-# End time: 23:08:09 on Nov 18,2015, Elapsed time: 0:00:00
+# End time: 18:54:55 on Nov 29,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim {E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim/countones.vt}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 23:08:09 on Nov 18,2015
+# Start time: 18:54:55 on Nov 29,2015
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim" E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim/countones.vt 
 # -- Compiling module countones_vlg_tst
 # 
 # Top level modules:
 # 	countones_vlg_tst
-# End time: 23:08:09 on Nov 18,2015, Elapsed time: 0:00:00
+# End time: 18:54:55 on Nov 29,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  countones_vlg_tst
 # vsim -gui "+altera" -l msim_transcript -do "countones_run_msim_rtl_verilog.do" 
-# Start time: 23:08:09 on Nov 18,2015
+# Start time: 18:54:55 on Nov 29,2015
 # Loading work.countones_vlg_tst
 # Loading work.countones
 # 
@@ -47,5 +47,5 @@
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 # Running testbench
-# End time: 23:09:05 on Nov 18,2015, Elapsed time: 0:00:56
+# End time: 19:02:13 on Nov 29,2015, Elapsed time: 0:07:18
 # Errors: 0, Warnings: 0

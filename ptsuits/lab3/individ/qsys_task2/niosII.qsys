@@ -246,7 +246,7 @@
    {
       datum baseAddress
       {
-         value = "20975792";
+         value = "20975800";
          type = "String";
       }
    }
@@ -262,7 +262,15 @@
    {
       datum baseAddress
       {
-         value = "20975784";
+         value = "20975776";
+         type = "String";
+      }
+   }
+   element niosII
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone IV E";
          type = "String";
       }
    }
@@ -357,7 +365,7 @@
    {
       datum baseAddress
       {
-         value = "20975776";
+         value = "20975792";
          type = "String";
       }
    }
@@ -451,7 +459,7 @@
   <parameter name="dataAddrWidth" value="26" />
   <parameter name="dataMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="dataMasterHighPerformanceMapParam" value="" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='ext_flash_ctl.uas' start='0x800000' end='0x1000000' /><slave name='ext_ram_ctl.uas' start='0x1200000' end='0x1400000' /><slave name='cpu.debug_mem_slave' start='0x1400800' end='0x1401000' /><slave name='performance_counter_0.control_slave' start='0x1401000' end='0x1401040' /><slave name='high_res_timer.s1' start='0x1401040' end='0x1401060' /><slave name='sys_clk_timer.s1' start='0x1401060' end='0x1401080' /><slave name='buttons.s1' start='0x1401080' end='0x1401090' /><slave name='seven_seg.s1' start='0x1401090' end='0x14010A0' /><slave name='sysid.control_slave' start='0x14010A0' end='0x14010A8' /><slave name='my_pwm.avalon_slave_0' start='0x14010A8' end='0x14010B0' /><slave name='jtag_uart.avalon_jtag_slave' start='0x14010B0' end='0x14010B8' /><slave name='instruction_tcm.s2' start='0x2000000' end='0x2004000' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='ext_flash_ctl.uas' start='0x800000' end='0x1000000' /><slave name='ext_ram_ctl.uas' start='0x1200000' end='0x1400000' /><slave name='cpu.debug_mem_slave' start='0x1400800' end='0x1401000' /><slave name='performance_counter_0.control_slave' start='0x1401000' end='0x1401040' /><slave name='high_res_timer.s1' start='0x1401040' end='0x1401060' /><slave name='sys_clk_timer.s1' start='0x1401060' end='0x1401080' /><slave name='buttons.s1' start='0x1401080' end='0x1401090' /><slave name='seven_seg.s1' start='0x1401090' end='0x14010A0' /><slave name='my_pwm.avalon_slave_0' start='0x14010A0' end='0x14010B0' /><slave name='sysid.control_slave' start='0x14010B0' end='0x14010B8' /><slave name='jtag_uart.avalon_jtag_slave' start='0x14010B8' end='0x14010C0' /><slave name='instruction_tcm.s2' start='0x2000000' end='0x2004000' /></address-map>]]></parameter>
   <parameter name="data_master_high_performance_paddr_base" value="0" />
   <parameter name="data_master_high_performance_paddr_size" value="0" />
   <parameter name="data_master_paddr_base" value="0" />
@@ -866,7 +874,7 @@
    start="cpu.data_master"
    end="jtag_uart.avalon_jtag_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x014010b0" />
+  <parameter name="baseAddress" value="0x014010b8" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -875,7 +883,7 @@
    start="cpu.data_master"
    end="my_pwm.avalon_slave_0">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x014010a8" />
+  <parameter name="baseAddress" value="0x014010a0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -884,7 +892,7 @@
    start="cpu.data_master"
    end="sysid.control_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x014010a0" />
+  <parameter name="baseAddress" value="0x014010b0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
