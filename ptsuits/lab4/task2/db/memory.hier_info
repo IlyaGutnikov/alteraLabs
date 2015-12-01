@@ -8,14 +8,14 @@ address[5] => address[5].IN1
 address[6] => address[6].IN1
 address[7] => address[7].IN1
 clock => clock.IN1
-q[0] <= altsyncram:altsyncram_component.q_a
-q[1] <= altsyncram:altsyncram_component.q_a
-q[2] <= altsyncram:altsyncram_component.q_a
-q[3] <= altsyncram:altsyncram_component.q_a
-q[4] <= altsyncram:altsyncram_component.q_a
-q[5] <= altsyncram:altsyncram_component.q_a
-q[6] <= altsyncram:altsyncram_component.q_a
-q[7] <= altsyncram:altsyncram_component.q_a
+q[0] << altsyncram:altsyncram_component.q_a
+q[1] << altsyncram:altsyncram_component.q_a
+q[2] << altsyncram:altsyncram_component.q_a
+q[3] << altsyncram:altsyncram_component.q_a
+q[4] << altsyncram:altsyncram_component.q_a
+q[5] << altsyncram:altsyncram_component.q_a
+q[6] << altsyncram:altsyncram_component.q_a
+q[7] << altsyncram:altsyncram_component.q_a
 
 
 |memory|altsyncram:altsyncram_component

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Dec 01 16:13:50 2015
+Quartus II 64-Bit Version : 15.0.2 Build 153 07/15/2015 SJ Web Edition
+Revision Name : phase_acc
+Top-level Entity Name : phase_acc
+Family : Cyclone IV E
+Total logic elements : 14
+    Total combinational functions : 14
+    Dedicated logic registers : 14
+Total registers : 14
+Total pins : 18
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/alteraLabs/ptsuits/lab4/task1/simulation/modelsim
+vphase_acc
+Z1 !s110 1448975673
+!i10b 1
+!s100 k_ijbgSb<DBkY=?o6W<T02
+IZ8SB?MM>JW]zJW__nQ=Sh2
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1448975360
+8E:/alteraLabs/ptsuits/lab4/task1/phase_acc.v
+FE:/alteraLabs/ptsuits/lab4/task1/phase_acc.v
+L0 1
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1448975673.057000
+!s107 E:/alteraLabs/ptsuits/lab4/task1/phase_acc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/alteraLabs/ptsuits/lab4/task1|E:/alteraLabs/ptsuits/lab4/task1/phase_acc.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+E:/alteraLabs/ptsuits/lab4/task1
+vphase_acc_vlg_tst
+R1
+!i10b 1
+!s100 RjT`_S6:CIJ[`RloNe`hW3
+I@YoJ;ZTh4kiKLTo`mFY131
+R2
+R0
+w1448975618
+8E:/alteraLabs/ptsuits/lab4/task1/phase_acc_tb.v
+FE:/alteraLabs/ptsuits/lab4/task1/phase_acc_tb.v
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1448975673.138000
+!s107 E:/alteraLabs/ptsuits/lab4/task1/phase_acc_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/alteraLabs/ptsuits/lab4/task1|E:/alteraLabs/ptsuits/lab4/task1/phase_acc_tb.v|
+!i113 1
+R4
+R5

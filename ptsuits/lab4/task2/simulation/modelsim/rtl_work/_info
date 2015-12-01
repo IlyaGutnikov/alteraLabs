@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/alteraLabs/ptsuits/lab4/task2/simulation/modelsim
+vmemory
+Z1 !s110 1448972416
+!i10b 1
+!s100 `jn7a6;;^_=IRDSij^3Mj1
+IASi[PjDSU36CY0fdlR;Ji3
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1448547238
+8E:/alteraLabs/ptsuits/lab4/task2/memory.v
+FE:/alteraLabs/ptsuits/lab4/task2/memory.v
+L0 40
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1448972416.436000
+!s107 E:/alteraLabs/ptsuits/lab4/task2/memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/alteraLabs/ptsuits/lab4/task2|E:/alteraLabs/ptsuits/lab4/task2/memory.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+E:/alteraLabs/ptsuits/lab4/task2
+vmemory_vlg_tst
+R1
+!i10b 1
+!s100 JXiza1l9?EQ0SOGNG=?8P2
+I:9Y5g`h:eD2N`CC7HQI1E0
+R2
+R0
+w1448972120
+8E:/alteraLabs/ptsuits/lab4/task2/memory_tb.v
+FE:/alteraLabs/ptsuits/lab4/task2/memory_tb.v
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1448972416.556000
+!s107 E:/alteraLabs/ptsuits/lab4/task2/memory_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/alteraLabs/ptsuits/lab4/task2|E:/alteraLabs/ptsuits/lab4/task2/memory_tb.v|
+!i113 1
+R4
+R5

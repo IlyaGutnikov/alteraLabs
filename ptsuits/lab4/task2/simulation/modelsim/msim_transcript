@@ -1,0 +1,66 @@
+# Reading E:/altera/modelsim_ase/tcl/vsim/pref.tcl
+# do memory_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying E:/altera/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied E:/altera/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+E:/alteraLabs/ptsuits/lab4/task2 {E:/alteraLabs/ptsuits/lab4/task2/memory.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:20:16 on Dec 01,2015
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/alteraLabs/ptsuits/lab4/task2" E:/alteraLabs/ptsuits/lab4/task2/memory.v 
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+# End time: 15:20:16 on Dec 01,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+E:/alteraLabs/ptsuits/lab4/task2 {E:/alteraLabs/ptsuits/lab4/task2/memory_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:20:16 on Dec 01,2015
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/alteraLabs/ptsuits/lab4/task2" E:/alteraLabs/ptsuits/lab4/task2/memory_tb.v 
+# -- Compiling module memory_vlg_tst
+# 
+# Top level modules:
+# 	memory_vlg_tst
+# End time: 15:20:16 on Dec 01,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  memory_vlg_tst
+# vsim -gui "+altera" -l msim_transcript -do "memory_run_msim_rtl_verilog.do" 
+# Start time: 15:20:16 on Dec 01,2015
+# Loading work.memory_vlg_tst
+# Loading work.memory
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "../sine256.mif" for reading.
+# 
+# No such file or directory. (errno = ENOENT)    : /build/swbuild/SJ/nightly/15.0/145/l64/work/modelsim/eda/sim_lib/altera_mf.v(188)
+#    Time: 0 ps  Iteration: 0  Instance: /memory_vlg_tst/i1/altsyncram_component/m_default/altsyncram_inst
+# ERROR: cannot read ../sine256.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "../sine256.ver" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)    : /build/swbuild/SJ/nightly/15.0/145/l64/work/modelsim/eda/sim_lib/altera_mf.v(48159)
+#    Time: 0 ps  Iteration: 0  Instance: /memory_vlg_tst/i1/altsyncram_component/m_default/altsyncram_inst
+add wave -position end sim:/memory_vlg_tst/i1/altsyncram_component/*
+# Load canceled
+run -all
+# End time: 15:22:46 on Dec 01,2015, Elapsed time: 0:02:30
+# Errors: 1, Warnings: 2

@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/alteraLabs/ptsuits/lab4/tasks1_2/simulation/modelsim
+vmemory
+Z1 !s110 1448979935
+!i10b 1
+!s100 `jn7a6;;^_=IRDSij^3Mj1
+ICkddmEThlP__3ee5o9g[71
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1448547238
+8E:/alteraLabs/ptsuits/lab4/tasks1_2/memory.v
+FE:/alteraLabs/ptsuits/lab4/tasks1_2/memory.v
+L0 40
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1448979935.523000
+!s107 E:/alteraLabs/ptsuits/lab4/tasks1_2/memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/alteraLabs/ptsuits/lab4/tasks1_2|E:/alteraLabs/ptsuits/lab4/tasks1_2/memory.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+E:/alteraLabs/ptsuits/lab4/tasks1_2
+vphase_acc
+R1
+!i10b 1
+!s100 k_ijbgSb<DBkY=?o6W<T02
+IGD?NfHh279MYlbFeh>`=K1
+R2
+R0
+w1448975360
+8E:/alteraLabs/ptsuits/lab4/tasks1_2/phase_acc.v
+FE:/alteraLabs/ptsuits/lab4/tasks1_2/phase_acc.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1448979935.449000
+!s107 E:/alteraLabs/ptsuits/lab4/tasks1_2/phase_acc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/alteraLabs/ptsuits/lab4/tasks1_2|E:/alteraLabs/ptsuits/lab4/tasks1_2/phase_acc.v|
+!i113 1
+R4
+R5
+vtasks
+R1
+!i10b 1
+!s100 0ec0GZOlLKEPS;9UX_YYV1
+ISh=Y2RYSC54F63AzPKQ=`3
+R2
+R0
+w1448979824
+8E:/alteraLabs/ptsuits/lab4/tasks1_2/tasks.v
+FE:/alteraLabs/ptsuits/lab4/tasks1_2/tasks.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1448979935.353000
+!s107 E:/alteraLabs/ptsuits/lab4/tasks1_2/tasks.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/alteraLabs/ptsuits/lab4/tasks1_2|E:/alteraLabs/ptsuits/lab4/tasks1_2/tasks.v|
+!i113 1
+R4
+R5
+vtasks_vlg_tst
+R1
+!i10b 1
+!s100 YUP5C7Ck3C7]]zAm4h8[b2
+I6iW5dgCS`AXa=]o@fz97P1
+R2
+R0
+w1448979924
+8E:/alteraLabs/ptsuits/lab4/tasks1_2/tasks_tb.v
+FE:/alteraLabs/ptsuits/lab4/tasks1_2/tasks_tb.v
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1448979935.597000
+!s107 E:/alteraLabs/ptsuits/lab4/tasks1_2/tasks_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/alteraLabs/ptsuits/lab4/tasks1_2|E:/alteraLabs/ptsuits/lab4/tasks1_2/tasks_tb.v|
+!i113 1
+R4
+R5

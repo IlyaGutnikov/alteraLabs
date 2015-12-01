@@ -1,5 +1,5 @@
 vendor_name = ModelSim
-source_file = 1, E:/alteraLabs/ptsuits/lab4/task2/memory.qip
+source_file = 1, E:/alteraLabs/ptsuits/lab4/task2/memory_tb.v
 source_file = 1, E:/alteraLabs/ptsuits/lab4/task2/memory.v
 source_file = 1, e:/altera/quartus/libraries/megafunctions/altsyncram.tdf
 source_file = 1, e:/altera/quartus/libraries/megafunctions/stratix_ram_block.inc
@@ -12,7 +12,7 @@ source_file = 1, e:/altera/quartus/libraries/megafunctions/altram.inc
 source_file = 1, e:/altera/quartus/libraries/megafunctions/altdpram.inc
 source_file = 1, e:/altera/quartus/libraries/megafunctions/cbx.lst
 source_file = 1, E:/alteraLabs/ptsuits/lab4/task2/db/altsyncram_na91.tdf
-source_file = 1, E:/alteraLabs/ptsuits/lab4/sine256.mif
+source_file = 1, /alteralabs/ptsuits/lab4/sine256.mif
 design_name = memory
 instance = comp, \q[0]~output , q[0]~output, memory, 1
 instance = comp, \q[1]~output , q[1]~output, memory, 1

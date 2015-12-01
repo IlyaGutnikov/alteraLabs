@@ -1,0 +1,893 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus II License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 15.0.2 Build 153 07/15/2015 SJ Web Edition"
+
+// DATE "12/01/2015 16:14:06"
+
+// 
+// Device: Altera EP4CE6E22C6 Package TQFP144
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module phase_acc (
+	phinc,
+	clk,
+	clrn,
+	phase);
+input 	[7:0] phinc;
+input 	clk;
+input 	clrn;
+output 	[7:0] phase;
+
+// Design Ports Information
+// phase[0]	=>  Location: PIN_128,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// phase[1]	=>  Location: PIN_136,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// phase[2]	=>  Location: PIN_129,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// phase[3]	=>  Location: PIN_52,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// phase[4]	=>  Location: PIN_137,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// phase[5]	=>  Location: PIN_138,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// phase[6]	=>  Location: PIN_121,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// phase[7]	=>  Location: PIN_125,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// clk	=>  Location: PIN_23,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// phinc[6]	=>  Location: PIN_133,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// phinc[5]	=>  Location: PIN_126,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// phinc[4]	=>  Location: PIN_135,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// phinc[3]	=>  Location: PIN_132,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// phinc[2]	=>  Location: PIN_127,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// phinc[1]	=>  Location: PIN_53,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// phinc[0]	=>  Location: PIN_119,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// clrn	=>  Location: PIN_24,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// phinc[7]	=>  Location: PIN_124,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("phase_acc_6_1200mv_0c_v_slow.sdo");
+// synopsys translate_on
+
+wire \phase[0]~output_o ;
+wire \phase[1]~output_o ;
+wire \phase[2]~output_o ;
+wire \phase[3]~output_o ;
+wire \phase[4]~output_o ;
+wire \phase[5]~output_o ;
+wire \phase[6]~output_o ;
+wire \phase[7]~output_o ;
+wire \clk~input_o ;
+wire \clk~inputclkctrl_outclk ;
+wire \phinc[6]~input_o ;
+wire \phinc[5]~input_o ;
+wire \phinc[4]~input_o ;
+wire \phinc[3]~input_o ;
+wire \phinc[2]~input_o ;
+wire \phinc[1]~input_o ;
+wire \phinc[0]~input_o ;
+wire \phasereg[0]~14_combout ;
+wire \clrn~input_o ;
+wire \clrn~inputclkctrl_outclk ;
+wire \phasereg[0]~15 ;
+wire \phasereg[1]~16_combout ;
+wire \phasereg[1]~17 ;
+wire \phasereg[2]~18_combout ;
+wire \phasereg[2]~19 ;
+wire \phasereg[3]~20_combout ;
+wire \phasereg[3]~21 ;
+wire \phasereg[4]~22_combout ;
+wire \phasereg[4]~23 ;
+wire \phasereg[5]~24_combout ;
+wire \phasereg[5]~25 ;
+wire \phasereg[6]~26_combout ;
+wire \phinc[7]~input_o ;
+wire \phasereg[6]~27 ;
+wire \phasereg[7]~28_combout ;
+wire \phasereg[7]~29 ;
+wire \phasereg[8]~30_combout ;
+wire \phasereg[8]~31 ;
+wire \phasereg[9]~32_combout ;
+wire \phasereg[9]~33 ;
+wire \phasereg[10]~34_combout ;
+wire \phasereg[10]~35 ;
+wire \phasereg[11]~36_combout ;
+wire \phasereg[11]~37 ;
+wire \phasereg[12]~38_combout ;
+wire \phasereg[12]~39 ;
+wire \phasereg[13]~40_combout ;
+wire [13:0] phasereg;
+
+
+// Location: IOOBUF_X16_Y24_N16
+cycloneive_io_obuf \phase[0]~output (
+	.i(phasereg[6]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\phase[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \phase[0]~output .bus_hold = "false";
+defparam \phase[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X9_Y24_N9
+cycloneive_io_obuf \phase[1]~output (
+	.i(phasereg[7]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\phase[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \phase[1]~output .bus_hold = "false";
+defparam \phase[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X16_Y24_N23
+cycloneive_io_obuf \phase[2]~output (
+	.i(phasereg[8]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\phase[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \phase[2]~output .bus_hold = "false";
+defparam \phase[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X16_Y0_N9
+cycloneive_io_obuf \phase[3]~output (
+	.i(phasereg[9]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\phase[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \phase[3]~output .bus_hold = "false";
+defparam \phase[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X7_Y24_N2
+cycloneive_io_obuf \phase[4]~output (
+	.i(phasereg[10]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\phase[4]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \phase[4]~output .bus_hold = "false";
+defparam \phase[4]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X7_Y24_N9
+cycloneive_io_obuf \phase[5]~output (
+	.i(phasereg[11]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\phase[5]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \phase[5]~output .bus_hold = "false";
+defparam \phase[5]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X23_Y24_N16
+cycloneive_io_obuf \phase[6]~output (
+	.i(phasereg[12]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\phase[6]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \phase[6]~output .bus_hold = "false";
+defparam \phase[6]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X18_Y24_N23
+cycloneive_io_obuf \phase[7]~output (
+	.i(phasereg[13]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\phase[7]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \phase[7]~output .bus_hold = "false";
+defparam \phase[7]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y11_N8
+cycloneive_io_ibuf \clk~input (
+	.i(clk),
+	.ibar(gnd),
+	.o(\clk~input_o ));
+// synopsys translate_off
+defparam \clk~input .bus_hold = "false";
+defparam \clk~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: CLKCTRL_G2
+cycloneive_clkctrl \clk~inputclkctrl (
+	.ena(vcc),
+	.inclk({vcc,vcc,vcc,\clk~input_o }),
+	.clkselect(2'b00),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(\clk~inputclkctrl_outclk ));
+// synopsys translate_off
+defparam \clk~inputclkctrl .clock_type = "global clock";
+defparam \clk~inputclkctrl .ena_register_mode = "none";
+// synopsys translate_on
+
+// Location: IOIBUF_X13_Y24_N22
+cycloneive_io_ibuf \phinc[6]~input (
+	.i(phinc[6]),
+	.ibar(gnd),
+	.o(\phinc[6]~input_o ));
+// synopsys translate_off
+defparam \phinc[6]~input .bus_hold = "false";
+defparam \phinc[6]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X16_Y24_N1
+cycloneive_io_ibuf \phinc[5]~input (
+	.i(phinc[5]),
+	.ibar(gnd),
+	.o(\phinc[5]~input_o ));
+// synopsys translate_off
+defparam \phinc[5]~input .bus_hold = "false";
+defparam \phinc[5]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X11_Y24_N15
+cycloneive_io_ibuf \phinc[4]~input (
+	.i(phinc[4]),
+	.ibar(gnd),
+	.o(\phinc[4]~input_o ));
+// synopsys translate_off
+defparam \phinc[4]~input .bus_hold = "false";
+defparam \phinc[4]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X13_Y24_N15
+cycloneive_io_ibuf \phinc[3]~input (
+	.i(phinc[3]),
+	.ibar(gnd),
+	.o(\phinc[3]~input_o ));
+// synopsys translate_off
+defparam \phinc[3]~input .bus_hold = "false";
+defparam \phinc[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X16_Y24_N8
+cycloneive_io_ibuf \phinc[2]~input (
+	.i(phinc[2]),
+	.ibar(gnd),
+	.o(\phinc[2]~input_o ));
+// synopsys translate_off
+defparam \phinc[2]~input .bus_hold = "false";
+defparam \phinc[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X16_Y0_N1
+cycloneive_io_ibuf \phinc[1]~input (
+	.i(phinc[1]),
+	.ibar(gnd),
+	.o(\phinc[1]~input_o ));
+// synopsys translate_off
+defparam \phinc[1]~input .bus_hold = "false";
+defparam \phinc[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X23_Y24_N1
+cycloneive_io_ibuf \phinc[0]~input (
+	.i(phinc[0]),
+	.ibar(gnd),
+	.o(\phinc[0]~input_o ));
+// synopsys translate_off
+defparam \phinc[0]~input .bus_hold = "false";
+defparam \phinc[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X16_Y23_N0
+cycloneive_lcell_comb \phasereg[0]~14 (
+// Equation(s):
+// \phasereg[0]~14_combout  = (\phinc[0]~input_o  & (phasereg[0] $ (VCC))) # (!\phinc[0]~input_o  & (phasereg[0] & VCC))
+// \phasereg[0]~15  = CARRY((\phinc[0]~input_o  & phasereg[0]))
+
+	.dataa(\phinc[0]~input_o ),
+	.datab(phasereg[0]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(gnd),
+	.combout(\phasereg[0]~14_combout ),
+	.cout(\phasereg[0]~15 ));
+// synopsys translate_off
+defparam \phasereg[0]~14 .lut_mask = 16'h6688;
+defparam \phasereg[0]~14 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y11_N15
+cycloneive_io_ibuf \clrn~input (
+	.i(clrn),
+	.ibar(gnd),
+	.o(\clrn~input_o ));
+// synopsys translate_off
+defparam \clrn~input .bus_hold = "false";
+defparam \clrn~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: CLKCTRL_G4
+cycloneive_clkctrl \clrn~inputclkctrl (
+	.ena(vcc),
+	.inclk({vcc,vcc,vcc,\clrn~input_o }),
+	.clkselect(2'b00),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(\clrn~inputclkctrl_outclk ));
+// synopsys translate_off
+defparam \clrn~inputclkctrl .clock_type = "global clock";
+defparam \clrn~inputclkctrl .ena_register_mode = "none";
+// synopsys translate_on
+
+// Location: FF_X16_Y23_N1
+dffeas \phasereg[0] (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\phasereg[0]~14_combout ),
+	.asdata(vcc),
+	.clrn(\clrn~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(phasereg[0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \phasereg[0] .is_wysiwyg = "true";
+defparam \phasereg[0] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X16_Y23_N2
+cycloneive_lcell_comb \phasereg[1]~16 (
+// Equation(s):
+// \phasereg[1]~16_combout  = (\phinc[1]~input_o  & ((phasereg[1] & (\phasereg[0]~15  & VCC)) # (!phasereg[1] & (!\phasereg[0]~15 )))) # (!\phinc[1]~input_o  & ((phasereg[1] & (!\phasereg[0]~15 )) # (!phasereg[1] & ((\phasereg[0]~15 ) # (GND)))))
+// \phasereg[1]~17  = CARRY((\phinc[1]~input_o  & (!phasereg[1] & !\phasereg[0]~15 )) # (!\phinc[1]~input_o  & ((!\phasereg[0]~15 ) # (!phasereg[1]))))
+
+	.dataa(\phinc[1]~input_o ),
+	.datab(phasereg[1]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\phasereg[0]~15 ),
+	.combout(\phasereg[1]~16_combout ),
+	.cout(\phasereg[1]~17 ));
+// synopsys translate_off
+defparam \phasereg[1]~16 .lut_mask = 16'h9617;
+defparam \phasereg[1]~16 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X16_Y23_N3
+dffeas \phasereg[1] (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\phasereg[1]~16_combout ),
+	.asdata(vcc),
+	.clrn(\clrn~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(phasereg[1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \phasereg[1] .is_wysiwyg = "true";
+defparam \phasereg[1] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X16_Y23_N4
+cycloneive_lcell_comb \phasereg[2]~18 (
+// Equation(s):
+// \phasereg[2]~18_combout  = ((\phinc[2]~input_o  $ (phasereg[2] $ (!\phasereg[1]~17 )))) # (GND)
+// \phasereg[2]~19  = CARRY((\phinc[2]~input_o  & ((phasereg[2]) # (!\phasereg[1]~17 ))) # (!\phinc[2]~input_o  & (phasereg[2] & !\phasereg[1]~17 )))
+
+	.dataa(\phinc[2]~input_o ),
+	.datab(phasereg[2]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\phasereg[1]~17 ),
+	.combout(\phasereg[2]~18_combout ),
+	.cout(\phasereg[2]~19 ));
+// synopsys translate_off
+defparam \phasereg[2]~18 .lut_mask = 16'h698E;
+defparam \phasereg[2]~18 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X16_Y23_N5
+dffeas \phasereg[2] (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\phasereg[2]~18_combout ),
+	.asdata(vcc),
+	.clrn(\clrn~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(phasereg[2]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \phasereg[2] .is_wysiwyg = "true";
+defparam \phasereg[2] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X16_Y23_N6
+cycloneive_lcell_comb \phasereg[3]~20 (
+// Equation(s):
+// \phasereg[3]~20_combout  = (phasereg[3] & ((\phinc[3]~input_o  & (\phasereg[2]~19  & VCC)) # (!\phinc[3]~input_o  & (!\phasereg[2]~19 )))) # (!phasereg[3] & ((\phinc[3]~input_o  & (!\phasereg[2]~19 )) # (!\phinc[3]~input_o  & ((\phasereg[2]~19 ) # 
+// (GND)))))
+// \phasereg[3]~21  = CARRY((phasereg[3] & (!\phinc[3]~input_o  & !\phasereg[2]~19 )) # (!phasereg[3] & ((!\phasereg[2]~19 ) # (!\phinc[3]~input_o ))))
+
+	.dataa(phasereg[3]),
+	.datab(\phinc[3]~input_o ),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\phasereg[2]~19 ),
+	.combout(\phasereg[3]~20_combout ),
+	.cout(\phasereg[3]~21 ));
+// synopsys translate_off
+defparam \phasereg[3]~20 .lut_mask = 16'h9617;
+defparam \phasereg[3]~20 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X16_Y23_N7
+dffeas \phasereg[3] (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\phasereg[3]~20_combout ),
+	.asdata(vcc),
+	.clrn(\clrn~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(phasereg[3]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \phasereg[3] .is_wysiwyg = "true";
+defparam \phasereg[3] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X16_Y23_N8
+cycloneive_lcell_comb \phasereg[4]~22 (
+// Equation(s):
+// \phasereg[4]~22_combout  = ((\phinc[4]~input_o  $ (phasereg[4] $ (!\phasereg[3]~21 )))) # (GND)
+// \phasereg[4]~23  = CARRY((\phinc[4]~input_o  & ((phasereg[4]) # (!\phasereg[3]~21 ))) # (!\phinc[4]~input_o  & (phasereg[4] & !\phasereg[3]~21 )))
+
+	.dataa(\phinc[4]~input_o ),
+	.datab(phasereg[4]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\phasereg[3]~21 ),
+	.combout(\phasereg[4]~22_combout ),
+	.cout(\phasereg[4]~23 ));
+// synopsys translate_off
+defparam \phasereg[4]~22 .lut_mask = 16'h698E;
+defparam \phasereg[4]~22 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X16_Y23_N9
+dffeas \phasereg[4] (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\phasereg[4]~22_combout ),
+	.asdata(vcc),
+	.clrn(\clrn~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(phasereg[4]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \phasereg[4] .is_wysiwyg = "true";
+defparam \phasereg[4] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X16_Y23_N10
+cycloneive_lcell_comb \phasereg[5]~24 (
+// Equation(s):
+// \phasereg[5]~24_combout  = (phasereg[5] & ((\phinc[5]~input_o  & (\phasereg[4]~23  & VCC)) # (!\phinc[5]~input_o  & (!\phasereg[4]~23 )))) # (!phasereg[5] & ((\phinc[5]~input_o  & (!\phasereg[4]~23 )) # (!\phinc[5]~input_o  & ((\phasereg[4]~23 ) # 
+// (GND)))))
+// \phasereg[5]~25  = CARRY((phasereg[5] & (!\phinc[5]~input_o  & !\phasereg[4]~23 )) # (!phasereg[5] & ((!\phasereg[4]~23 ) # (!\phinc[5]~input_o ))))
+
+	.dataa(phasereg[5]),
+	.datab(\phinc[5]~input_o ),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\phasereg[4]~23 ),
+	.combout(\phasereg[5]~24_combout ),
+	.cout(\phasereg[5]~25 ));
+// synopsys translate_off
+defparam \phasereg[5]~24 .lut_mask = 16'h9617;
+defparam \phasereg[5]~24 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X16_Y23_N11
+dffeas \phasereg[5] (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\phasereg[5]~24_combout ),
+	.asdata(vcc),
+	.clrn(\clrn~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(phasereg[5]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \phasereg[5] .is_wysiwyg = "true";
+defparam \phasereg[5] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X16_Y23_N12
+cycloneive_lcell_comb \phasereg[6]~26 (
+// Equation(s):
+// \phasereg[6]~26_combout  = ((phasereg[6] $ (\phinc[6]~input_o  $ (!\phasereg[5]~25 )))) # (GND)
+// \phasereg[6]~27  = CARRY((phasereg[6] & ((\phinc[6]~input_o ) # (!\phasereg[5]~25 ))) # (!phasereg[6] & (\phinc[6]~input_o  & !\phasereg[5]~25 )))
+
+	.dataa(phasereg[6]),
+	.datab(\phinc[6]~input_o ),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\phasereg[5]~25 ),
+	.combout(\phasereg[6]~26_combout ),
+	.cout(\phasereg[6]~27 ));
+// synopsys translate_off
+defparam \phasereg[6]~26 .lut_mask = 16'h698E;
+defparam \phasereg[6]~26 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X16_Y23_N13
+dffeas \phasereg[6] (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\phasereg[6]~26_combout ),
+	.asdata(vcc),
+	.clrn(\clrn~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(phasereg[6]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \phasereg[6] .is_wysiwyg = "true";
+defparam \phasereg[6] .power_up = "low";
+// synopsys translate_on
+
+// Location: IOIBUF_X18_Y24_N15
+cycloneive_io_ibuf \phinc[7]~input (
+	.i(phinc[7]),
+	.ibar(gnd),
+	.o(\phinc[7]~input_o ));
+// synopsys translate_off
+defparam \phinc[7]~input .bus_hold = "false";
+defparam \phinc[7]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X16_Y23_N14
+cycloneive_lcell_comb \phasereg[7]~28 (
+// Equation(s):
+// \phasereg[7]~28_combout  = (\phinc[7]~input_o  & ((phasereg[7] & (\phasereg[6]~27  & VCC)) # (!phasereg[7] & (!\phasereg[6]~27 )))) # (!\phinc[7]~input_o  & ((phasereg[7] & (!\phasereg[6]~27 )) # (!phasereg[7] & ((\phasereg[6]~27 ) # (GND)))))
+// \phasereg[7]~29  = CARRY((\phinc[7]~input_o  & (!phasereg[7] & !\phasereg[6]~27 )) # (!\phinc[7]~input_o  & ((!\phasereg[6]~27 ) # (!phasereg[7]))))
+
+	.dataa(\phinc[7]~input_o ),
+	.datab(phasereg[7]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\phasereg[6]~27 ),
+	.combout(\phasereg[7]~28_combout ),
+	.cout(\phasereg[7]~29 ));
+// synopsys translate_off
+defparam \phasereg[7]~28 .lut_mask = 16'h9617;
+defparam \phasereg[7]~28 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X16_Y23_N15
+dffeas \phasereg[7] (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\phasereg[7]~28_combout ),
+	.asdata(vcc),
+	.clrn(\clrn~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(phasereg[7]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \phasereg[7] .is_wysiwyg = "true";
+defparam \phasereg[7] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X16_Y23_N16
+cycloneive_lcell_comb \phasereg[8]~30 (
+// Equation(s):
+// \phasereg[8]~30_combout  = (phasereg[8] & (\phasereg[7]~29  $ (GND))) # (!phasereg[8] & (!\phasereg[7]~29  & VCC))
+// \phasereg[8]~31  = CARRY((phasereg[8] & !\phasereg[7]~29 ))
+
+	.dataa(gnd),
+	.datab(phasereg[8]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\phasereg[7]~29 ),
+	.combout(\phasereg[8]~30_combout ),
+	.cout(\phasereg[8]~31 ));
+// synopsys translate_off
+defparam \phasereg[8]~30 .lut_mask = 16'hC30C;
+defparam \phasereg[8]~30 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X16_Y23_N17
+dffeas \phasereg[8] (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\phasereg[8]~30_combout ),
+	.asdata(vcc),
+	.clrn(\clrn~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(phasereg[8]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \phasereg[8] .is_wysiwyg = "true";
+defparam \phasereg[8] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X16_Y23_N18
+cycloneive_lcell_comb \phasereg[9]~32 (
+// Equation(s):
+// \phasereg[9]~32_combout  = (phasereg[9] & (!\phasereg[8]~31 )) # (!phasereg[9] & ((\phasereg[8]~31 ) # (GND)))
+// \phasereg[9]~33  = CARRY((!\phasereg[8]~31 ) # (!phasereg[9]))
+
+	.dataa(gnd),
+	.datab(phasereg[9]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\phasereg[8]~31 ),
+	.combout(\phasereg[9]~32_combout ),
+	.cout(\phasereg[9]~33 ));
+// synopsys translate_off
+defparam \phasereg[9]~32 .lut_mask = 16'h3C3F;
+defparam \phasereg[9]~32 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X16_Y23_N19
+dffeas \phasereg[9] (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\phasereg[9]~32_combout ),
+	.asdata(vcc),
+	.clrn(\clrn~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(phasereg[9]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \phasereg[9] .is_wysiwyg = "true";
+defparam \phasereg[9] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X16_Y23_N20
+cycloneive_lcell_comb \phasereg[10]~34 (
+// Equation(s):
+// \phasereg[10]~34_combout  = (phasereg[10] & (\phasereg[9]~33  $ (GND))) # (!phasereg[10] & (!\phasereg[9]~33  & VCC))
+// \phasereg[10]~35  = CARRY((phasereg[10] & !\phasereg[9]~33 ))
+
+	.dataa(gnd),
+	.datab(phasereg[10]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\phasereg[9]~33 ),
+	.combout(\phasereg[10]~34_combout ),
+	.cout(\phasereg[10]~35 ));
+// synopsys translate_off
+defparam \phasereg[10]~34 .lut_mask = 16'hC30C;
+defparam \phasereg[10]~34 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X16_Y23_N21
+dffeas \phasereg[10] (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\phasereg[10]~34_combout ),
+	.asdata(vcc),
+	.clrn(\clrn~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(phasereg[10]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \phasereg[10] .is_wysiwyg = "true";
+defparam \phasereg[10] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X16_Y23_N22
+cycloneive_lcell_comb \phasereg[11]~36 (
+// Equation(s):
+// \phasereg[11]~36_combout  = (phasereg[11] & (!\phasereg[10]~35 )) # (!phasereg[11] & ((\phasereg[10]~35 ) # (GND)))
+// \phasereg[11]~37  = CARRY((!\phasereg[10]~35 ) # (!phasereg[11]))
+
+	.dataa(phasereg[11]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\phasereg[10]~35 ),
+	.combout(\phasereg[11]~36_combout ),
+	.cout(\phasereg[11]~37 ));
+// synopsys translate_off
+defparam \phasereg[11]~36 .lut_mask = 16'h5A5F;
+defparam \phasereg[11]~36 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X16_Y23_N23
+dffeas \phasereg[11] (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\phasereg[11]~36_combout ),
+	.asdata(vcc),
+	.clrn(\clrn~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(phasereg[11]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \phasereg[11] .is_wysiwyg = "true";
+defparam \phasereg[11] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X16_Y23_N24
+cycloneive_lcell_comb \phasereg[12]~38 (
+// Equation(s):
+// \phasereg[12]~38_combout  = (phasereg[12] & (\phasereg[11]~37  $ (GND))) # (!phasereg[12] & (!\phasereg[11]~37  & VCC))
+// \phasereg[12]~39  = CARRY((phasereg[12] & !\phasereg[11]~37 ))
+
+	.dataa(gnd),
+	.datab(phasereg[12]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\phasereg[11]~37 ),
+	.combout(\phasereg[12]~38_combout ),
+	.cout(\phasereg[12]~39 ));
+// synopsys translate_off
+defparam \phasereg[12]~38 .lut_mask = 16'hC30C;
+defparam \phasereg[12]~38 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X16_Y23_N25
+dffeas \phasereg[12] (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\phasereg[12]~38_combout ),
+	.asdata(vcc),
+	.clrn(\clrn~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(phasereg[12]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \phasereg[12] .is_wysiwyg = "true";
+defparam \phasereg[12] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X16_Y23_N26
+cycloneive_lcell_comb \phasereg[13]~40 (
+// Equation(s):
+// \phasereg[13]~40_combout  = phasereg[13] $ (\phasereg[12]~39 )
+
+	.dataa(phasereg[13]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(\phasereg[12]~39 ),
+	.combout(\phasereg[13]~40_combout ),
+	.cout());
+// synopsys translate_off
+defparam \phasereg[13]~40 .lut_mask = 16'h5A5A;
+defparam \phasereg[13]~40 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X16_Y23_N27
+dffeas \phasereg[13] (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\phasereg[13]~40_combout ),
+	.asdata(vcc),
+	.clrn(\clrn~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(phasereg[13]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \phasereg[13] .is_wysiwyg = "true";
+defparam \phasereg[13] .power_up = "low";
+// synopsys translate_on
+
+assign phase[0] = \phase[0]~output_o ;
+
+assign phase[1] = \phase[1]~output_o ;
+
+assign phase[2] = \phase[2]~output_o ;
+
+assign phase[3] = \phase[3]~output_o ;
+
+assign phase[4] = \phase[4]~output_o ;
+
+assign phase[5] = \phase[5]~output_o ;
+
+assign phase[6] = \phase[6]~output_o ;
+
+assign phase[7] = \phase[7]~output_o ;
+
+endmodule

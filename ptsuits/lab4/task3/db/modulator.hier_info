@@ -1,0 +1,31 @@
+|modulator
+val[0] => Add0.IN18
+val[1] => Add0.IN17
+val[2] => Add0.IN16
+val[3] => Add0.IN15
+val[4] => Add0.IN14
+val[5] => Add0.IN13
+val[6] => Add0.IN12
+val[7] => Add0.IN11
+val[7] => Add0.IN10
+clk => int[0].CLK
+clk => int[1].CLK
+clk => int[2].CLK
+clk => int[3].CLK
+clk => int[4].CLK
+clk => int[5].CLK
+clk => int[6].CLK
+clk => int[7].CLK
+clk => int[8].CLK
+clrn => int[0].ACLR
+clrn => int[1].ACLR
+clrn => int[2].ACLR
+clrn => int[3].ACLR
+clrn => int[4].ACLR
+clrn => int[5].ACLR
+clrn => int[6].ACLR
+clrn => int[7].ACLR
+clrn => int[8].ACLR
+daco <= int[8].DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/alteraLabs/ptsuits/lab4/task3/simulation/modelsim
+vmodulator
+Z1 !s110 1448982073
+!i10b 1
+!s100 6Xc`5gI^W;5M6P]UgLT`P3
+INcKN8d^Wg3MKn7D9Y2kE_2
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1448981659
+8E:/alteraLabs/ptsuits/lab4/task3/modulator.v
+FE:/alteraLabs/ptsuits/lab4/task3/modulator.v
+L0 1
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1448982073.118000
+!s107 E:/alteraLabs/ptsuits/lab4/task3/modulator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/alteraLabs/ptsuits/lab4/task3|E:/alteraLabs/ptsuits/lab4/task3/modulator.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+E:/alteraLabs/ptsuits/lab4/task3
+vmodulator_vlg_tst
+R1
+!i10b 1
+!s100 ]2?mfa1NILZU_g4_R0H]53
+IelB5_EM9Rc_[XYUaM_S6G3
+R2
+R0
+w1448982051
+8E:/alteraLabs/ptsuits/lab4/task3/modulator_tb.v
+FE:/alteraLabs/ptsuits/lab4/task3/modulator_tb.v
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1448982073.194000
+!s107 E:/alteraLabs/ptsuits/lab4/task3/modulator_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/alteraLabs/ptsuits/lab4/task3|E:/alteraLabs/ptsuits/lab4/task3/modulator_tb.v|
+!i113 1
+R4
+R5
