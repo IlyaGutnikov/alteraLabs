@@ -60,9 +60,9 @@ end
 initial
 begin
 
-	phinc = 255;
+	phinc = 2;
 	
-	forever #10 phinc = phinc + 220;
+	//forever #10 phinc = phinc + 220;
 
 end
 

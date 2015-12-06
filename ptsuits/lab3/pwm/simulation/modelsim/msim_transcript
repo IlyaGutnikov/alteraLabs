@@ -1,4 +1,4 @@
-# Reading E:/altera/modelsim_ase/tcl/vsim/pref.tcl
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
 # do avalon_pwm_run_msim_rtl_verilog.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -7,36 +7,36 @@
 # vmap work rtl_work
 # Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
 # vmap -modelsim_quiet work rtl_work 
-# Copying E:/altera/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
-# ** Warning: Copied E:/altera/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+E:/alteraLabs/ptsuits/lab3/pwm {E:/alteraLabs/ptsuits/lab3/pwm/avalon_pwm.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab3/pwm {C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab3/pwm/avalon_pwm.v}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 18:01:06 on Nov 29,2015
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/alteraLabs/ptsuits/lab3/pwm" E:/alteraLabs/ptsuits/lab3/pwm/avalon_pwm.v 
+# Start time: 10:45:56 on Dec 02,2015
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab3/pwm" C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab3/pwm/avalon_pwm.v 
 # -- Compiling module avalon_pwm
 # 
 # Top level modules:
 # 	avalon_pwm
-# End time: 18:01:06 on Nov 29,2015, Elapsed time: 0:00:00
+# End time: 10:45:56 on Dec 02,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -vlog01compat -work work +incdir+E:/alteraLabs/ptsuits/lab3/pwm/simulation/modelsim {E:/alteraLabs/ptsuits/lab3/pwm/simulation/modelsim/avalon_pwm.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab3/pwm/simulation/modelsim {C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab3/pwm/simulation/modelsim/avalon_pwm.v}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 18:01:06 on Nov 29,2015
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/alteraLabs/ptsuits/lab3/pwm/simulation/modelsim" E:/alteraLabs/ptsuits/lab3/pwm/simulation/modelsim/avalon_pwm.v 
+# Start time: 10:45:56 on Dec 02,2015
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab3/pwm/simulation/modelsim" C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab3/pwm/simulation/modelsim/avalon_pwm.v 
 # -- Compiling module avalon_pwm_vlg_tst
 # 
 # Top level modules:
 # 	avalon_pwm_vlg_tst
-# End time: 18:01:06 on Nov 29,2015, Elapsed time: 0:00:00
+# End time: 10:45:56 on Dec 02,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  avalon_pwm_vlg_tst
 # vsim -gui "+altera" -l msim_transcript -do "avalon_pwm_run_msim_rtl_verilog.do" 
-# Start time: 18:01:07 on Nov 29,2015
+# Start time: 10:45:56 on Dec 02,2015
 # Loading work.avalon_pwm_vlg_tst
 # Loading work.avalon_pwm
 # 
@@ -46,5 +46,5 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# End time: 18:14:59 on Nov 29,2015, Elapsed time: 0:13:52
+# End time: 11:18:21 on Dec 02,2015, Elapsed time: 0:32:25
 # Errors: 0, Warnings: 0

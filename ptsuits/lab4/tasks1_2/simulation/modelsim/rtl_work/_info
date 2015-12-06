@@ -7,46 +7,46 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dE:/alteraLabs/ptsuits/lab4/tasks1_2/simulation/modelsim
+Z0 dC:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab4/tasks1_2/simulation/modelsim
 vmemory
-Z1 !s110 1448979935
+Z1 !s110 1449230604
 !i10b 1
-!s100 `jn7a6;;^_=IRDSij^3Mj1
-ICkddmEThlP__3ee5o9g[71
+!s100 ;W;VUW``DzR_I7dTa`HQL0
+I`GFXZMFN=NYR>WbOCD2:h3
 Z2 V`JN@9S9cnhjKRR_L]QIcM3
 R0
-w1448547238
-8E:/alteraLabs/ptsuits/lab4/tasks1_2/memory.v
-FE:/alteraLabs/ptsuits/lab4/tasks1_2/memory.v
+w1449230507
+8C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab4/tasks1_2/memory.v
+FC:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab4/tasks1_2/memory.v
 L0 40
 Z3 OV;L;10.3d;59
 r1
 !s85 0
 31
-!s108 1448979935.523000
-!s107 E:/alteraLabs/ptsuits/lab4/tasks1_2/memory.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/alteraLabs/ptsuits/lab4/tasks1_2|E:/alteraLabs/ptsuits/lab4/tasks1_2/memory.v|
+!s108 1449230604.367000
+!s107 C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab4/tasks1_2/memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab4/tasks1_2|C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab4/tasks1_2/memory.v|
 !i113 1
 Z4 o-vlog01compat -work work
-Z5 !s92 -vlog01compat -work work +incdir+E:/alteraLabs/ptsuits/lab4/tasks1_2
+Z5 !s92 -vlog01compat -work work +incdir+C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab4/tasks1_2
 vphase_acc
 R1
 !i10b 1
 !s100 k_ijbgSb<DBkY=?o6W<T02
-IGD?NfHh279MYlbFeh>`=K1
+I935PQg:O1MPoQhiWg<z@a0
 R2
 R0
-w1448975360
-8E:/alteraLabs/ptsuits/lab4/tasks1_2/phase_acc.v
-FE:/alteraLabs/ptsuits/lab4/tasks1_2/phase_acc.v
+Z6 w1449041692
+8C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab4/tasks1_2/phase_acc.v
+FC:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab4/tasks1_2/phase_acc.v
 L0 1
 R3
 r1
 !s85 0
 31
-!s108 1448979935.449000
-!s107 E:/alteraLabs/ptsuits/lab4/tasks1_2/phase_acc.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/alteraLabs/ptsuits/lab4/tasks1_2|E:/alteraLabs/ptsuits/lab4/tasks1_2/phase_acc.v|
+!s108 1449230604.289000
+!s107 C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab4/tasks1_2/phase_acc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab4/tasks1_2|C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab4/tasks1_2/phase_acc.v|
 !i113 1
 R4
 R5
@@ -54,41 +54,41 @@ vtasks
 R1
 !i10b 1
 !s100 0ec0GZOlLKEPS;9UX_YYV1
-ISh=Y2RYSC54F63AzPKQ=`3
+IOe2=>ZCIadDTCQzzDXE3Q1
 R2
 R0
-w1448979824
-8E:/alteraLabs/ptsuits/lab4/tasks1_2/tasks.v
-FE:/alteraLabs/ptsuits/lab4/tasks1_2/tasks.v
+R6
+8C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab4/tasks1_2/tasks.v
+FC:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab4/tasks1_2/tasks.v
 L0 1
 R3
 r1
 !s85 0
 31
-!s108 1448979935.353000
-!s107 E:/alteraLabs/ptsuits/lab4/tasks1_2/tasks.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/alteraLabs/ptsuits/lab4/tasks1_2|E:/alteraLabs/ptsuits/lab4/tasks1_2/tasks.v|
+!s108 1449230604.226000
+!s107 C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab4/tasks1_2/tasks.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab4/tasks1_2|C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab4/tasks1_2/tasks.v|
 !i113 1
 R4
 R5
 vtasks_vlg_tst
 R1
 !i10b 1
-!s100 YUP5C7Ck3C7]]zAm4h8[b2
-I6iW5dgCS`AXa=]o@fz97P1
+!s100 1nnWQ_WW2L7^D<XU2Caza2
+IRRE@n;?334`@E[0iTUM;21
 R2
 R0
-w1448979924
-8E:/alteraLabs/ptsuits/lab4/tasks1_2/tasks_tb.v
-FE:/alteraLabs/ptsuits/lab4/tasks1_2/tasks_tb.v
+w1449229661
+8C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab4/tasks1_2/tasks_tb.v
+FC:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab4/tasks1_2/tasks_tb.v
 L0 29
 R3
 r1
 !s85 0
 31
-!s108 1448979935.597000
-!s107 E:/alteraLabs/ptsuits/lab4/tasks1_2/tasks_tb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/alteraLabs/ptsuits/lab4/tasks1_2|E:/alteraLabs/ptsuits/lab4/tasks1_2/tasks_tb.v|
+!s108 1449230604.445000
+!s107 C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab4/tasks1_2/tasks_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab4/tasks1_2|C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab4/tasks1_2/tasks_tb.v|
 !i113 1
 R4
 R5

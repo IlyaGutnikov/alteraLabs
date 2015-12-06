@@ -1,5 +1,5 @@
 EDA Netlist Writer report for avalon_pwm
-Sun Nov 29 17:50:35 2015
+Wed Dec 02 10:45:20 2015
 Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun Nov 29 17:50:35 2015 ;
+; EDA Netlist Writer Status ; Successful - Wed Dec 02 10:45:20 2015 ;
 ; Revision Name             ; avalon_pwm                            ;
 ; Top-level Entity Name     ; avalon_pwm                            ;
 ; Family                    ; Cyclone IV E                          ;
@@ -67,20 +67,20 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                             ;
-+----------------------------------------------------------------------------------------+
-; Generated Files                                                                        ;
-+----------------------------------------------------------------------------------------+
-; E:/alteraLabs/ptsuits/lab3/pwm/simulation/modelsim/avalon_pwm_6_1200mv_85c_slow.vo     ;
-; E:/alteraLabs/ptsuits/lab3/pwm/simulation/modelsim/avalon_pwm_6_1200mv_0c_slow.vo      ;
-; E:/alteraLabs/ptsuits/lab3/pwm/simulation/modelsim/avalon_pwm_min_1200mv_0c_fast.vo    ;
-; E:/alteraLabs/ptsuits/lab3/pwm/simulation/modelsim/avalon_pwm.vo                       ;
-; E:/alteraLabs/ptsuits/lab3/pwm/simulation/modelsim/avalon_pwm_6_1200mv_85c_v_slow.sdo  ;
-; E:/alteraLabs/ptsuits/lab3/pwm/simulation/modelsim/avalon_pwm_6_1200mv_0c_v_slow.sdo   ;
-; E:/alteraLabs/ptsuits/lab3/pwm/simulation/modelsim/avalon_pwm_min_1200mv_0c_v_fast.sdo ;
-; E:/alteraLabs/ptsuits/lab3/pwm/simulation/modelsim/avalon_pwm_v.sdo                    ;
-+----------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                                                                           ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                                                                      ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab3/pwm/simulation/modelsim/avalon_pwm_6_1200mv_85c_slow.vo     ;
+; C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab3/pwm/simulation/modelsim/avalon_pwm_6_1200mv_0c_slow.vo      ;
+; C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab3/pwm/simulation/modelsim/avalon_pwm_min_1200mv_0c_fast.vo    ;
+; C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab3/pwm/simulation/modelsim/avalon_pwm.vo                       ;
+; C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab3/pwm/simulation/modelsim/avalon_pwm_6_1200mv_85c_v_slow.sdo  ;
+; C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab3/pwm/simulation/modelsim/avalon_pwm_6_1200mv_0c_v_slow.sdo   ;
+; C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab3/pwm/simulation/modelsim/avalon_pwm_min_1200mv_0c_v_fast.sdo ;
+; C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab3/pwm/simulation/modelsim/avalon_pwm_v.sdo                    ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -89,19 +89,19 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
-    Info: Processing started: Sun Nov 29 17:50:34 2015
+    Info: Processing started: Wed Dec 02 10:45:19 2015
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off avalon_pwm -c avalon_pwm
-Info (204019): Generated file avalon_pwm_6_1200mv_85c_slow.vo in folder "E:/alteraLabs/ptsuits/lab3/pwm/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file avalon_pwm_6_1200mv_0c_slow.vo in folder "E:/alteraLabs/ptsuits/lab3/pwm/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file avalon_pwm_min_1200mv_0c_fast.vo in folder "E:/alteraLabs/ptsuits/lab3/pwm/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file avalon_pwm.vo in folder "E:/alteraLabs/ptsuits/lab3/pwm/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file avalon_pwm_6_1200mv_85c_v_slow.sdo in folder "E:/alteraLabs/ptsuits/lab3/pwm/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file avalon_pwm_6_1200mv_0c_v_slow.sdo in folder "E:/alteraLabs/ptsuits/lab3/pwm/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file avalon_pwm_min_1200mv_0c_v_fast.sdo in folder "E:/alteraLabs/ptsuits/lab3/pwm/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file avalon_pwm_v.sdo in folder "E:/alteraLabs/ptsuits/lab3/pwm/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file avalon_pwm_6_1200mv_85c_slow.vo in folder "C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab3/pwm/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file avalon_pwm_6_1200mv_0c_slow.vo in folder "C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab3/pwm/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file avalon_pwm_min_1200mv_0c_fast.vo in folder "C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab3/pwm/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file avalon_pwm.vo in folder "C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab3/pwm/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file avalon_pwm_6_1200mv_85c_v_slow.sdo in folder "C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab3/pwm/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file avalon_pwm_6_1200mv_0c_v_slow.sdo in folder "C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab3/pwm/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file avalon_pwm_min_1200mv_0c_v_fast.sdo in folder "C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab3/pwm/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file avalon_pwm_v.sdo in folder "C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab3/pwm/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 575 megabytes
-    Info: Processing ended: Sun Nov 29 17:50:35 2015
+    Info: Peak virtual memory: 565 megabytes
+    Info: Processing ended: Wed Dec 02 10:45:20 2015
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

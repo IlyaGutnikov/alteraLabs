@@ -1,5 +1,5 @@
 Analysis & Synthesis report for avalon_pwm
-Sun Nov 29 17:50:15 2015
+Wed Dec 02 10:44:57 2015
 Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
 
 
@@ -13,8 +13,8 @@ Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Inverted Register Statistics
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
  10. Multiplexer Restructuring Statistics (Restructuring Performed)
  11. Post-Synthesis Netlist Statistics for Top Partition
  12. Elapsed Time Per Partition
@@ -45,15 +45,15 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Nov 29 17:50:15 2015      ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 02 10:44:57 2015      ;
 ; Quartus II 64-Bit Version          ; 15.0.2 Build 153 07/15/2015 SJ Web Edition ;
 ; Revision Name                      ; avalon_pwm                                 ;
 ; Top-level Entity Name              ; avalon_pwm                                 ;
 ; Family                             ; Cyclone IV E                               ;
 ; Total logic elements               ; 283                                        ;
 ;     Total combinational functions  ; 187                                        ;
-;     Dedicated logic registers      ; 130                                        ;
-; Total registers                    ; 130                                        ;
+;     Dedicated logic registers      ; 128                                        ;
+; Total registers                    ; 128                                        ;
 ; Total pins                         ; 78                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
@@ -154,18 +154,18 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 8      ;
+; Number detected on machine ; 2      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                              ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                ; Library ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------+---------+
-; avalon_pwm.v                     ; yes             ; User Verilog HDL File  ; E:/alteraLabs/ptsuits/lab3/pwm/avalon_pwm.v ;         ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                            ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                              ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
+; avalon_pwm.v                     ; yes             ; User Verilog HDL File  ; C:/Users/Ilya/Desktop/alderik999-alteralabs-45cecda6f1dd/alderik999-alteralabs-45cecda6f1dd/ptsuits/lab3/pwm/avalon_pwm.v ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -185,8 +185,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- normal mode                          ; 94        ;
 ;     -- arithmetic mode                      ; 93        ;
 ;                                             ;           ;
-; Total registers                             ; 130       ;
-;     -- Dedicated logic registers            ; 130       ;
+; Total registers                             ; 128       ;
+;     -- Dedicated logic registers            ; 128       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 78        ;
@@ -194,8 +194,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 130       ;
-; Total fan-out                               ; 1250      ;
+; Maximum fan-out                             ; 129       ;
+; Total fan-out                               ; 1244      ;
 ; Average fan-out                             ; 2.64      ;
 +---------------------------------------------+-----------+
 
@@ -205,9 +205,20 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |avalon_pwm                ; 187 (187)         ; 130 (130)    ; 0           ; 0            ; 0       ; 0         ; 78   ; 0            ; |avalon_pwm         ; work         ;
+; |avalon_pwm                ; 187 (187)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 78   ; 0            ; |avalon_pwm         ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; off                                                ; off                 ; yes                    ;
+; Number of user-specified and inferred latches = 1  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -215,24 +226,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 130   ;
+; Total registers                              ; 128   ;
 ; Number of registers using Synchronous Clear  ; 32    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 130   ;
+; Number of registers using Asynchronous Clear ; 128   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 96    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; state                                  ; 2       ;
-; Total number of inverted registers = 1 ;         ;
-+----------------------------------------+---------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------+
@@ -240,7 +241,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |avalon_pwm|Mux30          ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |avalon_pwm|Mux23          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -250,8 +251,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 78                          ;
-; cycloneiii_ff         ; 130                         ;
-;     CLR               ; 2                           ;
+; cycloneiii_ff         ; 128                         ;
 ;     CLR SCLR          ; 32                          ;
 ;     ENA CLR           ; 96                          ;
 ; cycloneiii_lcell_comb ; 188                         ;
@@ -264,8 +264,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;         3 data inputs ; 1                           ;
 ;         4 data inputs ; 89                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.10                        ;
-; Average LUT depth     ; 3.20                        ;
+; Max LUT depth         ; 6.10                        ;
+; Average LUT depth     ; 3.43                        ;
 +-----------------------+-----------------------------+
 
 
@@ -284,7 +284,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
-    Info: Processing started: Sun Nov 29 17:50:04 2015
+    Info: Processing started: Wed Dec 02 10:44:38 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off avalon_pwm -c avalon_pwm
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file simulation/modelsim/avalon_pwm.v
@@ -292,11 +292,22 @@ Info (12021): Found 1 design units, including 1 entities, in source file simulat
 Info (12021): Found 1 design units, including 1 entities, in source file avalon_pwm.v
     Info (12023): Found entity 1: avalon_pwm
 Info (12127): Elaborating entity "avalon_pwm" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at avalon_pwm.v(23): object "state" assigned a value but never read
 Warning (10036): Verilog HDL or VHDL warning at avalon_pwm.v(26): object "div_en" assigned a value but never read
 Warning (10036): Verilog HDL or VHDL warning at avalon_pwm.v(26): object "duty_en" assigned a value but never read
 Warning (10230): Verilog HDL assignment warning at avalon_pwm.v(33): truncated value with size 2 to match size of target (1)
-Info (13000): Registers with preset signals will power-up high
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (10235): Verilog HDL Always Construct warning at avalon_pwm.v(87): variable "clr_n" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at avalon_pwm.v(93): variable "dither" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at avalon_pwm.v(94): variable "counter" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at avalon_pwm.v(94): variable "duty" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at avalon_pwm.v(108): variable "counter" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at avalon_pwm.v(108): variable "duty" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at avalon_pwm.v(111): variable "counter" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at avalon_pwm.v(114): variable "off" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10240): Verilog HDL Always Construct warning at avalon_pwm.v(84): inferring latch(es) for variable "off", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "off" at avalon_pwm.v(84)
+Warning (13012): Latch off has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal dither[31]
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -304,10 +315,10 @@ Info (21057): Implemented 361 device resources after synthesis - the final resou
     Info (21058): Implemented 38 input pins
     Info (21059): Implemented 40 output pins
     Info (21061): Implemented 283 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 647 megabytes
-    Info: Processing ended: Sun Nov 29 17:50:15 2015
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:25
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 645 megabytes
+    Info: Processing ended: Wed Dec 02 10:44:57 2015
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:24
 
 
