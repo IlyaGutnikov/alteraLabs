@@ -18,7 +18,7 @@
 // suit user's needs .Comments are provided in each section to help the user    
 // fill out necessary details.                                                  
 // *****************************************************************************
-// Generated on "11/18/2015 23:07:33"
+// Generated on "12/08/2015 12:35:19"
                                                                                 
 // Verilog Test Bench template for design : countones
 // 
@@ -45,7 +45,7 @@ initial
 begin                                                  
 // code that executes only once                        
 // insert code here --> begin                          
-din = 874799703;                                        
+din = 874799703;                                                         
 // --> end                                             
 $display("Running testbench");                       
 end                                                    

@@ -290,6 +290,14 @@
          type = "String";
       }
    }
+   element niosII
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone IV E";
+         type = "String";
+      }
+   }
    element performance_counter_0
    {
       datum _sortIndex

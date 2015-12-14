@@ -16,7 +16,7 @@ module countones(din,result);
 	integer c_int;
 	integer d_int;
 	
-	integer temp [0:3];
+	reg signed [7:0] temp [0:3];
 	
 	integer avr;
 	integer min;
@@ -35,17 +35,22 @@ module countones(din,result);
 		d_int = d;
 		
 		//average
-		avr = a + b + c + d;
+		avr = (a_int + b_int + c_int + d_int)>>2;
 		//abs
-		temp[0] = (avr - (a_int*4)) * (avr - (a_int*4));
-		temp[1] = (avr - (b_int*4)) * (avr - (a_int*4));
-		temp[2] = (avr - (c_int*4)) * (avr - (c_int*4));
-		temp[3] = (avr - (d_int*4)) * (avr - (d_int*4));
+		temp[0] = avr - a_int;
+		temp[1] = avr - b_int;
+		temp[2] = avr - c_int;
+		temp[3] = avr - d_int;
+		
+		for (i = 0; i<4; i=i+1) 
+		begin
+		if(temp[i] < 0) temp[i] = -temp[i];
+		end
 		
 		result = 0;
 		
 		min = temp[3];
-		
+		t = 0;
 		for (i = 0; i<4; i=i+1) 
 		begin
 		if(temp[i] < min)

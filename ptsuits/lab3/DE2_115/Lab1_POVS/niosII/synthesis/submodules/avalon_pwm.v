@@ -81,7 +81,7 @@ module avalon_pwm
 	end
 	
 	//PWM compare
-	always @(posedge clk or negedge clr_n)
+	always @(clk)
 	begin
 		//clr
 		if (clr_n == 0) begin
@@ -92,7 +92,7 @@ module avalon_pwm
 		//task1 work
 		if (dither == 1) begin
 			if (counter >= duty)
-					if ((clk == 1)&&(state == 1)) begin 
+					if (clk == 1) begin 
 						off <= 1;
 						state <= 0;	
 					end

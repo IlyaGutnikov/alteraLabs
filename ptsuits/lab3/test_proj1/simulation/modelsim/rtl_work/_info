@@ -7,46 +7,46 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dE:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim
+Z0 dC:/git/alteralabs/ptsuits/lab3/test_proj1/simulation/modelsim
 vcountones
-Z1 !s110 1448812495
+Z1 !s110 1449568462
 !i10b 1
-!s100 S@;fX]]De:bdZK3nj9k`U0
-Io3dUZSA0LI[0<jD7LYG7k0
+!s100 IoA2L_1k<?`U6E3_B<i4j1
+I`F4aG_Z5AdDlf=Y@QH5zZ0
 Z2 V`JN@9S9cnhjKRR_L]QIcM3
 R0
-w1448812476
-8E:/alteraLabs/ptsuits/lab3/test_proj1/countones.v
-FE:/alteraLabs/ptsuits/lab3/test_proj1/countones.v
+w1449568412
+8C:/git/alteralabs/ptsuits/lab3/test_proj1/countones.v
+FC:/git/alteralabs/ptsuits/lab3/test_proj1/countones.v
 L0 1
 Z3 OV;L;10.3d;59
 r1
 !s85 0
 31
-!s108 1448812495.720000
-!s107 E:/alteraLabs/ptsuits/lab3/test_proj1/countones.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/alteraLabs/ptsuits/lab3/test_proj1|E:/alteraLabs/ptsuits/lab3/test_proj1/countones.v|
+!s108 1449568462.254000
+!s107 C:/git/alteralabs/ptsuits/lab3/test_proj1/countones.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/git/alteralabs/ptsuits/lab3/test_proj1|C:/git/alteralabs/ptsuits/lab3/test_proj1/countones.v|
 !i113 1
 Z4 o-vlog01compat -work work
-!s92 -vlog01compat -work work +incdir+E:/alteraLabs/ptsuits/lab3/test_proj1
+!s92 -vlog01compat -work work +incdir+C:/git/alteralabs/ptsuits/lab3/test_proj1
 vcountones_vlg_tst
 R1
 !i10b 1
 !s100 F0bTKmWIAgF62Y2N0V_7J3
-IzAn^Wc`cNgdI4BXGO1o8`1
+IWXVjFV5dU:LWhg:h]P7z20
 R2
 R0
-w1447877266
-8E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim/countones.vt
-FE:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim/countones.vt
+w1449567338
+8C:/git/alteralabs/ptsuits/lab3/test_proj1/simulation/modelsim/countones.vt
+FC:/git/alteralabs/ptsuits/lab3/test_proj1/simulation/modelsim/countones.vt
 L0 29
 R3
 r1
 !s85 0
 31
-!s108 1448812495.806000
-!s107 E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim/countones.vt|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim|E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim/countones.vt|
+!s108 1449568462.316000
+!s107 C:/git/alteralabs/ptsuits/lab3/test_proj1/simulation/modelsim/countones.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/git/alteralabs/ptsuits/lab3/test_proj1/simulation/modelsim|C:/git/alteralabs/ptsuits/lab3/test_proj1/simulation/modelsim/countones.vt|
 !i113 1
 R4
-!s92 -vlog01compat -work work +incdir+E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim
+!s92 -vlog01compat -work work +incdir+C:/git/alteralabs/ptsuits/lab3/test_proj1/simulation/modelsim
