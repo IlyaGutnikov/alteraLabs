@@ -1,6 +1,6 @@
 EDA Netlist Writer report for semafor
-Fri Dec 11 17:31:51 2015
-Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+Mon Dec 14 16:38:46 2015
+Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
 
 
 ---------------------
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Dec 11 17:31:51 2015 ;
+; EDA Netlist Writer Status ; Successful - Mon Dec 14 16:38:46 2015 ;
 ; Revision Name             ; semafor                               ;
 ; Top-level Entity Name     ; lab2                                  ;
 ; Family                    ; Cyclone IV E                          ;
@@ -67,20 +67,20 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                            ;
-+-------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                       ;
-+-------------------------------------------------------------------------------------------------------+
-; Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/simulation/modelsim/semafor_7_1200mv_125c_slow.vo      ;
-; Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/simulation/modelsim/semafor_7_1200mv_-40c_slow.vo      ;
-; Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/simulation/modelsim/semafor_min_1200mv_-40c_fast.vo    ;
-; Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/simulation/modelsim/semafor.vo                         ;
-; Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/simulation/modelsim/semafor_7_1200mv_125c_v_slow.sdo   ;
-; Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/simulation/modelsim/semafor_7_1200mv_-40c_v_slow.sdo   ;
-; Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/simulation/modelsim/semafor_min_1200mv_-40c_v_fast.sdo ;
-; Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/simulation/modelsim/semafor_v.sdo                      ;
-+-------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                         ;
++----------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                    ;
++----------------------------------------------------------------------------------------------------+
+; C:/git/alteralabs/ptsuits/lab2/semafor_lab2/simulation/modelsim/semafor_7_1200mv_125c_slow.vo      ;
+; C:/git/alteralabs/ptsuits/lab2/semafor_lab2/simulation/modelsim/semafor_7_1200mv_-40c_slow.vo      ;
+; C:/git/alteralabs/ptsuits/lab2/semafor_lab2/simulation/modelsim/semafor_min_1200mv_-40c_fast.vo    ;
+; C:/git/alteralabs/ptsuits/lab2/semafor_lab2/simulation/modelsim/semafor.vo                         ;
+; C:/git/alteralabs/ptsuits/lab2/semafor_lab2/simulation/modelsim/semafor_7_1200mv_125c_v_slow.sdo   ;
+; C:/git/alteralabs/ptsuits/lab2/semafor_lab2/simulation/modelsim/semafor_7_1200mv_-40c_v_slow.sdo   ;
+; C:/git/alteralabs/ptsuits/lab2/semafor_lab2/simulation/modelsim/semafor_min_1200mv_-40c_v_fast.sdo ;
+; C:/git/alteralabs/ptsuits/lab2/semafor_lab2/simulation/modelsim/semafor_v.sdo                      ;
++----------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -88,20 +88,20 @@ agreement for further details.
 +-----------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
-    Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Fri Dec 11 17:31:50 2015
+    Info: Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
+    Info: Processing started: Mon Dec 14 16:38:45 2015
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off semafor_lab2 -c semafor
-Info (204019): Generated file semafor_7_1200mv_125c_slow.vo in folder "Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file semafor_7_1200mv_-40c_slow.vo in folder "Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file semafor_min_1200mv_-40c_fast.vo in folder "Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file semafor.vo in folder "Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file semafor_7_1200mv_125c_v_slow.sdo in folder "Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file semafor_7_1200mv_-40c_v_slow.sdo in folder "Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file semafor_min_1200mv_-40c_v_fast.sdo in folder "Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file semafor_v.sdo in folder "Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file semafor_7_1200mv_125c_slow.vo in folder "C:/git/alteralabs/ptsuits/lab2/semafor_lab2/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file semafor_7_1200mv_-40c_slow.vo in folder "C:/git/alteralabs/ptsuits/lab2/semafor_lab2/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file semafor_min_1200mv_-40c_fast.vo in folder "C:/git/alteralabs/ptsuits/lab2/semafor_lab2/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file semafor.vo in folder "C:/git/alteralabs/ptsuits/lab2/semafor_lab2/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file semafor_7_1200mv_125c_v_slow.sdo in folder "C:/git/alteralabs/ptsuits/lab2/semafor_lab2/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file semafor_7_1200mv_-40c_v_slow.sdo in folder "C:/git/alteralabs/ptsuits/lab2/semafor_lab2/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file semafor_min_1200mv_-40c_v_fast.sdo in folder "C:/git/alteralabs/ptsuits/lab2/semafor_lab2/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file semafor_v.sdo in folder "C:/git/alteralabs/ptsuits/lab2/semafor_lab2/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 561 megabytes
-    Info: Processing ended: Fri Dec 11 17:31:51 2015
+    Info: Peak virtual memory: 560 megabytes
+    Info: Processing ended: Mon Dec 14 16:38:46 2015
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

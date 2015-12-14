@@ -7,46 +7,46 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dY:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/simulation/modelsim
+Z0 dC:/git/alteralabs/ptsuits/lab2/semafor_lab2/simulation/modelsim
 vlab2
-Z1 !s110 1449843987
+Z1 !s110 1450100465
 !i10b 1
 !s100 2?hd?Z93hb4]V7DFFeQ[[2
-I^<HF>^4QOQl]a?^f?Yi3N1
+I7YaQhAh?VGTfZa0@0IMNZ1
 Z2 V`JN@9S9cnhjKRR_L]QIcM3
 R0
-w1449835618
-8Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/lab2.v
-FY:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/lab2.v
+w1450022812
+8C:/git/alteralabs/ptsuits/lab2/semafor_lab2/lab2.v
+FC:/git/alteralabs/ptsuits/lab2/semafor_lab2/lab2.v
 L0 1
 Z3 OV;L;10.3d;59
 r1
 !s85 0
 31
-!s108 1449843987.296000
-!s107 Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/lab2.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2|Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/lab2.v|
+!s108 1450100465.216000
+!s107 C:/git/alteralabs/ptsuits/lab2/semafor_lab2/lab2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/git/alteralabs/ptsuits/lab2/semafor_lab2|C:/git/alteralabs/ptsuits/lab2/semafor_lab2/lab2.v|
 !i113 1
 Z4 o-vlog01compat -work work
-Z5 !s92 -vlog01compat -work work +incdir+Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2
+Z5 !s92 -vlog01compat -work work +incdir+C:/git/alteralabs/ptsuits/lab2/semafor_lab2
 vperiodrom
 R1
 !i10b 1
 !s100 zRC<@E@6HNVLVRS]nRoT=0
-I?5H1>DX68hmI<a?K?1TYi2
+I[9SO_SaJ=Z:gZElgBQVie2
 R2
 R0
-w1448284587
-8Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/periodrom.v
-FY:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/periodrom.v
+Z6 w1450022813
+8C:/git/alteralabs/ptsuits/lab2/semafor_lab2/periodrom.v
+FC:/git/alteralabs/ptsuits/lab2/semafor_lab2/periodrom.v
 L0 40
 R3
 r1
 !s85 0
 31
-!s108 1449843987.169000
-!s107 Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/periodrom.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2|Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/periodrom.v|
+!s108 1450100465.154000
+!s107 C:/git/alteralabs/ptsuits/lab2/semafor_lab2/periodrom.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/git/alteralabs/ptsuits/lab2/semafor_lab2|C:/git/alteralabs/ptsuits/lab2/semafor_lab2/periodrom.v|
 !i113 1
 R4
 R5
@@ -54,62 +54,62 @@ vsemafor
 R1
 !i10b 1
 !s100 VOESk6Mm7[JHR;8?f[>nK2
-ILFOkJNUlj48cHoS@eDEVk2
+I0nF6Lb:d8<2jKNQzdfkGg1
 R2
 R0
-w1449658711
-8Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/semafor.v
-FY:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/semafor.v
+R6
+8C:/git/alteralabs/ptsuits/lab2/semafor_lab2/semafor.v
+FC:/git/alteralabs/ptsuits/lab2/semafor_lab2/semafor.v
 L0 1
 R3
 r1
 !s85 0
 31
-!s108 1449843987.064000
-!s107 Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/semafor.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2|Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/semafor.v|
-!i113 1
-R4
-R5
-vsemafor_tb
-R1
-!i10b 1
-!s100 8mM^8CMgEi42SzBNEjRQU3
-I@SJ;12A3QMGgToGzGQ@7z1
-R2
-R0
-w1449654756
-8Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/semafor_tb.v
-FY:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/semafor_tb.v
-L0 3
-R3
-r1
-!s85 0
-31
-!s108 1449843987.408000
-!s107 Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/semafor_tb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2|Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/semafor_tb.v|
+!s108 1450100465.091000
+!s107 C:/git/alteralabs/ptsuits/lab2/semafor_lab2/semafor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/git/alteralabs/ptsuits/lab2/semafor_lab2|C:/git/alteralabs/ptsuits/lab2/semafor_lab2/semafor.v|
 !i113 1
 R4
 R5
 vuart
-!s110 1449843986
+R1
 !i10b 1
-!s100 C^7gCK3i?K;@9gadLUaB?3
-I=8VN1V=ZME[[?=AjiR4;c1
+!s100 `W]?7o]D>OZYol^iN:F161
+IzafPhT0EOVfg3Rh8RgjKn1
 R2
 R0
-w1449840749
-8Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/uart.v
-FY:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/uart.v
+w1450100408
+8C:/git/alteralabs/ptsuits/lab2/semafor_lab2/uart.v
+FC:/git/alteralabs/ptsuits/lab2/semafor_lab2/uart.v
 L0 7
 R3
 r1
 !s85 0
 31
-!s108 1449843986.969000
-!s107 Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/uart.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2|Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/uart.v|
+!s108 1450100464.998000
+!s107 C:/git/alteralabs/ptsuits/lab2/semafor_lab2/uart.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/git/alteralabs/ptsuits/lab2/semafor_lab2|C:/git/alteralabs/ptsuits/lab2/semafor_lab2/uart.v|
+!i113 1
+R4
+R5
+vuart_tb
+R1
+!i10b 1
+!s100 z;XXFR;^1oQ_mLo^c]inF3
+I6UU[5nD?:MzTaao30ACV20
+R2
+R0
+w1450100455
+8C:/git/alteralabs/ptsuits/lab2/semafor_lab2/uart_tb.v
+FC:/git/alteralabs/ptsuits/lab2/semafor_lab2/uart_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1450100465.279000
+!s107 C:/git/alteralabs/ptsuits/lab2/semafor_lab2/uart_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/git/alteralabs/ptsuits/lab2/semafor_lab2|C:/git/alteralabs/ptsuits/lab2/semafor_lab2/uart_tb.v|
 !i113 1
 R4
 R5
