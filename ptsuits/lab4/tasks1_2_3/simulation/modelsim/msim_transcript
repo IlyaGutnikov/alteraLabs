@@ -1,4 +1,4 @@
-# Reading C:/altera/15.0/modelsim_ae/tcl/vsim/pref.tcl
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
 # do tasks_run_msim_rtl_verilog.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -7,75 +7,66 @@
 # vmap work rtl_work
 # Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
 # vmap -modelsim_quiet work rtl_work 
-# Copying C:/altera/15.0/modelsim_ae/win32aloem/../modelsim.ini to modelsim.ini
+# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
-# ** Warning: Copied C:/altera/15.0/modelsim_ae/win32aloem/../modelsim.ini to modelsim.ini.
+# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2 {D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/modulator.v}
+# vlog -vlog01compat -work work +incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3 {C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/modulator.v}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 16:05:39 on Dec 08,2015
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2" D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/modulator.v 
+# Start time: 11:47:27 on Dec 14,2015
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3" C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/modulator.v 
 # -- Compiling module modulator
 # 
 # Top level modules:
 # 	modulator
-# End time: 16:05:39 on Dec 08,2015, Elapsed time: 0:00:00
+# End time: 11:47:27 on Dec 14,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2 {D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/tasks.v}
+# vlog -vlog01compat -work work +incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3 {C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/tasks.v}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 16:05:39 on Dec 08,2015
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2" D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/tasks.v 
+# Start time: 11:47:27 on Dec 14,2015
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3" C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/tasks.v 
 # -- Compiling module tasks
 # 
 # Top level modules:
 # 	tasks
-# End time: 16:05:39 on Dec 08,2015, Elapsed time: 0:00:00
+# End time: 11:47:27 on Dec 14,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2 {D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/phase_acc.v}
+# vlog -vlog01compat -work work +incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3 {C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/phase_acc.v}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 16:05:39 on Dec 08,2015
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2" D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/phase_acc.v 
+# Start time: 11:47:27 on Dec 14,2015
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3" C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/phase_acc.v 
 # -- Compiling module phase_acc
 # 
 # Top level modules:
 # 	phase_acc
-# End time: 16:05:39 on Dec 08,2015, Elapsed time: 0:00:00
+# End time: 11:47:27 on Dec 14,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2 {D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/memory.v}
+# vlog -vlog01compat -work work +incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3 {C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/memory.v}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 16:05:39 on Dec 08,2015
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2" D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/memory.v 
+# Start time: 11:47:27 on Dec 14,2015
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3" C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/memory.v 
 # -- Compiling module memory
 # 
 # Top level modules:
 # 	memory
-# End time: 16:05:39 on Dec 08,2015, Elapsed time: 0:00:00
+# End time: 11:47:27 on Dec 14,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -vlog01compat -work work +incdir+D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2 {D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/tasks_tb.v}
+# vlog -vlog01compat -work work +incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3 {C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/tasks_tb.v}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 16:05:39 on Dec 08,2015
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2" D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/tasks_tb.v 
+# Start time: 11:47:27 on Dec 14,2015
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3" C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/tasks_tb.v 
 # -- Compiling module tasks_vlg_tst
 # 
 # Top level modules:
 # 	tasks_vlg_tst
-# End time: 16:05:39 on Dec 08,2015, Elapsed time: 0:00:00
+# End time: 11:47:28 on Dec 14,2015, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tasks_vlg_tst
 # vsim -gui "+altera" -l msim_transcript -do "tasks_run_msim_rtl_verilog.do" 
-# Start time: 16:05:39 on Dec 08,2015
-# //  ModelSim ALTERA 10.3d Oct  7 2014 
-# //
-# //  Copyright 1991-2014 Mentor Graphics Corporation
-# //  All Rights Reserved.
-# //
-# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
-# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
-# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
-# //
+# Start time: 11:47:28 on Dec 14,2015
 # Loading work.tasks_vlg_tst
 # Loading work.tasks
 # Loading work.phase_acc
@@ -92,8 +83,10 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-add wave -position 4  sim:/tasks_vlg_tst/i1/mod/val
+add wave -position end sim:/tasks_vlg_tst/i1/m/*
+add wave -position end sim:/tasks_vlg_tst/i1/mod/*
+add wave -position end sim:/tasks_vlg_tst/i1/pa/*
 restart
 run -all
-# End time: 16:17:27 on Dec 08,2015, Elapsed time: 0:11:48
+# End time: 11:50:03 on Dec 14,2015, Elapsed time: 0:02:35
 # Errors: 0, Warnings: 0

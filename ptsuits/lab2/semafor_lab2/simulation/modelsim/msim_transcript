@@ -1,0 +1,81 @@
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do semafor_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work gate_work 
+# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {semafor_7_1200mv_125c_slow.vo}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 17:32:02 on Dec 11,2015
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." semafor_7_1200mv_125c_slow.vo 
+# -- Compiling module lab2
+# 
+# Top level modules:
+# 	lab2
+# End time: 17:32:02 on Dec 11,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2 {Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/lab2_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 17:32:02 on Dec 11,2015
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2" Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/lab2_tb.v 
+# -- Compiling module lab2_tb
+# 
+# Top level modules:
+# 	lab2_tb
+# End time: 17:32:02 on Dec 11,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  lab2_tb
+# vsim -gui "+altera" -l msim_transcript -do "semafor_run_msim_gate_verilog.do" 
+# Start time: 17:32:02 on Dec 11,2015
+# Loading work.lab2_tb
+# Loading work.lab2
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_ram_block
+# Loading cycloneive_ver.cycloneive_ram_register
+# Loading cycloneive_ver.cycloneive_ram_pulse_generator
+# SDF 10.3d Compiler 2014.10 Oct  7 2014
+# 
+# Loading instances from semafor_7_1200mv_125c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from semafor_7_1200mv_125c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /lab2_tb File: Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/lab2_tb.v
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Администратор  Hostname: ADMIN-0MRH32G8P  ProcessID: 1544
+# 
+#           Attempting to use alternate WLF file "./wlft7f9qsa".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft7f9qsa
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/lab2_tb.v(40)
+#    Time: 30437036 ps  Iteration: 0  Instance: /lab2_tb
+# Break in Module lab2_tb at Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/lab2_tb.v line 40
+# Simulation Breakpoint: Break in Module lab2_tb at Y:/Yandex.Disk/9term/fedorov/lab2/semafor_lab2/lab2_tb.v line 40
+# MACRO ./semafor_run_msim_gate_verilog.do PAUSED at line 17
+# End time: 17:36:57 on Dec 11,2015, Elapsed time: 0:04:55
+# Errors: 0, Warnings: 2

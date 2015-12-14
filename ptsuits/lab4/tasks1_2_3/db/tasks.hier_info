@@ -9,7 +9,7 @@ phinc[6] => phinc[6].IN1
 phinc[7] => phinc[7].IN1
 clk => clk.IN3
 clrn => clrn.IN2
-daco <= modulator:mod.daco
+daco << modulator:mod.daco
 
 
 |tasks|phase_acc:pa

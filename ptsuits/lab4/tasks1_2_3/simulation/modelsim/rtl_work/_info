@@ -7,46 +7,46 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dD:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/simulation/modelsim
+Z0 dC:/git/alteralabs/ptsuits/lab4/tasks1_2_3/simulation/modelsim
 vmemory
-Z1 !s110 1449579939
+Z1 !s110 1450082847
 !i10b 1
 !s100 ;W;VUW``DzR_I7dTa`HQL0
-IC`1=68Fc>afaNb3fgaJQH2
+IZVDe`;a0TjDLm^1^ijlS=3
 Z2 V`JN@9S9cnhjKRR_L]QIcM3
 R0
 w1449498556
-8D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/memory.v
-FD:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/memory.v
+8C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/memory.v
+FC:/git/alteralabs/ptsuits/lab4/tasks1_2_3/memory.v
 L0 40
 Z3 OV;L;10.3d;59
 r1
 !s85 0
 31
-!s108 1449579939.782000
-!s107 D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/memory.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2|D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/memory.v|
+!s108 1450082847.936000
+!s107 C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3|C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/memory.v|
 !i113 1
 Z4 o-vlog01compat -work work
-Z5 !s92 -vlog01compat -work work +incdir+D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2
+Z5 !s92 -vlog01compat -work work +incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3
 vmodulator
 R1
 !i10b 1
 !s100 6Xc`5gI^W;5M6P]UgLT`P3
-I5E`Lombgb;z6G[8DlE8UW0
+IWGBiL7?BPm^GWjBo63:Io3
 R2
 R0
 w1448981658
-8D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/modulator.v
-FD:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/modulator.v
+8C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/modulator.v
+FC:/git/alteralabs/ptsuits/lab4/tasks1_2_3/modulator.v
 L0 1
 R3
 r1
 !s85 0
 31
-!s108 1449579939.492000
-!s107 D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/modulator.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2|D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/modulator.v|
+!s108 1450082847.530000
+!s107 C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/modulator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3|C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/modulator.v|
 !i113 1
 R4
 R5
@@ -54,20 +54,20 @@ vphase_acc
 R1
 !i10b 1
 !s100 k_ijbgSb<DBkY=?o6W<T02
-IES8==O9<9F_4A3zPn036j0
+II4CX_7b>2=nOi85D[lMda1
 R2
 R0
 w1448975360
-8D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/phase_acc.v
-FD:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/phase_acc.v
+8C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/phase_acc.v
+FC:/git/alteralabs/ptsuits/lab4/tasks1_2_3/phase_acc.v
 L0 1
 R3
 r1
 !s85 0
 31
-!s108 1449579939.652000
-!s107 D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/phase_acc.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2|D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/phase_acc.v|
+!s108 1450082847.718000
+!s107 C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/phase_acc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3|C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/phase_acc.v|
 !i113 1
 R4
 R5
@@ -75,41 +75,41 @@ vtasks
 R1
 !i10b 1
 !s100 PXQG8K;3Q;dziMQW1M`AA2
-Ida47fPVTR;Pl]7YcVoS:j0
+I=O[kVjWB:jN_5hf[n=QNF2
 R2
 R0
 w1449573433
-8D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/tasks.v
-FD:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/tasks.v
+8C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/tasks.v
+FC:/git/alteralabs/ptsuits/lab4/tasks1_2_3/tasks.v
 L0 1
 R3
 r1
 !s85 0
 31
-!s108 1449579939.552000
-!s107 D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/tasks.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2|D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/tasks.v|
+!s108 1450082847.608000
+!s107 C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/tasks.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3|C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/tasks.v|
 !i113 1
 R4
 R5
 vtasks_vlg_tst
-R1
+!s110 1450082848
 !i10b 1
 !s100 zFjH5=[DQ;R0U4le=>^Ma2
-IFDXNlK0AA4US5ZO@=ZW:K2
+INi[n`I3L1Ag6gT6JNdl^Y0
 R2
 R0
 w1449579907
-8D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/tasks_tb.v
-FD:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/tasks_tb.v
+8C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/tasks_tb.v
+FC:/git/alteralabs/ptsuits/lab4/tasks1_2_3/tasks_tb.v
 L0 29
 R3
 r1
 !s85 0
 31
-!s108 1449579939.842000
-!s107 D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/tasks_tb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2|D:/altera/IU3-17/Malych_Lenkov/fpga/tasks1_2/tasks_tb.v|
+!s108 1450082847.998000
+!s107 C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/tasks_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3|C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/tasks_tb.v|
 !i113 1
 R4
 R5
