@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Dec 14 11:18:47 2015
+Quartus II 64-Bit Version : 15.0.2 Build 153 07/15/2015 SJ Web Edition
+Revision Name : tasks
+Top-level Entity Name : tasks
+Family : Cyclone IV E
+Total logic elements : 32
+    Total combinational functions : 32
+    Dedicated logic registers : 23
+Total registers : 23
+Total pins : 11
+Total virtual pins : 0
+Total memory bits : 2,048
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

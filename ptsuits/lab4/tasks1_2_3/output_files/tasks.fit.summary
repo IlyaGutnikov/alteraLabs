@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Dec 14 11:18:57 2015
+Quartus II 64-Bit Version : 15.0.2 Build 153 07/15/2015 SJ Web Edition
+Revision Name : tasks
+Top-level Entity Name : tasks
+Family : Cyclone IV E
+Device : EP4CE6E22C6
+Timing Models : Final
+Total logic elements : 32 / 6,272 ( < 1 % )
+    Total combinational functions : 32 / 6,272 ( < 1 % )
+    Dedicated logic registers : 23 / 6,272 ( < 1 % )
+Total registers : 23
+Total pins : 11 / 92 ( 12 % )
+Total virtual pins : 0
+Total memory bits : 2,048 / 276,480 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )
