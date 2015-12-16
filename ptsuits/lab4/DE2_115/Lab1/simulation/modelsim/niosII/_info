@@ -1,0 +1,1671 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Ilya/Desktop/DE2_115/Lab1/simulation/modelsim
+valtera_avalon_sc_fifo
+Z1 !s110 1450168010
+!i10b 1
+!s100 2@;YleiQS51@UMb7^^WbN1
+IngKCcR1Ci?VIXM>G_h0oZ3
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+Z3 w1450167279
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_avalon_sc_fifo.v
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_avalon_sc_fifo.v
+Z4 L0 21
+Z5 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1450168010.469000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_avalon_sc_fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_avalon_sc_fifo.v|
+!i113 1
+Z6 o-vlog01compat -work niosII
+Z7 !s92 -vlog01compat -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules
+valtera_customins_master_translator
+Z8 !s110 1450168007
+!i10b 1
+!s100 49795j9Z3;i8UJz<XSzDY0
+IEHkG9[JSJGl0]agl4g<::1
+R2
+R0
+Z9 w1450167271
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_customins_master_translator.v
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_customins_master_translator.v
+Z10 L0 23
+R5
+r1
+!s85 0
+31
+!s108 1450168007.786000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_customins_master_translator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_customins_master_translator.v|
+!i113 1
+R6
+R7
+valtera_customins_slave_translator
+Z11 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+Z12 !s110 1450168011
+!i10b 1
+!s100 ]Omf=NjD6jS3I7]RhkCMY0
+ITLW92LPePTT=oC;SalNDc3
+R2
+!s105 altera_customins_slave_translator_sv_unit
+S1
+R0
+R9
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_customins_slave_translator.sv
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_customins_slave_translator.sv
+R10
+R5
+r1
+!s85 0
+31
+!s108 1450168011.140000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_customins_slave_translator.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_customins_slave_translator.sv|
+!i113 1
+Z13 o-sv -work niosII
+Z14 !s92 -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules
+valtera_merlin_arb_adder
+R11
+Z15 !s110 1450168009
+!i10b 1
+!s100 K`mj4ab`UI=f=Bzd]0FbK0
+I]D8W^Od4Nz?>@L`Y]aoAE3
+R2
+Z16 !s105 altera_merlin_arbitrator_sv_unit
+S1
+R0
+R3
+Z17 8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_arbitrator.sv
+Z18 FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_arbitrator.sv
+L0 228
+R5
+r1
+!s85 0
+31
+Z19 !s108 1450168009.580000
+Z20 !s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_arbitrator.sv|
+Z21 !s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_arbitrator.sv|
+!i113 1
+R13
+R14
+valtera_merlin_arbitrator
+R11
+R15
+!i10b 1
+!s100 Ni=FjEDhlN5HaJIeO8C?D0
+In2aKiSPN83>NIT6U08QG51
+R2
+R16
+S1
+R0
+R3
+R17
+R18
+L0 103
+R5
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 1
+R13
+R14
+valtera_merlin_burst_adapter
+R11
+R1
+!i10b 1
+!s100 bZ1:f>0J6eV<A[jRUL5_B2
+IkYUhaWHRJ<L5WR8PzOUG[1
+R2
+!s105 altera_merlin_burst_adapter_sv_unit
+S1
+R0
+R3
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_burst_adapter.sv
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_burst_adapter.sv
+R4
+R5
+r1
+!s85 0
+31
+!s108 1450168010.220000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_burst_adapter.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_burst_adapter.sv|
+!i113 1
+R13
+R14
+valtera_merlin_burst_adapter_uncompressed_only
+R11
+R1
+!i10b 1
+!s100 [J2_:XWPb<2O<hPWP1MZz3
+ISdEX;hK26YEle2oS]^ICb2
+R2
+!s105 altera_merlin_burst_adapter_uncmpr_sv_unit
+S1
+R0
+R3
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_burst_adapter_uncmpr.sv
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_burst_adapter_uncmpr.sv
+Z22 L0 39
+R5
+r1
+!s85 0
+31
+!s108 1450168010.282000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_burst_adapter_uncmpr.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_burst_adapter_uncmpr.sv|
+!i113 1
+R13
+R14
+valtera_merlin_burst_uncompressor
+R11
+R15
+!i10b 1
+!s100 GURQ=I3dUngBFBEkGhKmh3
+IoC1S_jbQbzSfch29ojEz;0
+R2
+!s105 altera_merlin_burst_uncompressor_sv_unit
+S1
+R0
+R3
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+L0 40
+R5
+r1
+!s85 0
+31
+!s108 1450168009.471000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_burst_uncompressor.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_burst_uncompressor.sv|
+!i113 1
+R13
+R14
+valtera_merlin_master_agent
+R11
+R12
+!i10b 1
+!s100 ;96Rc=znn;@WbB0jWGRRl1
+IWJd<X7@Ao42nB[gh@2hzE1
+R2
+!s105 altera_merlin_master_agent_sv_unit
+S1
+R0
+R3
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_master_agent.sv
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_master_agent.sv
+L0 28
+R5
+r1
+!s85 0
+31
+!s108 1450168011.078000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_master_agent.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_master_agent.sv|
+!i113 1
+R13
+R14
+valtera_merlin_master_translator
+R11
+R15
+!i10b 1
+!s100 6[_D]96gi`8O488PiFWUc1
+IdR8n7@11`;baj`64ijO3E1
+R2
+!s105 altera_merlin_master_translator_sv_unit
+S1
+R0
+R3
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_master_translator.sv
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_master_translator.sv
+L0 30
+R5
+r1
+!s85 0
+31
+!s108 1450168009.081000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_master_translator.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_master_translator.sv|
+!i113 1
+R13
+R14
+valtera_merlin_slave_agent
+R11
+R12
+!i10b 1
+!s100 3LfTAj;bB3aAXgCgCn_bT3
+Icen`:WVoN=lJ[cKGTWzn43
+R2
+!s105 altera_merlin_slave_agent_sv_unit
+S1
+R0
+R3
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_slave_agent.sv
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_slave_agent.sv
+L0 34
+R5
+r1
+!s85 0
+31
+!s108 1450168011.000000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_slave_agent.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_slave_agent.sv|
+!i113 1
+R13
+R14
+valtera_merlin_slave_translator
+R11
+R15
+!i10b 1
+!s100 dTa]H8`_eei9>oMl>o5z71
+IaE]EemHnIAi_k2;;QCBUK2
+R2
+!s105 altera_merlin_slave_translator_sv_unit
+S1
+R0
+R3
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_slave_translator.sv
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_slave_translator.sv
+L0 35
+R5
+r1
+!s85 0
+31
+!s108 1450168009.019000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_slave_translator.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_slave_translator.sv|
+!i113 1
+R13
+R14
+valtera_merlin_traffic_limiter
+R11
+R1
+!i10b 1
+!s100 gQE>6=R[U[<[CM5g8OG^:3
+IgZY8=?4SgAOCWGN^jHI9W2
+R2
+!s105 altera_merlin_traffic_limiter_sv_unit
+S1
+R0
+R3
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_traffic_limiter.sv
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_traffic_limiter.sv
+L0 49
+R5
+r1
+!s85 0
+31
+!s108 1450168010.360000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_traffic_limiter.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_traffic_limiter.sv|
+!i113 1
+R13
+R14
+valtera_merlin_width_adapter
+R11
+R15
+!i10b 1
+!s100 g=LN@e0hT7O1f_GYh[W>G3
+IMePShd@558H<BMZ_@=hV:2
+R2
+!s105 altera_merlin_width_adapter_sv_unit
+S1
+R0
+Z23 w1450167280
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_width_adapter.sv
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_width_adapter.sv
+L0 25
+R5
+r1
+!s85 0
+31
+!s108 1450168009.377000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_width_adapter.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_width_adapter.sv|
+!i113 1
+R13
+R14
+valtera_reset_controller
+R8
+!i10b 1
+!s100 VEhLaE^KT@RiagZkfkKI93
+IG[m0E;zD51FiL`MIJ6ge41
+R2
+R0
+R3
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_reset_controller.v
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_reset_controller.v
+L0 42
+R5
+r1
+!s85 0
+31
+!s108 1450168007.209000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_reset_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_reset_controller.v|
+!i113 1
+R6
+R7
+valtera_reset_synchronizer
+R8
+!i10b 1
+!s100 UTD:?4E=?>;X@do<;V;hQ1
+IIhAJnZgD_^Z]Z8MU[2CLm0
+R2
+R0
+R3
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_reset_synchronizer.v
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_reset_synchronizer.v
+L0 24
+R5
+r1
+!s85 0
+31
+!s108 1450168007.271000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_reset_synchronizer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_reset_synchronizer.v|
+!i113 1
+R6
+R7
+valtera_tristate_controller_aggregator
+R11
+R12
+!i10b 1
+!s100 feTUUKC1kL>16KO88eFUH1
+I:TcBYN61BOIUJoP6g?2nD2
+R2
+!s105 altera_tristate_controller_aggregator_sv_unit
+S1
+R0
+R3
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_tristate_controller_aggregator.sv
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_tristate_controller_aggregator.sv
+Z24 L0 22
+R5
+r1
+!s85 0
+31
+!s108 1450168011.312000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_tristate_controller_aggregator.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_tristate_controller_aggregator.sv|
+!i113 1
+R13
+R14
+valtera_tristate_controller_translator
+R11
+R12
+!i10b 1
+!s100 Tj6P^fW]XClzC4Z`9nW5J0
+I]2R@0FMld[hI=EbOlbbiZ2
+R2
+!s105 altera_tristate_controller_translator_sv_unit
+S1
+R0
+R3
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_tristate_controller_translator.sv
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_tristate_controller_translator.sv
+R24
+R5
+r1
+!s85 0
+31
+!s108 1450168011.374000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_tristate_controller_translator.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_tristate_controller_translator.sv|
+!i113 1
+R13
+R14
+vavalon_pwm
+Z25 !s110 1450168008
+!i10b 1
+!s100 z>5JEHFe[KkJbRiNmCM@K0
+I1;NEk`NOHEoDK`mK`QA1E3
+R2
+R0
+Z26 w1450167269
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/avalon_pwm.v
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/avalon_pwm.v
+L0 1
+R5
+r1
+!s85 0
+31
+!s108 1450168008.379000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/avalon_pwm.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/avalon_pwm.v|
+!i113 1
+R6
+R7
+vcountones
+R25
+!i10b 1
+!s100 PAiaNgZgoXGDEcFfk0L1F2
+I:JK;8h`LL<S2;ZP0QEzBL0
+R2
+R0
+Z27 w1450167255
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/countones.v
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/countones.v
+L0 1
+R5
+r1
+!s85 0
+31
+!s108 1450168008.816000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/countones.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/countones.v|
+!i113 1
+R6
+R7
+vmemory
+R25
+!i10b 1
+!s100 fO?Aa5mWIG^d;NYFmAcH91
+II@Y]V:OVeb[6ozS^QlZN=0
+R2
+R0
+Z28 w1450167270
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/memory.v
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/memory.v
+R22
+R5
+r1
+!s85 0
+31
+!s108 1450168008.114000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/memory.v|
+!i113 1
+R6
+R7
+vmodulator
+R25
+!i10b 1
+!s100 =e@Z^m4B^IQYJPj>WX7oA3
+I6XZCUE<BzXf[1_6^ml7f<3
+R2
+R0
+R28
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/modulator.v
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/modulator.v
+L0 1
+R5
+r1
+!s85 0
+31
+!s108 1450168008.176000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/modulator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/modulator.v|
+!i113 1
+R6
+R7
+vniosII
+R8
+!i10b 1
+!s100 k6X227X0<`QlTooj8=icW1
+IP44:QR@GU?LeV>`P2O=IL2
+R2
+R0
+w1450167254
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/niosII.v
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/niosII.v
+L0 6
+R5
+r1
+!s85 0
+31
+!s108 1450168007.131000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/niosII.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/niosII.v|
+!i113 1
+R6
+!s92 -vlog01compat -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis
+nnios@i@i
+vniosII_buttons
+R25
+!i10b 1
+!s100 Lz9ZTd=28kHZ9b;?RblzG1
+I;M`D[KK2VS:[H;nYUDVl73
+R2
+R0
+R27
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_buttons.v
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_buttons.v
+R4
+R5
+r1
+!s85 0
+31
+!s108 1450168008.878000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_buttons.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_buttons.v|
+!i113 1
+R6
+R7
+nnios@i@i_buttons
+vniosII_cpu_custom_instruction_master_comb_xconnect
+R11
+R12
+!i10b 1
+!s100 lQIW>b>a;TXJ>J_?bQW<M0
+IAE8U9_6DihADI^m86YKaj3
+R2
+!s105 niosII_cpu_custom_instruction_master_comb_xconnect_sv_unit
+S1
+R0
+R9
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_cpu_custom_instruction_master_comb_xconnect.sv
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_cpu_custom_instruction_master_comb_xconnect.sv
+L0 27
+R5
+r1
+!s85 0
+31
+!s108 1450168011.234000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_cpu_custom_instruction_master_comb_xconnect.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_cpu_custom_instruction_master_comb_xconnect.sv|
+!i113 1
+R13
+R14
+nnios@i@i_cpu_custom_instruction_master_comb_xconnect
+vniosII_ext_flash_bus
+R11
+R12
+!i10b 1
+!s100 UoFIh4:R6goc9>[J887J61
+IOghG[_ha?UnT]Smdmao@[1
+R2
+!s105 niosII_ext_flash_bus_sv_unit
+S1
+R0
+Z29 w1450167267
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_ext_flash_bus.sv
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_ext_flash_bus.sv
+Z30 L0 26
+R5
+r1
+!s85 0
+31
+!s108 1450168011.515000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_ext_flash_bus.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_ext_flash_bus.sv|
+!i113 1
+R13
+R14
+nnios@i@i_ext_flash_bus
+vniosII_ext_flash_ctl
+R25
+!i10b 1
+!s100 20UIZ<TAZE?hFnaRRfT2L0
+I8];;JGC9]]SaEf:l[S]VZ3
+R2
+R0
+R29
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_ext_flash_ctl.v
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_ext_flash_ctl.v
+L0 9
+R5
+r1
+!s85 0
+31
+!s108 1450168008.753000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_ext_flash_ctl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_ext_flash_ctl.v|
+!i113 1
+R6
+R7
+nnios@i@i_ext_flash_ctl
+vniosII_ext_ram_bus
+R11
+R12
+!i10b 1
+!s100 9Zo3j?0a83Ej>HdlF[_Az2
+I6=oG2n]kSWWgj^9DbFN@C1
+R2
+!s105 niosII_ext_ram_bus_sv_unit
+S1
+R0
+Z31 w1450167268
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_ext_ram_bus.sv
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_ext_ram_bus.sv
+R30
+R5
+r1
+!s85 0
+31
+!s108 1450168011.452000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_ext_ram_bus.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_ext_ram_bus.sv|
+!i113 1
+R13
+R14
+nnios@i@i_ext_ram_bus
+vniosII_ext_ram_ctl
+R25
+!i10b 1
+!s100 h2H67`gL7BYOHlHED1iHJ0
+IfG`FX?V<@b15PEgL@e@:k2
+R2
+R0
+R31
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_ext_ram_ctl.v
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_ext_ram_ctl.v
+L0 9
+R5
+r1
+!s85 0
+31
+!s108 1450168008.675000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_ext_ram_ctl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_ext_ram_ctl.v|
+!i113 1
+R6
+R7
+nnios@i@i_ext_ram_ctl
+vniosII_high_res_timer
+R25
+!i10b 1
+!s100 KZ?EmUHdo>:?V3NJTEEEi0
+I]0K89A5JL;HW;U8ggVndl1
+R2
+R0
+R26
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_high_res_timer.v
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_high_res_timer.v
+R4
+R5
+r1
+!s85 0
+31
+!s108 1450168008.597000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_high_res_timer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_high_res_timer.v|
+!i113 1
+R6
+R7
+nnios@i@i_high_res_timer
+vniosII_instruction_tcm
+R25
+!i10b 1
+!s100 78<SjJ7Y>jN=`7LB78bBZ2
+IZ274PMPC`]SZZ;ADNijCL1
+R2
+R0
+R26
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_instruction_tcm.v
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_instruction_tcm.v
+R4
+R5
+r1
+!s85 0
+31
+!s108 1450168008.535000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_instruction_tcm.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_instruction_tcm.v|
+!i113 1
+R6
+R7
+nnios@i@i_instruction_tcm
+vniosII_irq_mapper
+R11
+R25
+!i10b 1
+!s100 [i7SmV`J9^9@2_Lh7[3KK3
+I^TCJ];gXfD]@DgQK1RS9;0
+R2
+!s105 niosII_irq_mapper_sv_unit
+S1
+R0
+R3
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_irq_mapper.sv
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_irq_mapper.sv
+L0 31
+R5
+r1
+!s85 0
+31
+!s108 1450168008.941000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_irq_mapper.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_irq_mapper.sv|
+!i113 1
+R13
+R14
+nnios@i@i_irq_mapper
+vniosII_jtag_uart
+R25
+!i10b 1
+!s100 9b[:oD6_dU@MdG54V`ajV3
+I^0PFK8z@A7;S;z3916gMB3
+R2
+R0
+R26
+Z32 8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_jtag_uart.v
+Z33 FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_jtag_uart.v
+L0 327
+R5
+r1
+!s85 0
+31
+Z34 !s108 1450168008.441000
+Z35 !s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_jtag_uart.v|
+Z36 !s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_jtag_uart.v|
+!i113 1
+R6
+R7
+nnios@i@i_jtag_uart
+vniosII_jtag_uart_scfifo_r
+R25
+!i10b 1
+!s100 WAjP7cdf^JKMN9Il4BE0l2
+IDKLHWb>A9PmUOH8<3aogz1
+R2
+R0
+R26
+R32
+R33
+L0 240
+R5
+r1
+!s85 0
+31
+R34
+R35
+R36
+!i113 1
+R6
+R7
+nnios@i@i_jtag_uart_scfifo_r
+vniosII_jtag_uart_scfifo_w
+R25
+!i10b 1
+!s100 N5bV5PkeE^lh1c?LG3Zm22
+IQ<ZegM^m3ciHPC]?>B_?J1
+R2
+R0
+R26
+R32
+R33
+L0 77
+R5
+r1
+!s85 0
+31
+R34
+R35
+R36
+!i113 1
+R6
+R7
+nnios@i@i_jtag_uart_scfifo_w
+vniosII_jtag_uart_sim_scfifo_r
+R25
+!i10b 1
+!s100 2b?>8m5]c?SaG9mz;AmG=0
+IC8FHndi4O1T<Q]ZmBJeJF2
+R2
+R0
+R26
+R32
+R33
+L0 162
+R5
+r1
+!s85 0
+31
+R34
+R35
+R36
+!i113 1
+R6
+R7
+nnios@i@i_jtag_uart_sim_scfifo_r
+vniosII_jtag_uart_sim_scfifo_w
+R25
+!i10b 1
+!s100 jU=P;7D4NLATC_e`X`JLg0
+IN0M=:1JEm`>RdgoLUgnMc2
+R2
+R0
+R26
+R32
+R33
+R4
+R5
+r1
+!s85 0
+31
+R34
+R35
+R36
+!i113 1
+R6
+R7
+nnios@i@i_jtag_uart_sim_scfifo_w
+vniosII_mm_interconnect_0
+R8
+!i10b 1
+!s100 3Y^^>>B:>MB1K^d1z4L]>2
+I43Q<K>P7>1:aPUhz9XC_O0
+R2
+R0
+w1450167278
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0.v
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0.v
+L0 9
+R5
+r1
+!s85 0
+31
+!s108 1450168007.412000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0.v|
+!i113 1
+R6
+R7
+nnios@i@i_mm_interconnect_0
+vniosII_mm_interconnect_0_avalon_st_adapter
+R8
+!i10b 1
+!s100 E4=17fQT37L3mMGESUBDG2
+Io4KzW2nUbLAS?X4C1:`d?1
+R2
+R0
+R23
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter.v
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter.v
+L0 9
+R5
+r1
+!s85 0
+31
+!s108 1450168007.708000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter.v|
+!i113 1
+R6
+R7
+nnios@i@i_mm_interconnect_0_avalon_st_adapter
+vniosII_mm_interconnect_0_avalon_st_adapter_011
+R8
+!i10b 1
+!s100 H6KQ=KddTVBaKnUR7bd=O1
+I?T=oUjISaD<OK0lQD=eMI3
+R2
+R0
+R23
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_011.v
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_011.v
+L0 9
+R5
+r1
+!s85 0
+31
+!s108 1450168007.646000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_011.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_011.v|
+!i113 1
+R6
+R7
+nnios@i@i_mm_interconnect_0_avalon_st_adapter_011
+vniosII_mm_interconnect_0_avalon_st_adapter_011_error_adapter_0
+R11
+R15
+!i10b 1
+!s100 T3D8eli9ZN8R2k9AezcIP3
+IAmO<8:bRWHl]c@e1EmZS>3
+R2
+!s105 niosII_mm_interconnect_0_avalon_st_adapter_011_error_adapter_0_sv_unit
+S1
+R0
+R23
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_011_error_adapter_0.sv
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_011_error_adapter_0.sv
+Z37 L0 66
+R5
+r1
+!s85 0
+31
+!s108 1450168009.237000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_011_error_adapter_0.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_011_error_adapter_0.sv|
+!i113 1
+R13
+R14
+nnios@i@i_mm_interconnect_0_avalon_st_adapter_011_error_adapter_0
+vniosII_mm_interconnect_0_avalon_st_adapter_012
+R8
+!i10b 1
+!s100 ULS[MDm<SNiS=Y9:QUBca2
+Ii?7l2jo[<NgEiRVZLzAW>3
+R2
+R0
+R23
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_012.v
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_012.v
+L0 9
+R5
+r1
+!s85 0
+31
+!s108 1450168007.537000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_012.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_012.v|
+!i113 1
+R6
+R7
+nnios@i@i_mm_interconnect_0_avalon_st_adapter_012
+vniosII_mm_interconnect_0_avalon_st_adapter_012_error_adapter_0
+R11
+R15
+!i10b 1
+!s100 IEzJE5]JQzKMKKC`Gn1]a0
+IZcP8@J4o37a^jaWNhfL731
+R2
+!s105 niosII_mm_interconnect_0_avalon_st_adapter_012_error_adapter_0_sv_unit
+S1
+R0
+R23
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_012_error_adapter_0.sv
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_012_error_adapter_0.sv
+R37
+R5
+r1
+!s85 0
+31
+!s108 1450168009.159000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_012_error_adapter_0.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_012_error_adapter_0.sv|
+!i113 1
+R13
+R14
+nnios@i@i_mm_interconnect_0_avalon_st_adapter_012_error_adapter_0
+vniosII_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+R11
+R15
+!i10b 1
+!s100 gi9GIN0QNI7e0DnjB??zL0
+Ic<:;9]G6@Dg;[M;FA;NfE2
+R2
+!s105 niosII_mm_interconnect_0_avalon_st_adapter_error_adapter_0_sv_unit
+S1
+R0
+R23
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+R37
+R5
+r1
+!s85 0
+31
+!s108 1450168009.299000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv|
+!i113 1
+R13
+R14
+nnios@i@i_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+vniosII_mm_interconnect_0_cmd_demux
+R11
+R1
+!i10b 1
+!s100 PkCb;kF94NTJbomo6TRWM1
+IHk[F?i<0L:>YH@=8VbGH83
+R2
+!s105 niosII_mm_interconnect_0_cmd_demux_sv_unit
+S1
+R0
+R3
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_cmd_demux.sv
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_cmd_demux.sv
+Z38 L0 43
+R5
+r1
+!s85 0
+31
+!s108 1450168010.142000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_cmd_demux.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_cmd_demux.sv|
+!i113 1
+R13
+R14
+nnios@i@i_mm_interconnect_0_cmd_demux
+vniosII_mm_interconnect_0_cmd_demux_001
+R11
+R1
+!i10b 1
+!s100 72XK:k:RWRNWOm[YX;fbK2
+IC<M5XUJaBlAZo4K]zzZ5H0
+R2
+!s105 niosII_mm_interconnect_0_cmd_demux_001_sv_unit
+S1
+R0
+R3
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_cmd_demux_001.sv
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_cmd_demux_001.sv
+R38
+R5
+r1
+!s85 0
+31
+!s108 1450168010.079000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_cmd_demux_001.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_cmd_demux_001.sv|
+!i113 1
+R13
+R14
+nnios@i@i_mm_interconnect_0_cmd_demux_001
+vniosII_mm_interconnect_0_cmd_mux
+R11
+R1
+!i10b 1
+!s100 E3ECcNinE0ajQ2_BeDG5o2
+IK1Wg1BNVCBNFTF9dU8L`A3
+R2
+!s105 niosII_mm_interconnect_0_cmd_mux_sv_unit
+S1
+R0
+R3
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_cmd_mux.sv
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_cmd_mux.sv
+Z39 L0 51
+R5
+r1
+!s85 0
+31
+!s108 1450168010.001000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_cmd_mux.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_cmd_mux.sv|
+!i113 1
+R13
+R14
+nnios@i@i_mm_interconnect_0_cmd_mux
+vniosII_mm_interconnect_0_cmd_mux_005
+R11
+R15
+!i10b 1
+!s100 dmlnBYHJBdfXY]`b:olzg3
+IeEY:S0kh^]AA]6aeb3iG@3
+R2
+!s105 niosII_mm_interconnect_0_cmd_mux_005_sv_unit
+S1
+R0
+R3
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_cmd_mux_005.sv
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_cmd_mux_005.sv
+R39
+R5
+r1
+!s85 0
+31
+!s108 1450168009.939000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_cmd_mux_005.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_cmd_mux_005.sv|
+!i113 1
+R13
+R14
+nnios@i@i_mm_interconnect_0_cmd_mux_005
+vniosII_mm_interconnect_0_router
+R11
+R1
+!i10b 1
+!s100 AWHZ4e_P;LenTK8:cG=1=2
+I1QG8FI^_>gLgL_^E2H6`a3
+R2
+Z40 !s105 niosII_mm_interconnect_0_router_sv_unit
+S1
+R0
+R3
+Z41 8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router.sv
+Z42 FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router.sv
+Z43 L0 84
+R5
+r1
+!s85 0
+31
+Z44 !s108 1450168010.922000
+Z45 !s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router.sv|
+Z46 !s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router.sv|
+!i113 1
+R13
+R14
+nnios@i@i_mm_interconnect_0_router
+vniosII_mm_interconnect_0_router_001
+R11
+R1
+!i10b 1
+!s100 m<ELhnZJHNVQ@hcRL]HoZ0
+IMjA=GzkIc]2[nIZZ6F02P1
+R2
+Z47 !s105 niosII_mm_interconnect_0_router_001_sv_unit
+S1
+R0
+R3
+Z48 8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_001.sv
+Z49 FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_001.sv
+R43
+R5
+r1
+!s85 0
+31
+Z50 !s108 1450168010.844000
+Z51 !s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_001.sv|
+Z52 !s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_001.sv|
+!i113 1
+R13
+R14
+nnios@i@i_mm_interconnect_0_router_001
+vniosII_mm_interconnect_0_router_001_default_decode
+R11
+R1
+!i10b 1
+!s100 HhDH7=U5>B84FzR_Z23JL1
+INWkFOcZVbZ6^A5B@5_V=n3
+R2
+R47
+S1
+R0
+R3
+R48
+R49
+Z53 L0 45
+R5
+r1
+!s85 0
+31
+R50
+R51
+R52
+!i113 1
+R13
+R14
+nnios@i@i_mm_interconnect_0_router_001_default_decode
+vniosII_mm_interconnect_0_router_002
+R11
+R1
+!i10b 1
+!s100 6nd=^dMZ;OE_QE8NF07GW2
+IMiVnE<E6_8GFOFX045kFi2
+R2
+Z54 !s105 niosII_mm_interconnect_0_router_002_sv_unit
+S1
+R0
+R3
+Z55 8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_002.sv
+Z56 FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_002.sv
+R43
+R5
+r1
+!s85 0
+31
+Z57 !s108 1450168010.766000
+Z58 !s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_002.sv|
+Z59 !s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_002.sv|
+!i113 1
+R13
+R14
+nnios@i@i_mm_interconnect_0_router_002
+vniosII_mm_interconnect_0_router_002_default_decode
+R11
+R1
+!i10b 1
+!s100 MDDQk;=4[FThY:7hO>1NX3
+IMX`GMjI^1fMln0][l=8X21
+R2
+R54
+S1
+R0
+R3
+R55
+R56
+R53
+R5
+r1
+!s85 0
+31
+R57
+R58
+R59
+!i113 1
+R13
+R14
+nnios@i@i_mm_interconnect_0_router_002_default_decode
+vniosII_mm_interconnect_0_router_007
+R11
+R1
+!i10b 1
+!s100 mS_MdeoBDPWd_S1G:kCH>1
+I8K`f[Q39;BzUUJHP1;ZLF2
+R2
+Z60 !s105 niosII_mm_interconnect_0_router_007_sv_unit
+S1
+R0
+R3
+Z61 8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_007.sv
+Z62 FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_007.sv
+R43
+R5
+r1
+!s85 0
+31
+Z63 !s108 1450168010.703000
+Z64 !s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_007.sv|
+Z65 !s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_007.sv|
+!i113 1
+R13
+R14
+nnios@i@i_mm_interconnect_0_router_007
+vniosII_mm_interconnect_0_router_007_default_decode
+R11
+R1
+!i10b 1
+!s100 eO]SQISlbIAAS4jn:j^;g2
+IUelmlV^oeVbKd8<a2[e<g2
+R2
+R60
+S1
+R0
+R3
+R61
+R62
+R53
+R5
+r1
+!s85 0
+31
+R63
+R64
+R65
+!i113 1
+R13
+R14
+nnios@i@i_mm_interconnect_0_router_007_default_decode
+vniosII_mm_interconnect_0_router_013
+R11
+R1
+!i10b 1
+!s100 [9lmPZ6UdMf`i<F:IN[?Z2
+Il_EU<1fUNIPPN6lI1AdP;3
+R2
+Z66 !s105 niosII_mm_interconnect_0_router_013_sv_unit
+S1
+R0
+R3
+Z67 8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_013.sv
+Z68 FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_013.sv
+R43
+R5
+r1
+!s85 0
+31
+Z69 !s108 1450168010.625000
+Z70 !s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_013.sv|
+Z71 !s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_013.sv|
+!i113 1
+R13
+R14
+nnios@i@i_mm_interconnect_0_router_013
+vniosII_mm_interconnect_0_router_013_default_decode
+R11
+R1
+!i10b 1
+!s100 ;@7lAld;0`3L2a<hMFemH0
+I:eTPH0WeUhlZCCJjn5BGP0
+R2
+R66
+S1
+R0
+R3
+R67
+R68
+R53
+R5
+r1
+!s85 0
+31
+R69
+R70
+R71
+!i113 1
+R13
+R14
+nnios@i@i_mm_interconnect_0_router_013_default_decode
+vniosII_mm_interconnect_0_router_014
+R11
+R1
+!i10b 1
+!s100 2]fga48P:J>lcjLe2l9]K1
+I_Mb55B=E8cV1:3QiOOViD2
+R2
+Z72 !s105 niosII_mm_interconnect_0_router_014_sv_unit
+S1
+R0
+R3
+Z73 8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_014.sv
+Z74 FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_014.sv
+R43
+R5
+r1
+!s85 0
+31
+Z75 !s108 1450168010.547000
+Z76 !s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_014.sv|
+Z77 !s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_014.sv|
+!i113 1
+R13
+R14
+nnios@i@i_mm_interconnect_0_router_014
+vniosII_mm_interconnect_0_router_014_default_decode
+R11
+R1
+!i10b 1
+!s100 FRQH?>jR7b]`dcOIFJk=>1
+I<2JA69gc@LhUbX^J[ACgT3
+R2
+R72
+S1
+R0
+R3
+R73
+R74
+R53
+R5
+r1
+!s85 0
+31
+R75
+R76
+R77
+!i113 1
+R13
+R14
+nnios@i@i_mm_interconnect_0_router_014_default_decode
+vniosII_mm_interconnect_0_router_default_decode
+R11
+R1
+!i10b 1
+!s100 =?b2];1=_ahANWlRRCKgm1
+IIWZD9?=HOIM3h0<`_NW1o2
+R2
+R40
+S1
+R0
+R3
+R41
+R42
+R53
+R5
+r1
+!s85 0
+31
+R44
+R45
+R46
+!i113 1
+R13
+R14
+nnios@i@i_mm_interconnect_0_router_default_decode
+vniosII_mm_interconnect_0_rsp_demux
+R11
+R15
+!i10b 1
+!s100 RGV5M2A3`>GVJ]=93@9fl1
+IG@HdZF9IlQWIMdL@iQ^MN0
+R2
+!s105 niosII_mm_interconnect_0_rsp_demux_sv_unit
+S1
+R0
+R3
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_rsp_demux.sv
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_rsp_demux.sv
+R38
+R5
+r1
+!s85 0
+31
+!s108 1450168009.861000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_rsp_demux.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_rsp_demux.sv|
+!i113 1
+R13
+R14
+nnios@i@i_mm_interconnect_0_rsp_demux
+vniosII_mm_interconnect_0_rsp_demux_005
+R11
+R15
+!i10b 1
+!s100 DY`eO9C3g_>`F><e5Yz3J0
+IG`BS7R@CPzea]o4D;HSbT2
+R2
+!s105 niosII_mm_interconnect_0_rsp_demux_005_sv_unit
+S1
+R0
+R3
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_rsp_demux_005.sv
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_rsp_demux_005.sv
+R38
+R5
+r1
+!s85 0
+31
+!s108 1450168009.799000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_rsp_demux_005.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_rsp_demux_005.sv|
+!i113 1
+R13
+R14
+nnios@i@i_mm_interconnect_0_rsp_demux_005
+vniosII_mm_interconnect_0_rsp_mux
+R11
+R15
+!i10b 1
+!s100 =_SIVeCg=V6mb1[gzRPOX1
+I6mdz;:Gz2iDoDNL8IHbW`1
+R2
+!s105 niosII_mm_interconnect_0_rsp_mux_sv_unit
+S1
+R0
+R23
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_rsp_mux.sv
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_rsp_mux.sv
+R39
+R5
+r1
+!s85 0
+31
+!s108 1450168009.721000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_rsp_mux.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_rsp_mux.sv|
+!i113 1
+R13
+R14
+nnios@i@i_mm_interconnect_0_rsp_mux
+vniosII_mm_interconnect_0_rsp_mux_001
+R11
+R15
+!i10b 1
+!s100 b4n>WRE5]4BZMY_?V;j930
+I`nO6;>ogUznA<fJ@iS1iJ0
+R2
+!s105 niosII_mm_interconnect_0_rsp_mux_001_sv_unit
+S1
+R0
+R23
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_rsp_mux_001.sv
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_rsp_mux_001.sv
+R39
+R5
+r1
+!s85 0
+31
+!s108 1450168009.658000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_rsp_mux_001.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_rsp_mux_001.sv|
+!i113 1
+R13
+R14
+nnios@i@i_mm_interconnect_0_rsp_mux_001
+vniosII_mm_interconnect_1
+R8
+!i10b 1
+!s100 mjdd83d=gU6@ook<]fEeI1
+I?2MKSI8OHT]^lnjiFk]OK2
+R2
+R0
+R3
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_1.v
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_1.v
+L0 9
+R5
+r1
+!s85 0
+31
+!s108 1450168007.349000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_1.v|
+!i113 1
+R6
+R7
+nnios@i@i_mm_interconnect_1
+vniosII_performance_counter_0
+R25
+!i10b 1
+!s100 TI`h@MeZo07Q_Yi]KERM02
+IVUoE^46R;2dfG;FKI57cd1
+R2
+R0
+R28
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_performance_counter_0.v
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_performance_counter_0.v
+R4
+R5
+r1
+!s85 0
+31
+!s108 1450168008.301000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_performance_counter_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_performance_counter_0.v|
+!i113 1
+R6
+R7
+nnios@i@i_performance_counter_0
+vniosII_seven_seg
+R25
+!i10b 1
+!s100 lJ`ck89E:LECe[=MzP8U11
+Ie@5=n2GNS:GOANN2ZMd=W3
+R2
+R0
+R28
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_seven_seg.v
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_seven_seg.v
+R4
+R5
+r1
+!s85 0
+31
+!s108 1450168008.239000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_seven_seg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_seven_seg.v|
+!i113 1
+R6
+R7
+nnios@i@i_seven_seg
+vniosII_sys_clk_timer
+R8
+!i10b 1
+!s100 Yi]nXVmmT?U>>PmJ3M35H3
+IJfXD1d?LSLVA:3Gf?]?fD3
+R2
+R0
+R9
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_sys_clk_timer.v
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_sys_clk_timer.v
+R4
+R5
+r1
+!s85 0
+31
+!s108 1450168007.911000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_sys_clk_timer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_sys_clk_timer.v|
+!i113 1
+R6
+R7
+nnios@i@i_sys_clk_timer
+vniosII_sysid
+R8
+!i10b 1
+!s100 A7DnD1WFoYPB[o]cW>21?2
+I3FZ7Pi8<gT@dgfogc8^=H2
+R2
+R0
+R9
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_sysid.v
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_sysid.v
+R4
+R5
+r1
+!s85 0
+31
+!s108 1450168007.849000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_sysid.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_sysid.v|
+!i113 1
+R6
+R7
+nnios@i@i_sysid
+vphase_acc
+R25
+!i10b 1
+!s100 [99lVba:zjChVb;S=WUbY1
+I>F8LhiUzfODzz:^^LeUB70
+R2
+R0
+R28
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/phase_acc.v
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/phase_acc.v
+L0 1
+R5
+r1
+!s85 0
+31
+!s108 1450168008.036000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/phase_acc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/phase_acc.v|
+!i113 1
+R6
+R7
+vsigmadelta
+R8
+!i10b 1
+!s100 KX0ShVH<jOh6YAIlJD3FC0
+I;l2E3XLTcV1`H8hj6[@^f0
+R2
+R0
+R28
+8C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/sigmadelta.v
+FC:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/sigmadelta.v
+L0 19
+R5
+r1
+!s85 0
+31
+!s108 1450168007.973000
+!s107 C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/sigmadelta.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules|C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/sigmadelta.v|
+!i113 1
+R6
+R7

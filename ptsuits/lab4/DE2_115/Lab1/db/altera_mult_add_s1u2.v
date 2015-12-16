@@ -1,23 +1,24 @@
 //altera_mult_add ADDNSUB_MULTIPLIER_PIPELINE_ACLR1="ACLR0" ADDNSUB_MULTIPLIER_PIPELINE_REGISTER1="CLOCK0" ADDNSUB_MULTIPLIER_REGISTER1="UNREGISTERED" CBX_DECLARE_ALL_CONNECTED_PORTS="OFF" DEDICATED_MULTIPLIER_CIRCUITRY="YES" DEVICE_FAMILY="Cyclone IV E" DSP_BLOCK_BALANCING="Auto" INPUT_REGISTER_A0="UNREGISTERED" INPUT_REGISTER_B0="UNREGISTERED" INPUT_SOURCE_A0="DATAA" INPUT_SOURCE_B0="DATAB" MULTIPLIER1_DIRECTION="ADD" MULTIPLIER_ACLR0="ACLR0" MULTIPLIER_REGISTER0="CLOCK0" NUMBER_OF_MULTIPLIERS=1 OUTPUT_REGISTER="UNREGISTERED" port_addnsub1="PORT_UNUSED" port_addnsub3="PORT_UNUSED" port_signa="PORT_UNUSED" port_signb="PORT_UNUSED" REPRESENTATION_A="UNSIGNED" REPRESENTATION_B="UNSIGNED" SELECTED_DEVICE_FAMILY="CYCLONEIVE" SIGNED_PIPELINE_ACLR_A="ACLR0" SIGNED_PIPELINE_ACLR_B="ACLR0" SIGNED_PIPELINE_REGISTER_A="CLOCK0" SIGNED_PIPELINE_REGISTER_B="CLOCK0" SIGNED_REGISTER_A="UNREGISTERED" SIGNED_REGISTER_B="UNREGISTERED" WIDTH_A=16 WIDTH_B=16 WIDTH_RESULT=16 aclr0 clock0 dataa datab result
-//VERSION_BEGIN 13.0 cbx_altera_mult_add 2013:06:12:18:03:40:SJ cbx_altera_mult_add_rtl 2013:06:12:18:03:40:SJ cbx_mgl 2013:06:12:18:04:42:SJ  VERSION_END
+//VERSION_BEGIN 15.0 cbx_altera_mult_add 2015:07:15:18:07:03:SJ cbx_altera_mult_add_rtl 2015:07:15:18:07:03:SJ cbx_mgl 2015:07:15:18:09:04:SJ  VERSION_END
 // synthesis VERILOG_INPUT_VERSION VERILOG_2001
 // altera message_off 10463
 
 
 
-// Copyright (C) 1991-2013 Altera Corporation
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
 //  Your use of Altera Corporation's design tools, logic functions 
 //  and other software and tools, and its AMPP partner logic 
 //  functions, and any output files from any of the foregoing 
 //  (including device programming or simulation files), and any 
 //  associated documentation or information are expressly subject 
 //  to the terms and conditions of the Altera Program License 
-//  Subscription Agreement, Altera MegaCore Function License 
-//  Agreement, or other applicable license agreement, including, 
-//  without limitation, that your use is for the sole purpose of 
-//  programming logic devices manufactured by Altera and sold by 
-//  Altera or its authorized distributors.  Please refer to the 
-//  applicable agreement for further details.
+//  Subscription Agreement, the Altera Quartus II License Agreement,
+//  the Altera MegaCore Function License Agreement, or other 
+//  applicable license agreement, including, without limitation, 
+//  that your use is for the sole purpose of programming logic 
+//  devices manufactured by Altera and sold by Altera or its 
+//  authorized distributors.  Please refer to the applicable 
+//  agreement for further details.
 
 
 
@@ -92,6 +93,7 @@ module  altera_mult_add_s1u2
 	.mult01_saturation(1'b0),
 	.mult23_round(1'b0),
 	.mult23_saturation(1'b0),
+	.negate(1'b0),
 	.output_round(1'b0),
 	.output_saturate(1'b0),
 	.rotate(1'b0),
@@ -109,8 +111,8 @@ module  altera_mult_add_s1u2
 	defparam
 		altera_mult_add_rtl1.accum_direction = "ADD",
 		altera_mult_add_rtl1.accum_sload_aclr = "NONE",
-		altera_mult_add_rtl1.accum_sload_pipeline_aclr = "NONE",
-		altera_mult_add_rtl1.accum_sload_pipeline_register = "UNREGISTERED",
+		altera_mult_add_rtl1.accum_sload_latency_aclr = "NONE",
+		altera_mult_add_rtl1.accum_sload_latency_clock = "UNREGISTERED",
 		altera_mult_add_rtl1.accum_sload_register = "UNREGISTERED",
 		altera_mult_add_rtl1.accumulator = "NO",
 		altera_mult_add_rtl1.adder1_rounding = "NO",
@@ -125,14 +127,15 @@ module  altera_mult_add_s1u2
 		altera_mult_add_rtl1.addnsub3_round_register = "UNREGISTERED",
 		altera_mult_add_rtl1.addnsub_multiplier_aclr1 = "NONE",
 		altera_mult_add_rtl1.addnsub_multiplier_aclr3 = "NONE",
-		altera_mult_add_rtl1.addnsub_multiplier_pipeline_aclr1 = "ACLR0",
-		altera_mult_add_rtl1.addnsub_multiplier_pipeline_aclr3 = "NONE",
-		altera_mult_add_rtl1.addnsub_multiplier_pipeline_register1 = "CLOCK0",
-		altera_mult_add_rtl1.addnsub_multiplier_pipeline_register3 = "UNREGISTERED",
+		altera_mult_add_rtl1.addnsub_multiplier_latency_aclr1 = "NONE",
+		altera_mult_add_rtl1.addnsub_multiplier_latency_aclr3 = "NONE",
+		altera_mult_add_rtl1.addnsub_multiplier_latency_clock1 = "UNREGISTERED",
+		altera_mult_add_rtl1.addnsub_multiplier_latency_clock3 = "UNREGISTERED",
 		altera_mult_add_rtl1.addnsub_multiplier_register1 = "UNREGISTERED",
 		altera_mult_add_rtl1.addnsub_multiplier_register3 = "UNREGISTERED",
 		altera_mult_add_rtl1.chainout_aclr = "NONE",
 		altera_mult_add_rtl1.chainout_adder = "NO",
+		altera_mult_add_rtl1.chainout_adder_direction = "ADD",
 		altera_mult_add_rtl1.chainout_register = "UNREGISTERED",
 		altera_mult_add_rtl1.chainout_round_aclr = "NONE",
 		altera_mult_add_rtl1.chainout_round_output_aclr = "NONE",
@@ -181,17 +184,33 @@ module  altera_mult_add_s1u2
 		altera_mult_add_rtl1.coef3_6 = 0,
 		altera_mult_add_rtl1.coef3_7 = 0,
 		altera_mult_add_rtl1.coefsel0_aclr = "NONE",
+		altera_mult_add_rtl1.coefsel0_latency_aclr = "NONE",
+		altera_mult_add_rtl1.coefsel0_latency_clock = "UNREGISTERED",
 		altera_mult_add_rtl1.coefsel0_register = "UNREGISTERED",
 		altera_mult_add_rtl1.coefsel1_aclr = "NONE",
+		altera_mult_add_rtl1.coefsel1_latency_aclr = "NONE",
+		altera_mult_add_rtl1.coefsel1_latency_clock = "UNREGISTERED",
 		altera_mult_add_rtl1.coefsel1_register = "UNREGISTERED",
 		altera_mult_add_rtl1.coefsel2_aclr = "NONE",
+		altera_mult_add_rtl1.coefsel2_latency_aclr = "NONE",
+		altera_mult_add_rtl1.coefsel2_latency_clock = "UNREGISTERED",
 		altera_mult_add_rtl1.coefsel2_register = "UNREGISTERED",
 		altera_mult_add_rtl1.coefsel3_aclr = "NONE",
+		altera_mult_add_rtl1.coefsel3_latency_aclr = "NONE",
+		altera_mult_add_rtl1.coefsel3_latency_clock = "UNREGISTERED",
 		altera_mult_add_rtl1.coefsel3_register = "UNREGISTERED",
 		altera_mult_add_rtl1.dedicated_multiplier_circuitry = "YES",
 		altera_mult_add_rtl1.double_accum = "NO",
 		altera_mult_add_rtl1.dsp_block_balancing = "Auto",
 		altera_mult_add_rtl1.extra_latency = 0,
+		altera_mult_add_rtl1.input_a0_latency_aclr = "NONE",
+		altera_mult_add_rtl1.input_a0_latency_clock = "UNREGISTERED",
+		altera_mult_add_rtl1.input_a1_latency_aclr = "NONE",
+		altera_mult_add_rtl1.input_a1_latency_clock = "UNREGISTERED",
+		altera_mult_add_rtl1.input_a2_latency_aclr = "NONE",
+		altera_mult_add_rtl1.input_a2_latency_clock = "UNREGISTERED",
+		altera_mult_add_rtl1.input_a3_latency_aclr = "NONE",
+		altera_mult_add_rtl1.input_a3_latency_clock = "UNREGISTERED",
 		altera_mult_add_rtl1.input_aclr_a0 = "NONE",
 		altera_mult_add_rtl1.input_aclr_a1 = "NONE",
 		altera_mult_add_rtl1.input_aclr_a2 = "NONE",
@@ -204,6 +223,22 @@ module  altera_mult_add_s1u2
 		altera_mult_add_rtl1.input_aclr_c1 = "NONE",
 		altera_mult_add_rtl1.input_aclr_c2 = "NONE",
 		altera_mult_add_rtl1.input_aclr_c3 = "NONE",
+		altera_mult_add_rtl1.input_b0_latency_aclr = "NONE",
+		altera_mult_add_rtl1.input_b0_latency_clock = "UNREGISTERED",
+		altera_mult_add_rtl1.input_b1_latency_aclr = "NONE",
+		altera_mult_add_rtl1.input_b1_latency_clock = "UNREGISTERED",
+		altera_mult_add_rtl1.input_b2_latency_aclr = "NONE",
+		altera_mult_add_rtl1.input_b2_latency_clock = "UNREGISTERED",
+		altera_mult_add_rtl1.input_b3_latency_aclr = "NONE",
+		altera_mult_add_rtl1.input_b3_latency_clock = "UNREGISTERED",
+		altera_mult_add_rtl1.input_c0_latency_aclr = "NONE",
+		altera_mult_add_rtl1.input_c0_latency_clock = "UNREGISTERED",
+		altera_mult_add_rtl1.input_c1_latency_aclr = "NONE",
+		altera_mult_add_rtl1.input_c1_latency_clock = "UNREGISTERED",
+		altera_mult_add_rtl1.input_c2_latency_aclr = "NONE",
+		altera_mult_add_rtl1.input_c2_latency_clock = "UNREGISTERED",
+		altera_mult_add_rtl1.input_c3_latency_aclr = "NONE",
+		altera_mult_add_rtl1.input_c3_latency_clock = "UNREGISTERED",
 		altera_mult_add_rtl1.input_register_a0 = "UNREGISTERED",
 		altera_mult_add_rtl1.input_register_a1 = "UNREGISTERED",
 		altera_mult_add_rtl1.input_register_a2 = "UNREGISTERED",
@@ -224,6 +259,7 @@ module  altera_mult_add_s1u2
 		altera_mult_add_rtl1.input_source_b1 = "DATAB",
 		altera_mult_add_rtl1.input_source_b2 = "DATAB",
 		altera_mult_add_rtl1.input_source_b3 = "DATAB",
+		altera_mult_add_rtl1.latency = 0,
 		altera_mult_add_rtl1.loadconst_control_aclr = "NONE",
 		altera_mult_add_rtl1.loadconst_control_register = "UNREGISTERED",
 		altera_mult_add_rtl1.loadconst_value = 64,
@@ -249,6 +285,10 @@ module  altera_mult_add_s1u2
 		altera_mult_add_rtl1.multiplier_register1 = "UNREGISTERED",
 		altera_mult_add_rtl1.multiplier_register2 = "UNREGISTERED",
 		altera_mult_add_rtl1.multiplier_register3 = "UNREGISTERED",
+		altera_mult_add_rtl1.negate_aclr = "NONE",
+		altera_mult_add_rtl1.negate_latency_aclr = "NONE",
+		altera_mult_add_rtl1.negate_latency_clock = "UNREGISTERED",
+		altera_mult_add_rtl1.negate_register = "UNREGISTERED",
 		altera_mult_add_rtl1.number_of_multipliers = 1,
 		altera_mult_add_rtl1.output_aclr = "NONE",
 		altera_mult_add_rtl1.output_register = "UNREGISTERED",
@@ -267,6 +307,7 @@ module  altera_mult_add_s1u2
 		altera_mult_add_rtl1.port_addnsub1 = "PORT_UNUSED",
 		altera_mult_add_rtl1.port_addnsub3 = "PORT_UNUSED",
 		altera_mult_add_rtl1.port_chainout_sat_is_overflow = "PORT_UNUSED",
+		altera_mult_add_rtl1.port_negate = "PORT_UNUSED",
 		altera_mult_add_rtl1.port_output_is_overflow = "PORT_UNUSED",
 		altera_mult_add_rtl1.port_signa = "PORT_UNUSED",
 		altera_mult_add_rtl1.port_signb = "PORT_UNUSED",
@@ -295,10 +336,10 @@ module  altera_mult_add_s1u2
 		altera_mult_add_rtl1.shift_right_register = "UNREGISTERED",
 		altera_mult_add_rtl1.signed_aclr_a = "NONE",
 		altera_mult_add_rtl1.signed_aclr_b = "NONE",
-		altera_mult_add_rtl1.signed_pipeline_aclr_a = "ACLR0",
-		altera_mult_add_rtl1.signed_pipeline_aclr_b = "ACLR0",
-		altera_mult_add_rtl1.signed_pipeline_register_a = "CLOCK0",
-		altera_mult_add_rtl1.signed_pipeline_register_b = "CLOCK0",
+		altera_mult_add_rtl1.signed_latency_aclr_a = "NONE",
+		altera_mult_add_rtl1.signed_latency_aclr_b = "NONE",
+		altera_mult_add_rtl1.signed_latency_clock_a = "UNREGISTERED",
+		altera_mult_add_rtl1.signed_latency_clock_b = "UNREGISTERED",
 		altera_mult_add_rtl1.signed_register_a = "UNREGISTERED",
 		altera_mult_add_rtl1.signed_register_b = "UNREGISTERED",
 		altera_mult_add_rtl1.systolic_aclr1 = "NONE",
@@ -306,6 +347,7 @@ module  altera_mult_add_s1u2
 		altera_mult_add_rtl1.systolic_delay1 = "UNREGISTERED",
 		altera_mult_add_rtl1.systolic_delay3 = "UNREGISTERED",
 		altera_mult_add_rtl1.use_sload_accum_port = "NO",
+		altera_mult_add_rtl1.use_subnadd = "NO",
 		altera_mult_add_rtl1.width_a = 16,
 		altera_mult_add_rtl1.width_b = 16,
 		altera_mult_add_rtl1.width_c = 22,

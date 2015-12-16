@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/git/alteralabs/ptsuits/lab4/tasks1_2_3/simulation/modelsim
 vmemory
-Z1 !s110 1450082847
+Z1 !s110 1450163466
 !i10b 1
 !s100 ;W;VUW``DzR_I7dTa`HQL0
 IZVDe`;a0TjDLm^1^ijlS=3
@@ -23,14 +23,14 @@ Z3 OV;L;10.3d;59
 r1
 !s85 0
 31
-!s108 1450082847.936000
+!s108 1450163466.061000
 !s107 C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/memory.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3|C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/memory.v|
 !i113 1
 Z4 o-vlog01compat -work work
 Z5 !s92 -vlog01compat -work work +incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3
 vmodulator
-R1
+Z6 !s110 1450163465
 !i10b 1
 !s100 6Xc`5gI^W;5M6P]UgLT`P3
 IWGBiL7?BPm^GWjBo63:Io3
@@ -44,14 +44,14 @@ R3
 r1
 !s85 0
 31
-!s108 1450082847.530000
+!s108 1450163465.749000
 !s107 C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/modulator.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3|C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/modulator.v|
 !i113 1
 R4
 R5
 vphase_acc
-R1
+R6
 !i10b 1
 !s100 k_ijbgSb<DBkY=?o6W<T02
 II4CX_7b>2=nOi85D[lMda1
@@ -65,14 +65,14 @@ R3
 r1
 !s85 0
 31
-!s108 1450082847.718000
+!s108 1450163465.905000
 !s107 C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/phase_acc.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3|C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/phase_acc.v|
 !i113 1
 R4
 R5
 vtasks
-R1
+R6
 !i10b 1
 !s100 PXQG8K;3Q;dziMQW1M`AA2
 I=O[kVjWB:jN_5hf[n=QNF2
@@ -86,14 +86,14 @@ R3
 r1
 !s85 0
 31
-!s108 1450082847.608000
+!s108 1450163465.843000
 !s107 C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/tasks.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3|C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/tasks.v|
 !i113 1
 R4
 R5
 vtasks_vlg_tst
-!s110 1450082848
+R1
 !i10b 1
 !s100 zFjH5=[DQ;R0U4le=>^Ma2
 INi[n`I3L1Ag6gT6JNdl^Y0
@@ -107,7 +107,7 @@ R3
 r1
 !s85 0
 31
-!s108 1450082847.998000
+!s108 1450163466.124000
 !s107 C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/tasks_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3|C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/tasks_tb.v|
 !i113 1

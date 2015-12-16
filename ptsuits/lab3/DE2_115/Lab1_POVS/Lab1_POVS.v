@@ -121,7 +121,7 @@ wire [31:0] hex_wire;
 	  .flash_bus_tcm_data_out           (FL_DQ),
 	  .flash_bus_tcm_chipselect_n_out   (FL_CE_N),
 	  .hex_export                       (hex_wire),
-	  .pwm_readdata                     (LEDG),
+	  .led_export                     (LEDG),
 	  .btn_export                       (KEY)
  );
  assign FL_WP_N = 1'b1;

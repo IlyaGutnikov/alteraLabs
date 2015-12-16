@@ -1,0 +1,758 @@
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do Lab1_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/sigmadelta {C:/Users/Ilya/Desktop/DE2_115/Lab1/sigmadelta/sigmadelta.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:46 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/sigmadelta" C:/Users/Ilya/Desktop/DE2_115/Lab1/sigmadelta/sigmadelta.v 
+# -- Compiling module sigmadelta
+# 
+# Top level modules:
+# 	sigmadelta
+# End time: 11:26:46 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1 {C:/Users/Ilya/Desktop/DE2_115/Lab1/lab1.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:46 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1" C:/Users/Ilya/Desktop/DE2_115/Lab1/lab1.v 
+# -- Compiling module Lab1
+# 
+# Top level modules:
+# 	Lab1
+# End time: 11:26:47 on Dec 15,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlib niosII
+# ** Warning: (vlib-34) Library already exists at "niosII".
+# 
+# vmap niosII niosII
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet niosII niosII 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/niosII.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:47 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/niosII.v 
+# -- Compiling module niosII
+# 
+# Top level modules:
+# 	niosII
+# End time: 11:26:47 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_reset_controller.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:47 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_reset_controller.v 
+# -- Compiling module altera_reset_controller
+# 
+# Top level modules:
+# 	altera_reset_controller
+# End time: 11:26:47 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_reset_synchronizer.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:47 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_reset_synchronizer.v 
+# -- Compiling module altera_reset_synchronizer
+# 
+# Top level modules:
+# 	altera_reset_synchronizer
+# End time: 11:26:47 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_1.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:47 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_1.v 
+# -- Compiling module niosII_mm_interconnect_1
+# 
+# Top level modules:
+# 	niosII_mm_interconnect_1
+# End time: 11:26:47 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:47 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0.v 
+# -- Compiling module niosII_mm_interconnect_0
+# 
+# Top level modules:
+# 	niosII_mm_interconnect_0
+# End time: 11:26:47 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_012.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:47 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_012.v 
+# -- Compiling module niosII_mm_interconnect_0_avalon_st_adapter_012
+# 
+# Top level modules:
+# 	niosII_mm_interconnect_0_avalon_st_adapter_012
+# End time: 11:26:47 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_011.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:47 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_011.v 
+# -- Compiling module niosII_mm_interconnect_0_avalon_st_adapter_011
+# 
+# Top level modules:
+# 	niosII_mm_interconnect_0_avalon_st_adapter_011
+# End time: 11:26:47 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:47 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter.v 
+# -- Compiling module niosII_mm_interconnect_0_avalon_st_adapter
+# 
+# Top level modules:
+# 	niosII_mm_interconnect_0_avalon_st_adapter
+# End time: 11:26:47 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_customins_master_translator.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:47 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_customins_master_translator.v 
+# -- Compiling module altera_customins_master_translator
+# 
+# Top level modules:
+# 	altera_customins_master_translator
+# End time: 11:26:47 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_sysid.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:47 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_sysid.v 
+# -- Compiling module niosII_sysid
+# 
+# Top level modules:
+# 	niosII_sysid
+# End time: 11:26:47 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_sys_clk_timer.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:47 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_sys_clk_timer.v 
+# -- Compiling module niosII_sys_clk_timer
+# 
+# Top level modules:
+# 	niosII_sys_clk_timer
+# End time: 11:26:47 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/sigmadelta.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:47 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/sigmadelta.v 
+# -- Compiling module sigmadelta
+# 
+# Top level modules:
+# 	sigmadelta
+# End time: 11:26:48 on Dec 15,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/phase_acc.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:48 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/phase_acc.v 
+# -- Compiling module phase_acc
+# 
+# Top level modules:
+# 	phase_acc
+# End time: 11:26:48 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/memory.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:48 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/memory.v 
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+# End time: 11:26:48 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/modulator.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:48 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/modulator.v 
+# -- Compiling module modulator
+# 
+# Top level modules:
+# 	modulator
+# End time: 11:26:48 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_seven_seg.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:48 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_seven_seg.v 
+# -- Compiling module niosII_seven_seg
+# ** Warning: C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_seven_seg.v(56): (vlog-2597) '4294967295' is being treated as 32-bit signed integer and will overflow.
+# 
+# 
+# Top level modules:
+# 	niosII_seven_seg
+# End time: 11:26:48 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vlog -vlog01compat -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_performance_counter_0.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:48 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_performance_counter_0.v 
+# -- Compiling module niosII_performance_counter_0
+# 
+# Top level modules:
+# 	niosII_performance_counter_0
+# End time: 11:26:48 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/avalon_pwm.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:48 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/avalon_pwm.v 
+# -- Compiling module avalon_pwm
+# 
+# Top level modules:
+# 	avalon_pwm
+# End time: 11:26:48 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_jtag_uart.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:48 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_jtag_uart.v 
+# -- Compiling module niosII_jtag_uart_sim_scfifo_w
+# -- Compiling module niosII_jtag_uart_scfifo_w
+# -- Compiling module niosII_jtag_uart_sim_scfifo_r
+# -- Compiling module niosII_jtag_uart_scfifo_r
+# -- Compiling module niosII_jtag_uart
+# 
+# Top level modules:
+# 	niosII_jtag_uart
+# End time: 11:26:48 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_instruction_tcm.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:48 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_instruction_tcm.v 
+# -- Compiling module niosII_instruction_tcm
+# 
+# Top level modules:
+# 	niosII_instruction_tcm
+# End time: 11:26:48 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_high_res_timer.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:48 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_high_res_timer.v 
+# -- Compiling module niosII_high_res_timer
+# 
+# Top level modules:
+# 	niosII_high_res_timer
+# End time: 11:26:48 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_ext_ram_ctl.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:48 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_ext_ram_ctl.v 
+# -- Compiling module niosII_ext_ram_ctl
+# 
+# Top level modules:
+# 	niosII_ext_ram_ctl
+# End time: 11:26:48 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_ext_flash_ctl.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:48 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_ext_flash_ctl.v 
+# -- Compiling module niosII_ext_flash_ctl
+# 
+# Top level modules:
+# 	niosII_ext_flash_ctl
+# End time: 11:26:48 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/countones.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:48 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/countones.v 
+# -- Compiling module countones
+# 
+# Top level modules:
+# 	countones
+# End time: 11:26:48 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_buttons.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:48 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_buttons.v 
+# -- Compiling module niosII_buttons
+# 
+# Top level modules:
+# 	niosII_buttons
+# End time: 11:26:48 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_irq_mapper.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:48 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_irq_mapper.sv 
+# -- Compiling module niosII_irq_mapper
+# 
+# Top level modules:
+# 	niosII_irq_mapper
+# End time: 11:26:48 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_slave_translator.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:48 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_slave_translator.sv 
+# -- Compiling module altera_merlin_slave_translator
+# 
+# Top level modules:
+# 	altera_merlin_slave_translator
+# End time: 11:26:49 on Dec 15,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_master_translator.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:49 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_master_translator.sv 
+# -- Compiling module altera_merlin_master_translator
+# 
+# Top level modules:
+# 	altera_merlin_master_translator
+# End time: 11:26:49 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_012_error_adapter_0.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:49 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_012_error_adapter_0.sv 
+# -- Compiling module niosII_mm_interconnect_0_avalon_st_adapter_012_error_adapter_0
+# 
+# Top level modules:
+# 	niosII_mm_interconnect_0_avalon_st_adapter_012_error_adapter_0
+# End time: 11:26:49 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_011_error_adapter_0.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:49 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_011_error_adapter_0.sv 
+# -- Compiling module niosII_mm_interconnect_0_avalon_st_adapter_011_error_adapter_0
+# 
+# Top level modules:
+# 	niosII_mm_interconnect_0_avalon_st_adapter_011_error_adapter_0
+# End time: 11:26:49 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:49 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv 
+# -- Compiling module niosII_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# 
+# Top level modules:
+# 	niosII_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# End time: 11:26:49 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_width_adapter.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:49 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_width_adapter.sv 
+# -- Compiling module altera_merlin_width_adapter
+# 
+# Top level modules:
+# 	altera_merlin_width_adapter
+# End time: 11:26:49 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_burst_uncompressor.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:49 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_burst_uncompressor.sv 
+# -- Compiling module altera_merlin_burst_uncompressor
+# 
+# Top level modules:
+# 	altera_merlin_burst_uncompressor
+# End time: 11:26:49 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_arbitrator.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:49 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_arbitrator.sv 
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# End time: 11:26:49 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_rsp_mux_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:49 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_rsp_mux_001.sv 
+# -- Compiling module niosII_mm_interconnect_0_rsp_mux_001
+# 
+# Top level modules:
+# 	niosII_mm_interconnect_0_rsp_mux_001
+# End time: 11:26:49 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_rsp_mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:49 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_rsp_mux.sv 
+# -- Compiling module niosII_mm_interconnect_0_rsp_mux
+# 
+# Top level modules:
+# 	niosII_mm_interconnect_0_rsp_mux
+# End time: 11:26:49 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_rsp_demux_005.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:49 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_rsp_demux_005.sv 
+# -- Compiling module niosII_mm_interconnect_0_rsp_demux_005
+# 
+# Top level modules:
+# 	niosII_mm_interconnect_0_rsp_demux_005
+# End time: 11:26:49 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_rsp_demux.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:49 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_rsp_demux.sv 
+# -- Compiling module niosII_mm_interconnect_0_rsp_demux
+# 
+# Top level modules:
+# 	niosII_mm_interconnect_0_rsp_demux
+# End time: 11:26:49 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_cmd_mux_005.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:49 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_cmd_mux_005.sv 
+# -- Compiling module niosII_mm_interconnect_0_cmd_mux_005
+# 
+# Top level modules:
+# 	niosII_mm_interconnect_0_cmd_mux_005
+# End time: 11:26:49 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_cmd_mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:49 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_cmd_mux.sv 
+# -- Compiling module niosII_mm_interconnect_0_cmd_mux
+# 
+# Top level modules:
+# 	niosII_mm_interconnect_0_cmd_mux
+# End time: 11:26:50 on Dec 15,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_cmd_demux_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:50 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_cmd_demux_001.sv 
+# -- Compiling module niosII_mm_interconnect_0_cmd_demux_001
+# 
+# Top level modules:
+# 	niosII_mm_interconnect_0_cmd_demux_001
+# End time: 11:26:50 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_cmd_demux.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:50 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_cmd_demux.sv 
+# -- Compiling module niosII_mm_interconnect_0_cmd_demux
+# 
+# Top level modules:
+# 	niosII_mm_interconnect_0_cmd_demux
+# End time: 11:26:50 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_burst_adapter.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:50 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_burst_adapter.sv 
+# -- Compiling module altera_merlin_burst_adapter
+# 
+# Top level modules:
+# 	altera_merlin_burst_adapter
+# End time: 11:26:50 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_burst_adapter_uncmpr.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:50 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_burst_adapter_uncmpr.sv 
+# -- Compiling module altera_merlin_burst_adapter_uncompressed_only
+# 
+# Top level modules:
+# 	altera_merlin_burst_adapter_uncompressed_only
+# End time: 11:26:50 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_traffic_limiter.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:50 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_traffic_limiter.sv 
+# -- Compiling module altera_merlin_traffic_limiter
+# ** Warning: C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_traffic_limiter.sv(531): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_traffic_limiter.sv(602): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_traffic_limiter.sv(603): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_traffic_limiter.sv(604): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_traffic_limiter.sv(605): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_traffic_limiter.sv(606): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_traffic_limiter.sv(607): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_traffic_limiter.sv(612): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_traffic_limiter.sv(614): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_traffic_limiter.sv(617): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_traffic_limiter.sv(618): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_traffic_limiter.sv(644): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_traffic_limiter.sv(646): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_traffic_limiter.sv(647): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_traffic_limiter.sv(648): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_traffic_limiter.sv(649): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_traffic_limiter.sv(650): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_traffic_limiter.sv(655): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_traffic_limiter.sv(657): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_traffic_limiter.sv(660): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_traffic_limiter.sv(661): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# 
+# Top level modules:
+# 	altera_merlin_traffic_limiter
+# End time: 11:26:50 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 21
+# vlog -vlog01compat -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_avalon_sc_fifo.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:50 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_avalon_sc_fifo.v 
+# -- Compiling module altera_avalon_sc_fifo
+# 
+# Top level modules:
+# 	altera_avalon_sc_fifo
+# End time: 11:26:50 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_014.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:50 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_014.sv 
+# -- Compiling module niosII_mm_interconnect_0_router_014_default_decode
+# -- Compiling module niosII_mm_interconnect_0_router_014
+# 
+# Top level modules:
+# 	niosII_mm_interconnect_0_router_014
+# End time: 11:26:50 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_013.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:50 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_013.sv 
+# -- Compiling module niosII_mm_interconnect_0_router_013_default_decode
+# -- Compiling module niosII_mm_interconnect_0_router_013
+# 
+# Top level modules:
+# 	niosII_mm_interconnect_0_router_013
+# End time: 11:26:50 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_007.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:50 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_007.sv 
+# -- Compiling module niosII_mm_interconnect_0_router_007_default_decode
+# -- Compiling module niosII_mm_interconnect_0_router_007
+# 
+# Top level modules:
+# 	niosII_mm_interconnect_0_router_007
+# End time: 11:26:50 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_002.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:50 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_002.sv 
+# -- Compiling module niosII_mm_interconnect_0_router_002_default_decode
+# -- Compiling module niosII_mm_interconnect_0_router_002
+# 
+# Top level modules:
+# 	niosII_mm_interconnect_0_router_002
+# End time: 11:26:50 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:50 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router_001.sv 
+# -- Compiling module niosII_mm_interconnect_0_router_001_default_decode
+# -- Compiling module niosII_mm_interconnect_0_router_001
+# 
+# Top level modules:
+# 	niosII_mm_interconnect_0_router_001
+# End time: 11:26:50 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:50 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_mm_interconnect_0_router.sv 
+# -- Compiling module niosII_mm_interconnect_0_router_default_decode
+# -- Compiling module niosII_mm_interconnect_0_router
+# 
+# Top level modules:
+# 	niosII_mm_interconnect_0_router
+# End time: 11:26:50 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_slave_agent.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:50 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_slave_agent.sv 
+# -- Compiling module altera_merlin_slave_agent
+# ** Warning: C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_slave_agent.sv(618): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# ** Warning: C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_slave_agent.sv(488): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_slave_agent.sv(489): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_slave_agent.sv(490): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_slave_agent.sv(491): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_slave_agent.sv(34): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# 
+# Top level modules:
+# 	altera_merlin_slave_agent
+# End time: 11:26:51 on Dec 15,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 6
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_master_agent.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:51 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_merlin_master_agent.sv 
+# -- Compiling module altera_merlin_master_agent
+# 
+# Top level modules:
+# 	altera_merlin_master_agent
+# End time: 11:26:51 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_customins_slave_translator.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:51 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_customins_slave_translator.sv 
+# -- Compiling module altera_customins_slave_translator
+# 
+# Top level modules:
+# 	altera_customins_slave_translator
+# End time: 11:26:51 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_cpu_custom_instruction_master_comb_xconnect.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:51 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_cpu_custom_instruction_master_comb_xconnect.sv 
+# -- Compiling module niosII_cpu_custom_instruction_master_comb_xconnect
+# 
+# Top level modules:
+# 	niosII_cpu_custom_instruction_master_comb_xconnect
+# End time: 11:26:51 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_tristate_controller_aggregator.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:51 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_tristate_controller_aggregator.sv 
+# -- Compiling module altera_tristate_controller_aggregator
+# 
+# Top level modules:
+# 	altera_tristate_controller_aggregator
+# End time: 11:26:51 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_tristate_controller_translator.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:51 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/altera_tristate_controller_translator.sv 
+# -- Compiling module altera_tristate_controller_translator
+# 
+# Top level modules:
+# 	altera_tristate_controller_translator
+# End time: 11:26:51 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_ext_ram_bus.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:51 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_ext_ram_bus.sv 
+# -- Compiling module niosII_ext_ram_bus
+# 
+# Top level modules:
+# 	niosII_ext_ram_bus
+# End time: 11:26:51 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work niosII +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules {C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_ext_flash_bus.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:51 on Dec 15,2015
+# vlog -reportprogress 300 -sv -work niosII "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules" C:/Users/Ilya/Desktop/DE2_115/Lab1/niosII/synthesis/submodules/niosII_ext_flash_bus.sv 
+# -- Compiling module niosII_ext_flash_bus
+# 
+# Top level modules:
+# 	niosII_ext_flash_bus
+# End time: 11:26:51 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/sigmadelta {C:/Users/Ilya/Desktop/DE2_115/Lab1/sigmadelta/tb.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:26:51 on Dec 15,2015
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ilya/Desktop/DE2_115/Lab1/sigmadelta" C:/Users/Ilya/Desktop/DE2_115/Lab1/sigmadelta/tb.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 11:26:51 on Dec 15,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -L niosII -voptargs="+acc"  tb
+# vsim -gui "+altera" -l msim_transcript -do "Lab1_run_msim_rtl_verilog.do" 
+# Start time: 11:26:51 on Dec 15,2015
+# Loading work.tb
+# Loading work.sigmadelta
+# Loading niosII.memory
+# Loading altera_mf_ver.altsyncram
+# Loading niosII.modulator
+# Loading niosII.phase_acc
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) C:/Users/Ilya/Desktop/DE2_115/Lab1/sigmadelta/tb.v(14): [TFMPC] - Too few port connections. Expected 6, found 4.
+# 
+#         Region: /tb/test
+# ** Error: (vsim-3063) C:/Users/Ilya/Desktop/DE2_115/Lab1/sigmadelta/tb.v(14): Port 'data' not found in the connected module (3rd connection).
+# 
+#         Region: /tb/test
+# ** Warning: (vsim-3722) C:/Users/Ilya/Desktop/DE2_115/Lab1/sigmadelta/tb.v(14): [TFMPC] - Missing connection for port 'cs'.
+# 
+# ** Warning: (vsim-3722) C:/Users/Ilya/Desktop/DE2_115/Lab1/sigmadelta/tb.v(14): [TFMPC] - Missing connection for port 'wr_data'.
+# 
+# ** Warning: (vsim-3722) C:/Users/Ilya/Desktop/DE2_115/Lab1/sigmadelta/tb.v(14): [TFMPC] - Missing connection for port 'wr_n'.
+# 
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./Lab1_run_msim_rtl_verilog.do PAUSED at line 75
+# End time: 11:26:58 on Dec 15,2015, Elapsed time: 0:00:07
+# Errors: 1, Warnings: 4

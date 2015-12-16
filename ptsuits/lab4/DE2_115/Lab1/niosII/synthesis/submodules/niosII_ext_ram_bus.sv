@@ -1,4 +1,4 @@
-// (C) 2001-2013 Altera Corporation. All rights reserved.
+// (C) 2001-2015 Altera Corporation. All rights reserved.
 // Your use of Altera Corporation's design tools, logic functions and other 
 // software and tools, and its AMPP partner logic functions, and any output 
 // files any of the foregoing (including device programming or simulation 
@@ -11,9 +11,9 @@
 // agreement for further details.
 
 
-// $Id: //acds/rel/13.0sp1/ip/merlin/altera_tristate_conduit_bridge/altera_tristate_conduit_bridge.sv.terp#1 $
+// $Id: //acds/rel/15.0/ip/merlin/altera_tristate_conduit_bridge/altera_tristate_conduit_bridge.sv.terp#1 $
 // $Revision: #1 $
-// $Date: 2013/03/07 $
+// $Date: 2015/02/08 $
 // $Author: swbranch $
 
 //Defined Terp Parameters
@@ -30,10 +30,10 @@ module niosII_ext_ram_bus (
     ,output logic grant
     ,input  logic[ 20 :0 ] tcs_tcm_address_out
     ,output  wire [ 20 :0 ] tcm_address_out
-    ,input  logic[ 0 :0 ] tcs_tcm_outputenable_n_out
-    ,output  wire [ 0 :0 ] tcm_outputenable_n_out
     ,input  logic[ 1 :0 ] tcs_tcm_byteenable_n_out
     ,output  wire [ 1 :0 ] tcm_byteenable_n_out
+    ,input  logic[ 0 :0 ] tcs_tcm_outputenable_n_out
+    ,output  wire [ 0 :0 ] tcm_outputenable_n_out
     ,input  logic[ 0 :0 ] tcs_tcm_write_n_out
     ,output  wire [ 0 :0 ] tcm_write_n_out
     ,output logic[ 15 :0 ] tcs_tcm_data_in
@@ -81,31 +81,6 @@ module niosII_ext_ram_bus (
         
 
 
- // ** Output Pin tcm_outputenable_n_out 
- 
-    reg                       tcm_outputenable_n_outen_reg;     
-  
-    always@(posedge clk) begin
-	 if( reset ) begin
-	   tcm_outputenable_n_outen_reg <= 'b0;
-	 end
-	 else begin
-	   tcm_outputenable_n_outen_reg <= 'b1;
-	 end
-     end		     
-   
- 
-    reg [ 0 : 0 ] tcm_outputenable_n_out_reg;   
-
-     always@(posedge clk) begin
-	 tcm_outputenable_n_out_reg   <= tcs_tcm_outputenable_n_out[ 0 : 0 ];
-      end
-          
- 
-    assign 	tcm_outputenable_n_out[ 0 : 0 ] = tcm_outputenable_n_outen_reg ? tcm_outputenable_n_out_reg : 'z ;
-        
-
-
  // ** Output Pin tcm_byteenable_n_out 
  
     reg                       tcm_byteenable_n_outen_reg;     
@@ -128,6 +103,31 @@ module niosII_ext_ram_bus (
           
  
     assign 	tcm_byteenable_n_out[ 1 : 0 ] = tcm_byteenable_n_outen_reg ? tcm_byteenable_n_out_reg : 'z ;
+        
+
+
+ // ** Output Pin tcm_outputenable_n_out 
+ 
+    reg                       tcm_outputenable_n_outen_reg;     
+  
+    always@(posedge clk) begin
+	 if( reset ) begin
+	   tcm_outputenable_n_outen_reg <= 'b0;
+	 end
+	 else begin
+	   tcm_outputenable_n_outen_reg <= 'b1;
+	 end
+     end		     
+   
+ 
+    reg [ 0 : 0 ] tcm_outputenable_n_out_reg;   
+
+     always@(posedge clk) begin
+	 tcm_outputenable_n_out_reg   <= tcs_tcm_outputenable_n_out[ 0 : 0 ];
+      end
+          
+ 
+    assign 	tcm_outputenable_n_out[ 0 : 0 ] = tcm_outputenable_n_outen_reg ? tcm_outputenable_n_out_reg : 'z ;
         
 
 

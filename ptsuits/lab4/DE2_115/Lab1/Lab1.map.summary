@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Sat Dec 07 17:52:36 2013
-Quartus II 32-bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Analysis & Synthesis Status : Successful - Tue Dec 15 14:10:23 2015
+Quartus II 64-Bit Version : 15.0.2 Build 153 07/15/2015 SJ Full Version
 Revision Name : Lab1
 Top-level Entity Name : Lab1
 Family : Cyclone IV E
-Total logic elements : 6,903
-    Total combinational functions : 5,620
-    Dedicated logic registers : 4,001
-Total registers : 4001
+Total logic elements : 6,699
+    Total combinational functions : 5,563
+    Dedicated logic registers : 3,794
+Total registers : 3794
 Total pins : 169
 Total virtual pins : 0
 Total memory bits : 202,816

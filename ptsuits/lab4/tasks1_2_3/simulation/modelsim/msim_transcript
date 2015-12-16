@@ -14,59 +14,59 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3 {C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/modulator.v}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 11:47:27 on Dec 14,2015
+# Start time: 10:11:05 on Dec 15,2015
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3" C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/modulator.v 
 # -- Compiling module modulator
 # 
 # Top level modules:
 # 	modulator
-# End time: 11:47:27 on Dec 14,2015, Elapsed time: 0:00:00
+# End time: 10:11:05 on Dec 15,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3 {C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/tasks.v}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 11:47:27 on Dec 14,2015
+# Start time: 10:11:05 on Dec 15,2015
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3" C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/tasks.v 
 # -- Compiling module tasks
 # 
 # Top level modules:
 # 	tasks
-# End time: 11:47:27 on Dec 14,2015, Elapsed time: 0:00:00
+# End time: 10:11:05 on Dec 15,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3 {C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/phase_acc.v}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 11:47:27 on Dec 14,2015
+# Start time: 10:11:05 on Dec 15,2015
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3" C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/phase_acc.v 
 # -- Compiling module phase_acc
 # 
 # Top level modules:
 # 	phase_acc
-# End time: 11:47:27 on Dec 14,2015, Elapsed time: 0:00:00
+# End time: 10:11:06 on Dec 15,2015, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3 {C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/memory.v}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 11:47:27 on Dec 14,2015
+# Start time: 10:11:06 on Dec 15,2015
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3" C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/memory.v 
 # -- Compiling module memory
 # 
 # Top level modules:
 # 	memory
-# End time: 11:47:27 on Dec 14,2015, Elapsed time: 0:00:00
+# End time: 10:11:06 on Dec 15,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3 {C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/tasks_tb.v}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 11:47:27 on Dec 14,2015
+# Start time: 10:11:06 on Dec 15,2015
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/git/alteralabs/ptsuits/lab4/tasks1_2_3" C:/git/alteralabs/ptsuits/lab4/tasks1_2_3/tasks_tb.v 
 # -- Compiling module tasks_vlg_tst
 # 
 # Top level modules:
 # 	tasks_vlg_tst
-# End time: 11:47:28 on Dec 14,2015, Elapsed time: 0:00:01
+# End time: 10:11:06 on Dec 15,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tasks_vlg_tst
 # vsim -gui "+altera" -l msim_transcript -do "tasks_run_msim_rtl_verilog.do" 
-# Start time: 11:47:28 on Dec 14,2015
+# Start time: 10:11:06 on Dec 15,2015
 # Loading work.tasks_vlg_tst
 # Loading work.tasks
 # Loading work.phase_acc
@@ -86,7 +86,7 @@
 add wave -position end sim:/tasks_vlg_tst/i1/m/*
 add wave -position end sim:/tasks_vlg_tst/i1/mod/*
 add wave -position end sim:/tasks_vlg_tst/i1/pa/*
-restart
+restart -f
 run -all
-# End time: 11:50:03 on Dec 14,2015, Elapsed time: 0:02:35
+# End time: 10:23:57 on Dec 15,2015, Elapsed time: 0:12:51
 # Errors: 0, Warnings: 0

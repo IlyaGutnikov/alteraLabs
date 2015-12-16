@@ -1,4 +1,4 @@
-// (C) 2001-2013 Altera Corporation. All rights reserved.
+// (C) 2001-2015 Altera Corporation. All rights reserved.
 // Your use of Altera Corporation's design tools, logic functions and other 
 // software and tools, and its AMPP partner logic functions, and any output 
 // files any of the foregoing (including device programming or simulation 
@@ -11,9 +11,9 @@
 // agreement for further details.
 
 
-// $Id: //acds/rel/13.0sp1/ip/merlin/altera_customins_slave_translator/altera_customins_slave_translator.sv#1 $
+// $Id: //acds/rel/15.0/ip/merlin/altera_customins_slave_translator/altera_customins_slave_translator.sv#1 $
 // $Revision: #1 $
-// $Date: 2013/03/07 $
+// $Date: 2015/02/08 $
 // $Author: swbranch $
 // --------------------------------------
 // Custom instruction slave translator
@@ -46,6 +46,7 @@ module altera_customins_slave_translator
     input  wire        ci_slave_clk,
     input  wire        ci_slave_clken,
     input  wire        ci_slave_reset,
+    input  wire        ci_slave_reset_req,
     input  wire        ci_slave_start,
     output wire        ci_slave_done,
 
@@ -68,6 +69,7 @@ module altera_customins_slave_translator
     output wire        ci_master_clk,
     output wire        ci_master_clken,
     output wire        ci_master_reset,
+    output wire        ci_master_reset_req,
     output wire        ci_master_start,
     input  wire        ci_master_done
        
@@ -94,6 +96,7 @@ module altera_customins_slave_translator
     assign ci_master_clk    = ci_slave_clk;
     assign ci_master_clken  = ci_slave_clken;
     assign ci_master_reset  = ci_slave_reset;
+    assign ci_master_reset_req = ci_slave_reset_req;
 
     // --------------------------------------
     // Is there something we need to do if the master does not 

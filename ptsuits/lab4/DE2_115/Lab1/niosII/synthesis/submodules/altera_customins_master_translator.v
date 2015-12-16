@@ -1,4 +1,4 @@
-// (C) 2001-2013 Altera Corporation. All rights reserved.
+// (C) 2001-2015 Altera Corporation. All rights reserved.
 // Your use of Altera Corporation's design tools, logic functions and other 
 // software and tools, and its AMPP partner logic functions, and any output 
 // files any of the foregoing (including device programming or simulation 
@@ -11,9 +11,9 @@
 // agreement for further details.
 
 
-// $Id: //acds/rel/13.0sp1/ip/merlin/altera_customins_master_translator/altera_customins_master_translator.v#1 $
+// $Id: //acds/rel/15.0/ip/merlin/altera_customins_master_translator/altera_customins_master_translator.v#1 $
 // $Revision: #1 $
-// $Date: 2013/03/07 $
+// $Date: 2015/02/08 $
 // $Author: swbranch $
 // ------------------------------------------
 // Custom instruction master translator
@@ -42,6 +42,7 @@ module altera_customins_master_translator
     input  wire        ci_slave_estatus,        //                .estatus
     input  wire        ci_slave_multi_clk,      //                .clk
     input  wire        ci_slave_multi_reset,    //                .reset
+    input  wire        ci_slave_multi_reset_req,//                .reset_req
     input  wire        ci_slave_multi_clken,    //                .clk_en
     input  wire        ci_slave_multi_start,    //                .start
     output wire        ci_slave_multi_done,     //                .done
@@ -75,6 +76,7 @@ module altera_customins_master_translator
     // ------------------------------------------
     output wire        multi_ci_master_clk,     // multi_ci_master.clk
     output wire        multi_ci_master_reset,   //                .reset
+    output wire        multi_ci_master_reset_req, //              .reset_req
     output wire        multi_ci_master_clken,   //                .clk_en
     output wire        multi_ci_master_start,   //                .start
     input  wire        multi_ci_master_done,    //                .done
@@ -101,10 +103,10 @@ module altera_customins_master_translator
     assign comb_ci_master_writerc = ci_slave_writerc;
     assign comb_ci_master_ipending = ci_slave_ipending;
     assign comb_ci_master_estatus  = ci_slave_estatus;
-    
 
     assign multi_ci_master_clk   = ci_slave_multi_clk;
     assign multi_ci_master_reset = ci_slave_multi_reset;
+    assign multi_ci_master_reset_req = ci_slave_multi_reset_req;
     assign multi_ci_master_clken = ci_slave_multi_clken;
     assign multi_ci_master_start = ci_slave_multi_start;
     assign ci_slave_multi_done   = multi_ci_master_done;
