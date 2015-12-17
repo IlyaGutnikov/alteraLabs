@@ -1,94 +1,81 @@
-# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
-# do semafor_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
+# Reading E:/altera/modelsim_ase/tcl/vsim/pref.tcl
+# do semafor_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
 # }
-# vlib rtl_work
-# vmap work rtl_work
+# vlib gate_work
+# vmap work gate_work
 # Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
-# vmap -modelsim_quiet work rtl_work 
-# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# vmap -modelsim_quiet work gate_work 
+# Copying E:/altera/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
-# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+# ** Warning: Copied E:/altera/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+C:/git/alteralabs/ptsuits/lab2/semafor_lab2 {C:/git/alteralabs/ptsuits/lab2/semafor_lab2/uart.v}
+# vlog -vlog01compat -work work +incdir+. {semafor_min_1200mv_-40c_fast.vo}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 16:41:04 on Dec 14,2015
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/git/alteralabs/ptsuits/lab2/semafor_lab2" C:/git/alteralabs/ptsuits/lab2/semafor_lab2/uart.v 
-# -- Compiling module uart
-# 
-# Top level modules:
-# 	uart
-# End time: 16:41:05 on Dec 14,2015, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/git/alteralabs/ptsuits/lab2/semafor_lab2 {C:/git/alteralabs/ptsuits/lab2/semafor_lab2/semafor.v}
-# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 16:41:05 on Dec 14,2015
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/git/alteralabs/ptsuits/lab2/semafor_lab2" C:/git/alteralabs/ptsuits/lab2/semafor_lab2/semafor.v 
-# -- Compiling module semafor
-# 
-# Top level modules:
-# 	semafor
-# End time: 16:41:05 on Dec 14,2015, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/git/alteralabs/ptsuits/lab2/semafor_lab2 {C:/git/alteralabs/ptsuits/lab2/semafor_lab2/periodrom.v}
-# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 16:41:05 on Dec 14,2015
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/git/alteralabs/ptsuits/lab2/semafor_lab2" C:/git/alteralabs/ptsuits/lab2/semafor_lab2/periodrom.v 
-# -- Compiling module periodrom
-# 
-# Top level modules:
-# 	periodrom
-# End time: 16:41:05 on Dec 14,2015, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/git/alteralabs/ptsuits/lab2/semafor_lab2 {C:/git/alteralabs/ptsuits/lab2/semafor_lab2/lab2.v}
-# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 16:41:05 on Dec 14,2015
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/git/alteralabs/ptsuits/lab2/semafor_lab2" C:/git/alteralabs/ptsuits/lab2/semafor_lab2/lab2.v 
+# Start time: 21:19:15 on Dec 17,2015
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." semafor_min_1200mv_-40c_fast.vo 
 # -- Compiling module lab2
 # 
 # Top level modules:
 # 	lab2
-# End time: 16:41:05 on Dec 14,2015, Elapsed time: 0:00:00
+# End time: 21:19:15 on Dec 17,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -vlog01compat -work work +incdir+C:/git/alteralabs/ptsuits/lab2/semafor_lab2 {C:/git/alteralabs/ptsuits/lab2/semafor_lab2/uart_tb.v}
+# vlog -vlog01compat -work work +incdir+E:/alteraLabs/ptsuits/lab2/semafor_lab2 {E:/alteraLabs/ptsuits/lab2/semafor_lab2/lab2_tb.v}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 16:41:05 on Dec 14,2015
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/git/alteralabs/ptsuits/lab2/semafor_lab2" C:/git/alteralabs/ptsuits/lab2/semafor_lab2/uart_tb.v 
-# -- Compiling module uart_tb
+# Start time: 21:19:16 on Dec 17,2015
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/alteraLabs/ptsuits/lab2/semafor_lab2" E:/alteraLabs/ptsuits/lab2/semafor_lab2/lab2_tb.v 
+# -- Compiling module lab2_tb
 # 
 # Top level modules:
-# 	uart_tb
-# End time: 16:41:05 on Dec 14,2015, Elapsed time: 0:00:00
+# 	lab2_tb
+# End time: 21:19:16 on Dec 17,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  uart_tb
-# vsim -gui "+altera" -l msim_transcript -do "semafor_run_msim_rtl_verilog.do" 
-# Start time: 16:41:05 on Dec 14,2015
-# Loading work.uart_tb
-# Loading work.uart
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  lab2_tb
+# vsim -gui "+altera" -l msim_transcript -do "semafor_run_msim_gate_verilog.do" 
+# Start time: 21:19:16 on Dec 17,2015
+# Loading work.lab2_tb
+# Loading work.lab2
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_ram_block
+# Loading cycloneive_ver.cycloneive_ram_register
+# Loading cycloneive_ver.cycloneive_ram_pulse_generator
+# SDF 10.3d Compiler 2014.10 Oct  7 2014
+# 
+# Loading instances from semafor_min_1200mv_-40c_v_fast.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from semafor_min_1200mv_-40c_v_fast.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /lab2_tb File: E:/alteraLabs/ptsuits/lab2/semafor_lab2/lab2_tb.v
 # 
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: Администратор  Hostname: ADMIN-0MRH32G8P  ProcessID: 1544
 # 
-#           Attempting to use alternate WLF file "./wlft3f07sm".
+#           Attempting to use alternate WLF file "./wlftr63s1k".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlft3f07sm
+#           Using alternate file: ./wlftr63s1k
 # 
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Note: $stop    : C:/git/alteralabs/ptsuits/lab2/semafor_lab2/uart_tb.v(59)
-#    Time: 17120 ns  Iteration: 0  Instance: /uart_tb
-# Break in Module uart_tb at C:/git/alteralabs/ptsuits/lab2/semafor_lab2/uart_tb.v line 59
-# Simulation Breakpoint: Break in Module uart_tb at C:/git/alteralabs/ptsuits/lab2/semafor_lab2/uart_tb.v line 59
-# MACRO ./semafor_run_msim_rtl_verilog.do PAUSED at line 20
-# End time: 16:41:45 on Dec 14,2015, Elapsed time: 0:00:40
+# ** Note: $stop    : E:/alteraLabs/ptsuits/lab2/semafor_lab2/lab2_tb.v(41)
+#    Time: 27193585 ps  Iteration: 0  Instance: /lab2_tb
+# Break in Module lab2_tb at E:/alteraLabs/ptsuits/lab2/semafor_lab2/lab2_tb.v line 41
+# Simulation Breakpoint: Break in Module lab2_tb at E:/alteraLabs/ptsuits/lab2/semafor_lab2/lab2_tb.v line 41
+# MACRO ./semafor_run_msim_gate_verilog.do PAUSED at line 17
+# End time: 21:19:33 on Dec 17,2015, Elapsed time: 0:00:17
 # Errors: 0, Warnings: 2

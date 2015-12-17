@@ -27,15 +27,16 @@ module lab2_tb();
 		begin
 			#20 clr = 1;
 			#20 clr = 0;
-			#320 rx = 0;
-			#320 rx = div[1];
-			#320 rx = div[0];
-			#320 rx = 1;
-			#320 rx = 1;
+			
+			#160 rx = 0;
+			#160 rx = div[1];
+			#160 rx = div[0];
+			#160 rx = 1;
+			#160 rx = 1;
 			#20 train = 1;
 			#20 train = 0;
 			wait ({r,y,g}==3'b001);
-			#320 div=div+1;
+			#160 div=div+1;
 		end
 		$stop;
 	end

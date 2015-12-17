@@ -19,7 +19,7 @@ module uart_tb();
 	initial begin
 		#160 rst = 1;
 		#160 rst = 0;
-		#160 rx = 1; //start
+
 		#160 rx = 0; //start
 		#160 rx = 1; //старший бит
 		#160 rx = 0; //младший бит
@@ -29,7 +29,7 @@ module uart_tb();
 		
 		#160 rst = 1;
 		#160 rst = 0;
-		#160 rx = 1; //start
+
 		#160 rx = 0;
 		#160 rx = 1;
 		#160 rx = 1;
@@ -39,7 +39,7 @@ module uart_tb();
 		
 		#160 rst = 1;
 		#160 rst = 0;
-		#160 rx = 1; //start
+
 		#160 rx = 0;
 		#160 rx = 0;
 		#160 rx = 1;
@@ -49,7 +49,7 @@ module uart_tb();
 		
 		#160 rst = 1;
 		#160 rst = 0;
-		#160 rx = 1; //start
+
 		#160 rx = 0;
 		#160 rx = 0;
 		#160 rx = 1;

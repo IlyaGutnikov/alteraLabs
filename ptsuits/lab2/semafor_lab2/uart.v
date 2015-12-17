@@ -27,11 +27,10 @@ reg          rx_empty       ;
 reg          rx_d1          ;
 reg          rx_d2          ;
 reg          rx_d3          ;
-reg          rx_d4          ;
 reg          rx_busy        ;
 reg        	 uld_rx_data = 0;
-reg 	       rx_enable = 1  ;
-reg 			 xor_bit 		 ;
+reg 	       rx_enable = 1;
+reg 			 xor_bit  	;
 
 
 // UART RX Logic
@@ -39,7 +38,7 @@ always @ (posedge rxclk or posedge reset)
 if (reset) 
   begin
     rx_reg        <= 0;
-	 //rx_data 		<= 0;
+	//rx_data 		<= 0;
     rx_sample_cnt <= 0;
     rx_cnt        <= 0;
     rx_frame_err  <= 0;
@@ -89,30 +88,30 @@ else
                     // Start storing the rx data
                     if (rx_cnt > 0 && rx_cnt < 3) 
                       begin
-                        rx_reg[2 - rx_cnt] <= rx_d2; //старший бит
+                        rx_reg[2 - rx_cnt] <= rx_d2;//старший бит
                       end
-                    if (rx_cnt == 5) 
+                    if (rx_cnt == 4) 
                       begin
                         rx_busy <= 0;
-								xor_bit = rx_reg[0] ^ rx_reg[1];
+						xor_bit = rx_reg[0] ^ rx_reg[1]; //вычисляем бит проверки на четность\нечетность
                         // Check if End of frame received correctly
-								if (!(rx_d2 && rx_d4 && xor_bit)) //d2- стоп бит d4 - бит четности
+								if (!(rx_d2 && rx_d3 && xor_bit))
                           begin
                             rx_frame_err <= 1;
                           end 
                         else 
                           begin
-                            rx_empty     <= 0;
+                            //rx_empty     <= 0;
                             rx_frame_err <= 0;
                             // Check if last rx data was not unloaded,
                             rx_over_run  <= (rx_empty) ? 0 : 1;
                             //write to output register
-                            uld_rx_data <= 1;
+                            rx_data  <= rx_reg;
+									 //uld_rx_data <= 1;
                           end
                       end
                   end
-                  rx_d3 <= rx_d2; //
-                  rx_d4 <= rx_d3;
+                 rx_d3 <= rx_d2;
               end 
           end 
       end

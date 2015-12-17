@@ -1,5 +1,5 @@
 Analysis & Synthesis report for semafor
-Mon Dec 14 16:40:26 2015
+Thu Dec 17 21:17:50 2015
 Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
 
 
@@ -15,16 +15,17 @@ Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis IP Cores Summary
- 10. General Register Statistics
- 11. Inverted Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Source assignments for semafor:my_sem|periodrom:b2v_inst2|altsyncram:altsyncram_component|altsyncram_h0a1:auto_generated
- 14. Parameter Settings for User Entity Instance: semafor:my_sem|periodrom:b2v_inst2|altsyncram:altsyncram_component
- 15. altsyncram Parameter Settings by Entity Instance
- 16. Post-Synthesis Netlist Statistics for Top Partition
- 17. Elapsed Time Per Partition
- 18. Analysis & Synthesis Messages
- 19. Analysis & Synthesis Suppressed Messages
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for semafor:my_sem|periodrom:b2v_inst2|altsyncram:altsyncram_component|altsyncram_h0a1:auto_generated
+ 15. Parameter Settings for User Entity Instance: semafor:my_sem|periodrom:b2v_inst2|altsyncram:altsyncram_component
+ 16. altsyncram Parameter Settings by Entity Instance
+ 17. Post-Synthesis Netlist Statistics for Top Partition
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
+ 20. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -51,15 +52,15 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Dec 14 16:40:26 2015      ;
+; Analysis & Synthesis Status        ; Successful - Thu Dec 17 21:17:50 2015      ;
 ; Quartus II 64-Bit Version          ; 15.0.2 Build 153 07/15/2015 SJ Web Edition ;
 ; Revision Name                      ; semafor                                    ;
 ; Top-level Entity Name              ; lab2                                       ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 49                                         ;
-;     Total combinational functions  ; 45                                         ;
-;     Dedicated logic registers      ; 29                                         ;
-; Total registers                    ; 29                                         ;
+; Total logic elements               ; 44                                         ;
+;     Total combinational functions  ; 41                                         ;
+;     Dedicated logic registers      ; 27                                         ;
+; Total registers                    ; 27                                         ;
 ; Total pins                         ; 7                                          ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 128                                        ;
@@ -161,32 +162,32 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 2      ;
+; Number detected on machine ; 8      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                 ;
-+----------------------------------+-----------------+----------------------------------+----------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                         ; Library ;
-+----------------------------------+-----------------+----------------------------------+----------------------------------------------------------------------+---------+
-; uart.v                           ; yes             ; User Verilog HDL File            ; C:/git/alteralabs/ptsuits/lab2/semafor_lab2/uart.v                   ;         ;
-; semafor.v                        ; yes             ; User Verilog HDL File            ; C:/git/alteralabs/ptsuits/lab2/semafor_lab2/semafor.v                ;         ;
-; periods.mif                      ; yes             ; User Memory Initialization File  ; C:/git/alteralabs/ptsuits/lab2/semafor_lab2/periods.mif              ;         ;
-; periodrom.v                      ; yes             ; User Wizard-Generated File       ; C:/git/alteralabs/ptsuits/lab2/semafor_lab2/periodrom.v              ;         ;
-; lab2.v                           ; yes             ; User Verilog HDL File            ; C:/git/alteralabs/ptsuits/lab2/semafor_lab2/lab2.v                   ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                     ; c:/altera/15.0/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                     ; c:/altera/15.0/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                     ; c:/altera/15.0/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                     ; c:/altera/15.0/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; aglobal150.inc                   ; yes             ; Megafunction                     ; c:/altera/15.0/quartus/libraries/megafunctions/aglobal150.inc        ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                     ; c:/altera/15.0/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altrom.inc                       ; yes             ; Megafunction                     ; c:/altera/15.0/quartus/libraries/megafunctions/altrom.inc            ;         ;
-; altram.inc                       ; yes             ; Megafunction                     ; c:/altera/15.0/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                     ; c:/altera/15.0/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_h0a1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/git/alteralabs/ptsuits/lab2/semafor_lab2/db/altsyncram_h0a1.tdf   ;         ;
-+----------------------------------+-----------------+----------------------------------+----------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                            ;
++----------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                    ; Library ;
++----------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------+---------+
+; uart.v                           ; yes             ; User Verilog HDL File            ; E:/alteraLabs/ptsuits/lab2/semafor_lab2/uart.v                  ;         ;
+; semafor.v                        ; yes             ; User Verilog HDL File            ; E:/alteraLabs/ptsuits/lab2/semafor_lab2/semafor.v               ;         ;
+; periods.mif                      ; yes             ; User Memory Initialization File  ; E:/alteraLabs/ptsuits/lab2/semafor_lab2/periods.mif             ;         ;
+; periodrom.v                      ; yes             ; User Wizard-Generated File       ; E:/alteraLabs/ptsuits/lab2/semafor_lab2/periodrom.v             ;         ;
+; lab2.v                           ; yes             ; User Verilog HDL File            ; E:/alteraLabs/ptsuits/lab2/semafor_lab2/lab2.v                  ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                     ; e:/altera/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                     ; e:/altera/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                     ; e:/altera/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                     ; e:/altera/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; aglobal150.inc                   ; yes             ; Megafunction                     ; e:/altera/quartus/libraries/megafunctions/aglobal150.inc        ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                     ; e:/altera/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
+; altrom.inc                       ; yes             ; Megafunction                     ; e:/altera/quartus/libraries/megafunctions/altrom.inc            ;         ;
+; altram.inc                       ; yes             ; Megafunction                     ; e:/altera/quartus/libraries/megafunctions/altram.inc            ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                     ; e:/altera/quartus/libraries/megafunctions/altdpram.inc          ;         ;
+; db/altsyncram_h0a1.tdf           ; yes             ; Auto-Generated Megafunction      ; E:/alteraLabs/ptsuits/lab2/semafor_lab2/db/altsyncram_h0a1.tdf  ;         ;
++----------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -194,20 +195,20 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 49        ;
+; Estimated Total logic elements              ; 44        ;
 ;                                             ;           ;
-; Total combinational functions               ; 45        ;
+; Total combinational functions               ; 41        ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 20        ;
-;     -- 3 input functions                    ; 11        ;
-;     -- <=2 input functions                  ; 14        ;
+;     -- 4 input functions                    ; 22        ;
+;     -- 3 input functions                    ; 8         ;
+;     -- <=2 input functions                  ; 11        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 38        ;
+;     -- normal mode                          ; 34        ;
 ;     -- arithmetic mode                      ; 7         ;
 ;                                             ;           ;
-; Total registers                             ; 29        ;
-;     -- Dedicated logic registers            ; 29        ;
+; Total registers                             ; 27        ;
+;     -- Dedicated logic registers            ; 27        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 7         ;
@@ -216,9 +217,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 37        ;
-; Total fan-out                               ; 286       ;
-; Average fan-out                             ; 2.98      ;
+; Maximum fan-out                             ; 35        ;
+; Total fan-out                               ; 273       ;
+; Average fan-out                             ; 3.03      ;
 +---------------------------------------------+-----------+
 
 
@@ -227,12 +228,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                     ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------+--------------+
-; |lab2                                        ; 45 (0)            ; 29 (0)       ; 128         ; 0            ; 0       ; 0         ; 7    ; 0            ; |lab2                                                                                                   ; work         ;
+; |lab2                                        ; 41 (0)            ; 27 (0)       ; 128         ; 0            ; 0       ; 0         ; 7    ; 0            ; |lab2                                                                                                   ; work         ;
 ;    |semafor:my_sem|                          ; 18 (18)           ; 13 (13)      ; 128         ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|semafor:my_sem                                                                                    ; work         ;
 ;       |periodrom:b2v_inst2|                  ; 0 (0)             ; 0 (0)        ; 128         ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|semafor:my_sem|periodrom:b2v_inst2                                                                ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 128         ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|semafor:my_sem|periodrom:b2v_inst2|altsyncram:altsyncram_component                                ; work         ;
 ;             |altsyncram_h0a1:auto_generated| ; 0 (0)             ; 0 (0)        ; 128         ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|semafor:my_sem|periodrom:b2v_inst2|altsyncram:altsyncram_component|altsyncram_h0a1:auto_generated ; work         ;
-;    |uart:uart_rx|                            ; 27 (27)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|uart:uart_rx                                                                                      ; work         ;
+;    |uart:uart_rx|                            ; 23 (23)           ; 14 (14)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2|uart:uart_rx                                                                                      ; work         ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -255,17 +256,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+------------------------------------------+-----------------+
 
 
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; uart:uart_rx|uld_rx_data              ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 1 ;                                        ;
++---------------------------------------+----------------------------------------+
+
+
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 29    ;
+; Total registers                              ; 27    ;
 ; Number of registers using Synchronous Clear  ; 8     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 25    ;
+; Number of registers using Asynchronous Clear ; 24    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 7     ;
+; Number of registers using Clock Enable       ; 5     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -276,7 +287,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
 ; semafor:my_sem|colors[2]               ; 4       ;
-; uart:uart_rx|rx_d2                     ; 9       ;
+; uart:uart_rx|rx_d2                     ; 8       ;
 ; uart:uart_rx|rx_d1                     ; 1       ;
 ; Total number of inverted registers = 3 ;         ;
 +----------------------------------------+---------+
@@ -388,23 +399,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 7                           ;
-; cycloneiii_ff         ; 29                          ;
-;     CLR               ; 14                          ;
+; cycloneiii_ff         ; 27                          ;
+;     CLR               ; 13                          ;
 ;     CLR SCLR          ; 8                           ;
-;     ENA               ; 4                           ;
+;     ENA               ; 2                           ;
 ;     ENA CLR           ; 3                           ;
-; cycloneiii_lcell_comb ; 46                          ;
+;     plain             ; 1                           ;
+; cycloneiii_lcell_comb ; 42                          ;
 ;     arith             ; 7                           ;
 ;         2 data inputs ; 7                           ;
-;     normal            ; 39                          ;
-;         1 data inputs ; 4                           ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 11                          ;
-;         4 data inputs ; 20                          ;
+;     normal            ; 35                          ;
+;         1 data inputs ; 3                           ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 8                           ;
+;         4 data inputs ; 22                          ;
 ; cycloneiii_ram_block  ; 8                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.12                        ;
+; Average LUT depth     ; 2.19                        ;
 +-----------------------+-----------------------------+
 
 
@@ -423,7 +435,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
-    Info: Processing started: Mon Dec 14 16:40:12 2015
+    Info: Processing started: Thu Dec 17 21:17:39 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off semafor_lab2 -c semafor
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file uart_tb.v
@@ -468,30 +480,30 @@ Info (12128): Elaborating entity "altsyncram_h0a1" for hierarchy "semafor:my_sem
 Info (12128): Elaborating entity "uart" for hierarchy "uart:uart_rx"
 Warning (10036): Verilog HDL or VHDL warning at uart.v(24): object "rx_frame_err" assigned a value but never read
 Warning (10036): Verilog HDL or VHDL warning at uart.v(25): object "rx_over_run" assigned a value but never read
-Warning (10230): Verilog HDL assignment warning at uart.v(78): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at uart.v(88): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at uart.v(108): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at uart.v(77): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at uart.v(87): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at uart.v(107): truncated value with size 32 to match size of target (1)
 Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file C:/git/alteralabs/ptsuits/lab2/semafor_lab2/output_files/semafor.map.smsg
+Info (144001): Generated suppressed messages file E:/alteraLabs/ptsuits/lab2/semafor_lab2/output_files/semafor.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 64 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 59 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 3 output pins
-    Info (21061): Implemented 49 logic cells
+    Info (21061): Implemented 44 logic cells
     Info (21064): Implemented 8 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 647 megabytes
-    Info: Processing ended: Mon Dec 14 16:40:26 2015
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Peak virtual memory: 653 megabytes
+    Info: Processing ended: Thu Dec 17 21:17:50 2015
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:26
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/git/alteralabs/ptsuits/lab2/semafor_lab2/output_files/semafor.map.smsg.
+The suppressed messages can be found in E:/alteraLabs/ptsuits/lab2/semafor_lab2/output_files/semafor.map.smsg.
 
 
