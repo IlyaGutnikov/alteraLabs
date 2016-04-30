@@ -1,4 +1,4 @@
-# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# Reading E:/altera/modelsim_ase/tcl/vsim/pref.tcl
 # do countones_run_msim_rtl_verilog.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -7,36 +7,36 @@
 # vmap work rtl_work
 # Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
 # vmap -modelsim_quiet work rtl_work 
-# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Copying E:/altera/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
-# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+# ** Warning: Copied E:/altera/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+C:/git/alteralabs/ptsuits/lab3/test_proj1 {C:/git/alteralabs/ptsuits/lab3/test_proj1/countones.v}
+# vlog -vlog01compat -work work +incdir+E:/alteraLabs/ptsuits/lab3/test_proj1 {E:/alteraLabs/ptsuits/lab3/test_proj1/countones.v}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 12:54:22 on Dec 08,2015
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/git/alteralabs/ptsuits/lab3/test_proj1" C:/git/alteralabs/ptsuits/lab3/test_proj1/countones.v 
+# Start time: 20:43:41 on Jan 26,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/alteraLabs/ptsuits/lab3/test_proj1" E:/alteraLabs/ptsuits/lab3/test_proj1/countones.v 
 # -- Compiling module countones
 # 
 # Top level modules:
 # 	countones
-# End time: 12:54:22 on Dec 08,2015, Elapsed time: 0:00:00
+# End time: 20:43:41 on Jan 26,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -vlog01compat -work work +incdir+C:/git/alteralabs/ptsuits/lab3/test_proj1/simulation/modelsim {C:/git/alteralabs/ptsuits/lab3/test_proj1/simulation/modelsim/countones.vt}
+# vlog -vlog01compat -work work +incdir+E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim {E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim/countones.vt}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 12:54:22 on Dec 08,2015
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/git/alteralabs/ptsuits/lab3/test_proj1/simulation/modelsim" C:/git/alteralabs/ptsuits/lab3/test_proj1/simulation/modelsim/countones.vt 
+# Start time: 20:43:41 on Jan 26,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim" E:/alteraLabs/ptsuits/lab3/test_proj1/simulation/modelsim/countones.vt 
 # -- Compiling module countones_vlg_tst
 # 
 # Top level modules:
 # 	countones_vlg_tst
-# End time: 12:54:22 on Dec 08,2015, Elapsed time: 0:00:00
+# End time: 20:43:41 on Jan 26,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  countones_vlg_tst
 # vsim -gui "+altera" -l msim_transcript -do "countones_run_msim_rtl_verilog.do" 
-# Start time: 12:54:22 on Dec 08,2015
+# Start time: 20:43:41 on Jan 26,2016
 # Loading work.countones_vlg_tst
 # Loading work.countones
 # 
@@ -47,5 +47,5 @@
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 # Running testbench
-# End time: 12:54:33 on Dec 08,2015, Elapsed time: 0:00:11
+# End time: 20:44:25 on Jan 26,2016, Elapsed time: 0:00:44
 # Errors: 0, Warnings: 0

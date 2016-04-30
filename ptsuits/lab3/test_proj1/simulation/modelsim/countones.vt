@@ -18,7 +18,7 @@
 // suit user's needs .Comments are provided in each section to help the user    
 // fill out necessary details.                                                  
 // *****************************************************************************
-// Generated on "12/08/2015 12:35:19"
+// Generated on "01/21/2016 15:52:31"
                                                                                 
 // Verilog Test Bench template for design : countones
 // 
@@ -33,7 +33,7 @@ reg eachvec;
 // test vector input registers
 reg [31:0] din;
 // wires                                               
-wire [1:0]  result;
+wire [31:0]  result;
 
 // assign statements (if any)                          
 countones i1 (
@@ -45,7 +45,7 @@ initial
 begin                                                  
 // code that executes only once                        
 // insert code here --> begin                          
-din = 874799703;                                                         
+din = 131073;                                                       
 // --> end                                             
 $display("Running testbench");                       
 end                                                    
